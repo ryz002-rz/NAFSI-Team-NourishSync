@@ -127,8 +127,8 @@ git rebase main
 
 ### 👤 Christian — depends on Tasks 4, 5, 6
 
-- [ ] 7.1 **[Christian]** Rewrite `src/App.js` — import `HashRouter`, `Routes`, `Route`, `Navigate` from react-router-dom; import `Layout`, `Gateway`, `FamilyPortal`, `DonorPortal`, `VolunteerPortal`; import `./utils/i18n` for side-effect initialization; wrap app in `<HashRouter>` → `<Layout>` → `<Routes>` with routes for `/` (Gateway), `/family`, `/donor`, `/volunteer`, and `*` (redirect to `/`)
-- [ ] 7.2 **[Christian]** Remove default CRA boilerplate from `src/App.js` (logo import, App.css import, default JSX) and delete `src/App.css` if no longer needed
+- [x] 7.1 **[Christian]** Rewrite `src/App.js` — import `HashRouter`, `Routes`, `Route`, `Navigate` from react-router-dom; import `Layout`, `Gateway`, `FamilyPortal`, `DonorPortal`, `VolunteerPortal`; import `./utils/i18n` for side-effect initialization; wrap app in `<HashRouter>` → `<Layout>` → `<Routes>` with routes for `/` (Gateway), `/family`, `/donor`, `/volunteer`, and `*` (redirect to `/`)
+- [x] 7.2 **[Christian]** Remove default CRA boilerplate from `src/App.js` (logo import, App.css import, default JSX) and delete `src/App.css` if no longer needed
 
 > **Git note:** Christian should merge AFTER Ryan's portal pages are on `main`, so the imports in App.js resolve. Alternatively, Christian can create stub portal files and Ryan overwrites them — coordinate on this.
 
