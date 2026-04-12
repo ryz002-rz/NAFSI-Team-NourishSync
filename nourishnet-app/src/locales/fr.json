@@ -50,6 +50,21 @@
     "count": "emplacements trouvés",
     "countSingular": "emplacement trouvé"
   },
+  "donor": {
+    "wishlist": "Liste de Souhaits",
+    "acceptsPerishable": "Accepte les Périssables",
+    "dropOffHours": "Heures de Dépôt",
+    "highNeed": "Zone à Fort Besoin",
+    "sortByNeed": "Trier par Besoin"
+  },
+  "volunteer": {
+    "missions": "missions disponibles",
+    "skills": "Compétences",
+    "languages": "Langues",
+    "date": "Date",
+    "volunteersNeeded": "Bénévoles Nécessaires",
+    "signUp": "S'inscrire"
+  },
   "portal": {
     "family": {
       "title": "Trouvez de la Nourriture Près de Vous",

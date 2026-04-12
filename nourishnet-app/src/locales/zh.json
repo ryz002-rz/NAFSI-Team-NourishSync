@@ -50,6 +50,21 @@
     "count": "个地点",
     "countSingular": "个地点"
   },
+  "donor": {
+    "wishlist": "需求清单",
+    "acceptsPerishable": "接受易腐食品",
+    "dropOffHours": "送达时间",
+    "highNeed": "高需求地区",
+    "sortByNeed": "按需求排序"
+  },
+  "volunteer": {
+    "missions": "个任务可用",
+    "skills": "技能",
+    "languages": "语言",
+    "date": "日期",
+    "volunteersNeeded": "需要志愿者",
+    "signUp": "报名"
+  },
   "portal": {
     "family": {
       "title": "查找您附近的食物",

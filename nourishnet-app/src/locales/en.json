@@ -50,6 +50,21 @@
     "count": "locations found",
     "countSingular": "location found"
   },
+  "donor": {
+    "wishlist": "Wishlist",
+    "acceptsPerishable": "Accepts Perishable",
+    "dropOffHours": "Drop-off Hours",
+    "highNeed": "High Need Area",
+    "sortByNeed": "Sort by Need"
+  },
+  "volunteer": {
+    "missions": "missions available",
+    "skills": "Skills",
+    "languages": "Languages",
+    "date": "Date",
+    "volunteersNeeded": "Volunteers Needed",
+    "signUp": "Sign Up"
+  },
   "portal": {
     "family": {
       "title": "Find Food Near You",
