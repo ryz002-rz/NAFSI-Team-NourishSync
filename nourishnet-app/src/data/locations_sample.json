@@ -1,0 +1,128 @@
+[
+  {
+    "id": "loc-001",
+    "name": "Capital Area Food Bank",
+    "address": "4900 Puerto Rico Ave NE",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20017",
+    "lat": 38.9307,
+    "lng": -76.9512,
+    "phone": "(202) 644-9800",
+    "website": "https://capitalareafoodbank.org",
+    "hours": "Mon-Fri 8:00 AM - 4:00 PM",
+    "description": "Largest food bank in the DC metro area, providing fresh produce and pantry staples to families in need.",
+    "food_types": ["Fresh Produce", "Canned Goods", "Dairy", "Bread/Bakery"],
+    "dietary_tags": ["Vegan", "Vegetarian", "Dairy-Free", "Gluten-Free"],
+    "event_dates": [
+      {
+        "day_of_week": "Tuesday",
+        "start_time": "10:00 AM",
+        "end_time": "2:00 PM",
+        "frequency": "Weekly",
+        "notes": "First come first served"
+      }
+    ],
+    "requirements": "Photo ID required",
+    "serves": "DC, MD, VA residents",
+    "volunteer_needs": {
+      "accepting_volunteers": true,
+      "roles": ["Food sorting", "Distribution", "Driver"],
+      "contact": "volunteer@capitalareafoodbank.org"
+    },
+    "donation_info": {
+      "accepts_food": true,
+      "accepts_money": true,
+      "accepts_other": "Hygiene products, diapers",
+      "dropoff_instructions": "Drop off at loading dock Mon-Fri 8AM-3PM",
+      "donation_url": "https://capitalareafoodbank.org/donate"
+    },
+    "demand_level": "High",
+    "community_rating": 4.8,
+    "last_updated": "2026-04-10"
+  },
+  {
+    "id": "loc-002",
+    "name": "Masjid Muhammad Halal Food Pantry",
+    "address": "1519 4th St NW",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20001",
+    "lat": 38.9101,
+    "lng": -77.0147,
+    "phone": "(202) 483-8832",
+    "website": null,
+    "hours": "Sat 10:00 AM - 1:00 PM",
+    "description": "Community food pantry serving halal food options for Muslim families and all community members.",
+    "food_types": ["Halal Meat", "Fresh Produce", "Canned Goods", "Rice/Grains"],
+    "dietary_tags": ["Halal", "Vegetarian"],
+    "event_dates": [
+      {
+        "day_of_week": "Saturday",
+        "start_time": "10:00 AM",
+        "end_time": "1:00 PM",
+        "frequency": "Weekly",
+        "notes": null
+      }
+    ],
+    "requirements": null,
+    "serves": "Anyone",
+    "volunteer_needs": {
+      "accepting_volunteers": true,
+      "roles": ["Food distribution"],
+      "contact": null
+    },
+    "donation_info": {
+      "accepts_food": true,
+      "accepts_money": true,
+      "accepts_other": null,
+      "dropoff_instructions": null,
+      "donation_url": null
+    },
+    "demand_level": "Medium",
+    "community_rating": 4.5,
+    "last_updated": "2026-04-08"
+  },
+  {
+    "id": "loc-003",
+    "name": "PG County Mobile Market",
+    "address": "Various locations in Prince George's County",
+    "city": "Largo",
+    "state": "MD",
+    "zip": "20774",
+    "lat": 38.8976,
+    "lng": -76.8298,
+    "phone": null,
+    "website": "https://pgcfoodequity.org",
+    "hours": "Schedule varies",
+    "description": "Mobile food distribution bringing fresh, healthy food directly to underserved neighborhoods.",
+    "food_types": ["Fresh Produce", "Prepared Meals"],
+    "dietary_tags": ["Vegan", "Vegetarian", "Low-GI", "Dairy-Free"],
+    "event_dates": [
+      {
+        "day_of_week": "Wednesday",
+        "start_time": "3:00 PM",
+        "end_time": "6:00 PM",
+        "frequency": "Biweekly",
+        "notes": "Check website for exact locations"
+      }
+    ],
+    "requirements": "PG County residents",
+    "serves": "PG County residents",
+    "volunteer_needs": {
+      "accepting_volunteers": false,
+      "roles": [],
+      "contact": null
+    },
+    "donation_info": {
+      "accepts_food": false,
+      "accepts_money": true,
+      "accepts_other": null,
+      "dropoff_instructions": null,
+      "donation_url": "https://pgcfoodequity.org/donate"
+    },
+    "demand_level": "High",
+    "community_rating": 4.9,
+    "last_updated": "2026-04-11"
+  }
+]
