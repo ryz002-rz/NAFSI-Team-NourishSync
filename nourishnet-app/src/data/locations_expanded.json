@@ -45,7 +45,12 @@
       "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
       "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-002",
@@ -92,7 +97,12 @@
       "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
       "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-003",
@@ -139,7 +149,12 @@
       "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
       "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-004",
@@ -183,7 +198,23 @@
       "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
       "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [
+      "Culturally appropriate foods",
+      "Fresh African vegetables"
+    ],
+    "acceptsPerishable": true,
+    "dropOffHours": "",
+    "missions": [
+      {
+        "title": "Food Distribution Volunteer",
+        "description": "Help distribute culturally appropriate food at mobile pantry events on 1st and 3rd Sundays",
+        "skillsRequired": [],
+        "languagesNeeded": [],
+        "date": "1st and 3rd Sunday 12:00 PM - 2:00 PM"
+      }
+    ],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-005",
@@ -222,7 +253,12 @@
       "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
       "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-007",
@@ -271,7 +307,16 @@
       "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
       "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [
+      "Fruits",
+      "Vegetables",
+      "Nutrient-dense foods"
+    ],
+    "acceptsPerishable": true,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-008",
@@ -314,7 +359,24 @@
       "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
       "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [
+      "Diapers",
+      "Menstrual hygiene products",
+      "Nutritional food items"
+    ],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [
+      {
+        "title": "Youth CAP Volunteer",
+        "description": "Service-oriented volunteer opportunities building community connections for youth",
+        "skillsRequired": [],
+        "languagesNeeded": [],
+        "date": ""
+      }
+    ],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-009",
@@ -359,7 +421,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-010",
@@ -403,7 +470,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-011",
@@ -448,7 +520,15 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [
+      "Emergency food items",
+      "Clothing"
+    ],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-012",
@@ -486,7 +566,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-013",
@@ -525,7 +610,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-014",
@@ -563,7 +653,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-015",
@@ -609,7 +704,15 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [
+      "Groceries",
+      "Christmas food basket items"
+    ],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-016",
@@ -647,7 +750,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-017",
@@ -690,7 +798,17 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [
+      "Food",
+      "Toiletries",
+      "Laundry detergent",
+      "Diapers"
+    ],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-018",
@@ -732,7 +850,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-019",
@@ -770,7 +893,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-020",
@@ -813,7 +941,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-021",
@@ -857,7 +990,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-022",
@@ -895,7 +1033,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-023",
@@ -937,7 +1080,16 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [
+      "Groceries",
+      "Baby formula",
+      "Clothing"
+    ],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-024",
@@ -975,7 +1127,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-025",
@@ -1018,7 +1175,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-026",
@@ -1066,7 +1228,18 @@
       "source_url": "https://dbknews.com/2025/11/04/food-banks-prince-georges-county/",
       "extracted_from": "https://dbknews.com/2025/11/04/food-banks-prince-georges-county/"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [
+      "Fresh produce",
+      "Canned produce",
+      "Protein",
+      "Rice",
+      "Pasta"
+    ],
+    "acceptsPerishable": true,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-027",
@@ -1104,7 +1277,12 @@
       "source_url": "https://dbknews.com/2025/11/04/food-banks-prince-georges-county/",
       "extracted_from": "https://dbknews.com/2025/11/04/food-banks-prince-georges-county/"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-028",
@@ -1149,7 +1327,14 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [
+      "Emergency food"
+    ],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-030",
@@ -1187,7 +1372,12 @@
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-031",
@@ -1225,7 +1415,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-032",
@@ -1263,7 +1458,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-033",
@@ -1301,7 +1501,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-034",
@@ -1345,7 +1550,12 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-035",
@@ -1392,7 +1602,16 @@
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
     },
-    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific.",
+    "wishlist": [
+      "Food",
+      "Diapers",
+      "Laundry detergent"
+    ],
+    "acceptsPerishable": true,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-036",
@@ -1432,7 +1651,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-037",
@@ -1472,7 +1696,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-038",
@@ -1512,7 +1741,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-039",
@@ -1552,7 +1786,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-040",
@@ -1592,7 +1831,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-041",
@@ -1632,7 +1876,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-042",
@@ -1672,7 +1921,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-043",
@@ -1711,7 +1965,20 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [
+      {
+        "title": "Food Pantry Volunteer",
+        "description": "Help with food distribution at the Accokeek pantry. 2-4 hour shifts.",
+        "skillsRequired": [],
+        "languagesNeeded": [],
+        "date": "Tuesday or Friday"
+      }
+    ],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-044",
@@ -1751,7 +2018,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-045",
@@ -1791,7 +2063,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-046",
@@ -1831,7 +2108,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-047",
@@ -1871,7 +2153,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-048",
@@ -1911,7 +2198,12 @@
       "source_name": "foodpantries.org",
       "source_url": "https://www.foodpantries.org/co/md-prince_georges",
       "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-049",
@@ -1951,7 +2243,12 @@
       "source_name": "sengov.com Free Food Pantries PG County",
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-050",
@@ -1990,7 +2287,12 @@
       "source_name": "sengov.com Free Food Pantries PG County",
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-051",
@@ -2029,7 +2331,12 @@
       "source_name": "sengov.com Free Food Pantries PG County",
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-052",
@@ -2069,7 +2376,12 @@
       "source_name": "sengov.com Free Food Pantries PG County",
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-053",
@@ -2108,7 +2420,12 @@
       "source_name": "sengov.com Free Food Pantries PG County",
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-054",
@@ -2147,7 +2464,12 @@
       "source_name": "sengov.com Free Food Pantries PG County",
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-055",
@@ -2186,7 +2508,12 @@
       "source_name": "sengov.com Free Food Pantries PG County",
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-056",
@@ -2225,7 +2552,12 @@
       "source_name": "sengov.com Free Food Pantries PG County",
       "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
       "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-057",
@@ -2265,7 +2597,12 @@
       "source_name": "Prince George's County Government",
       "source_url": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency",
       "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-058",
@@ -2304,7 +2641,20 @@
       "source_name": "Prince George's County Government / chfoundationconnect.org",
       "source_url": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency",
       "extracted_from": "https://chfoundationconnect.org"
-    }
+    },
+    "wishlist": [
+      "Dairy products",
+      "Fresh produce",
+      "Chicken",
+      "Fish",
+      "Eggs",
+      "Rice",
+      "Beans"
+    ],
+    "acceptsPerishable": true,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-059",
@@ -2343,7 +2693,12 @@
       "source_name": "PGCPS McKinney-Vento Program",
       "source_url": "https://sites.google.com/pgcps.org/mckinney-vento-parent-resource/food-resources",
       "extracted_from": "https://sites.google.com/pgcps.org/mckinney-vento-parent-resource/food-resources"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   },
   {
     "id": "loc-060",
@@ -2383,6 +2738,11 @@
       "source_name": "QCI Behavioral Health",
       "source_url": "https://www.qcihealth.com/resources/food-pantries/prince-georges-county-panties",
       "extracted_from": "https://www.qcihealth.com/resources/food-pantries/prince-georges-county-panties"
-    }
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
   }
 ]

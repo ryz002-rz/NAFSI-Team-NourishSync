@@ -1,7 +1,8 @@
 # NourishNet Data Dictionary
 
-**Last updated:** April 11, 2026  
-**Dataset:** `locations.json` — 33 PG County food pantry locations  
+**Last updated:** April 12, 2026 (Day 2)  
+**Dataset:** `locations_expanded.json` — 58 PG County food assistance locations  
+**Original dataset:** `locations.json` — 33 locations (preserved, not modified)  
 **Insecurity data source:** Feeding America Map the Meal Gap 2021 via [Stacker](https://stacker.com/maryland/prince-georges-county-md/food-insecurity-rates-prince-georges-county-md)
 
 ---
@@ -25,8 +26,14 @@
 | `insecurityIndex` | number | Yes | Food insecurity rate for the area | County-level: 7.4% for all PG County locations (Feeding America 2021) |
 | `insecurityIndexNote` | string | Yes | Explains the source and granularity of the insecurity score | Always present; documents that this is county-level data |
 | `type` | string | Yes | Portal type: `customer`, `donor`, or `volunteer` | All currently set to `customer` |
+| `description` | string | No | Short factual summary from source page | Extracted from source. Empty string if not available. Only present on expanded entries (loc-036+). |
 | `lastVerified` | string | Yes | ISO date when the record was last checked | Date of data extraction |
 | `source` | object | Yes | Full data lineage tracking | See Source section below |
+| `wishlist` | string[] | No | Items the pantry currently needs from donors | Extracted from source page. Empty array if not confirmed. See Donor Fields below. |
+| `acceptsPerishable` | boolean \| null | No | Whether the location accepts perishable food donations | `true` if confirmed, `null` if unknown. See Donor Fields below. |
+| `dropOffHours` | string | No | Hours when donors can drop off donations | Extracted from source page. Empty string if not listed. |
+| `missions` | object[] | No | Volunteer mission opportunities at this location | Array of mission objects. Empty array if none confirmed. See Volunteer Fields below. |
+| `volunteersNeeded` | number \| null | No | Number of volunteers currently needed | `null` if unknown. Specific number only if confirmed by source. |
 
 ---
 
@@ -99,3 +106,71 @@ Every location includes a `source` object for full data lineage:
 - **Meaning:** 7.4% of the county population (70,930 people) experienced food insecurity in 2021
 - **Limitation:** This is a single county-wide rate. We do not have zip-code-level or census-tract-level insecurity data. All locations share the same value.
 - **Maryland state rate for comparison:** 9.7%
+
+---
+
+## Donor Fields (Added Day 2)
+
+These fields support the Donor Portal by indicating what each location needs and whether they accept donations.
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `wishlist` | string[] | `[]` | Specific items the pantry needs. Only populated when source page explicitly lists needed items. |
+| `acceptsPerishable` | boolean \| null | `null` | Whether the location accepts perishable food. `true` = confirmed accepts perishable, `false` = confirmed does NOT accept perishable, `null` = unknown/not stated. |
+| `dropOffHours` | string | `""` | Hours when donors can drop off donations. Empty string if not listed on source page. |
+
+**Current status:** 11 locations have verified wishlist data. 5 locations have confirmed `acceptsPerishable` status. 0 locations have confirmed `dropOffHours` (no source pages listed separate donor drop-off hours).
+
+### Example: Donor-enabled location
+
+```json
+{
+  "id": "loc-026",
+  "name": "College Park Community Food Bank",
+  "wishlist": ["Fresh produce", "Canned produce", "Protein", "Rice", "Pasta"],
+  "acceptsPerishable": true,
+  "dropOffHours": ""
+}
+```
+
+---
+
+## Volunteer Fields (Added Day 2)
+
+These fields support the Volunteer Portal by listing available missions and volunteer needs.
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `missions` | object[] | `[]` | Array of volunteer mission objects. Each mission has: `title` (string), `description` (string), `skillsRequired` (string[]), `languagesNeeded` (string[]), `date` (string). |
+| `volunteersNeeded` | number \| null | `null` | Number of volunteers currently needed. `null` if not stated by source. |
+
+### Mission object schema
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `title` | string | Short title of the volunteer opportunity |
+| `description` | string | What the volunteer will do |
+| `skillsRequired` | string[] | Skills needed (e.g., "Heavy Lifting", "Driver"). Empty array if none specified. |
+| `languagesNeeded` | string[] | Languages needed (e.g., "Spanish", "Amharic"). Empty array if none specified. |
+| `date` | string | When the mission occurs. Empty string if ongoing/not specified. |
+
+**Current status:** 3 locations have verified mission data. 0 locations have confirmed `volunteersNeeded` counts (no source pages listed specific numbers).
+
+### Example: Volunteer-enabled location
+
+```json
+{
+  "id": "loc-004",
+  "name": "AfriThrive Mobile Food Pantry",
+  "missions": [
+    {
+      "title": "Food Distribution Volunteer",
+      "description": "Help distribute culturally appropriate food at mobile pantry events on 1st and 3rd Sundays",
+      "skillsRequired": [],
+      "languagesNeeded": [],
+      "date": "1st and 3rd Sunday 12:00 PM - 2:00 PM"
+    }
+  ],
+  "volunteersNeeded": null
+}
+```
