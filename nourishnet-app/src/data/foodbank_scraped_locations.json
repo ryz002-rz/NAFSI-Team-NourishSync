@@ -1,0 +1,3138 @@
+[
+  {
+    "id": "ff-001",
+    "name": "DSS Largo District Office Food Pantry",
+    "address": {
+      "street": "5012 Rhode Island Ave",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20781"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "8:00 AM - 4:30 PM (Monday - Friday)",
+    "phone": "",
+    "website": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+    "requirements": [],
+    "foodTypes": [
+      "Canned Goods",
+      "Fresh Produce",
+      "Shelf-Stable Items",
+      "Groceries"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "government-run",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Prince George's County Dept. of Social Services food pantry at Largo District Office.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-002",
+    "name": "DSS Forestville District Office Food Pantry",
+    "address": {
+      "street": "3701 Donnell Dr",
+      "city": "Forestville",
+      "state": "MD",
+      "zip": "20747"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "8:00 AM - 4:30 PM (Monday - Friday)",
+    "phone": "",
+    "website": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+    "requirements": [],
+    "foodTypes": [
+      "Canned Goods",
+      "Fresh Produce",
+      "Shelf-Stable Items",
+      "Groceries"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "government-run",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Prince George's County Dept. of Social Services food pantry at Forestville District Office.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-003",
+    "name": "Capital Area Food Bank - Langley Park Distribution",
+    "address": {
+      "street": "1500 Merrimac Dr",
+      "city": "Langley Park",
+      "state": "MD",
+      "zip": "20783"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "9:00 AM - 12:00 PM (Every Saturday)",
+    "phone": "",
+    "website": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "requirements": [],
+    "foodTypes": [
+      "Fresh Produce",
+      "Canned Goods",
+      "Dairy",
+      "Bread",
+      "Frozen Meat"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank / PGCFEC weekly Saturday distribution at Langley Park.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-004",
+    "name": "PGCFEC Community Food Pantry - Oxon Hill",
+    "address": {
+      "street": "6200 Oxon Hill Rd",
+      "city": "Oxon Hill",
+      "state": "MD",
+      "zip": "20745"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "10:00 AM - 1:00 PM (Every Wednesday)",
+    "phone": "",
+    "website": "https://pgcfec.org/resources/find-food-food-pantry-listings/",
+    "requirements": [],
+    "foodTypes": [
+      "Canned Goods",
+      "Fresh Produce",
+      "Baby Formula",
+      "Hygiene Items"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "baby-supplies",
+      "hygiene-products"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Prince George's County Food Equity Council community food pantry in Oxon Hill.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-005",
+    "name": "Capital Area Food Bank Pop-Up - Suitland",
+    "address": {
+      "street": "4950 Auth Rd",
+      "city": "Suitland",
+      "state": "MD",
+      "zip": "20746"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "5:00 PM - 7:00 PM (Every Thursday)",
+    "phone": "",
+    "website": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "requirements": [],
+    "foodTypes": [
+      "Pantry Items",
+      "Fresh Produce"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank weekly pop-up distribution in Suitland.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-006",
+    "name": "Capital Area Food Bank Pop-Up - Greenbelt",
+    "address": {
+      "street": "7600 Greenbelt Rd",
+      "city": "Greenbelt",
+      "state": "MD",
+      "zip": "20770"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "9:00 AM - 11:00 AM (Every Saturday)",
+    "phone": "",
+    "website": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "requirements": [],
+    "foodTypes": [
+      "Pantry Items",
+      "Fresh Produce"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank weekly pop-up distribution in Greenbelt.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-007",
+    "name": "Capital Area Food Bank Pop-Up - Hyattsville",
+    "address": {
+      "street": "6400 Belcrest Rd",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "9:00 AM - 11:00 AM (Every Saturday)",
+    "phone": "",
+    "website": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "requirements": [],
+    "foodTypes": [
+      "Pantry Items",
+      "Fresh Produce"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank weekly pop-up distribution in Hyattsville.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-008",
+    "name": "Horeb SDA",
+    "address": {
+      "street": "3310 Powdermill Rd",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20783"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-009",
+    "name": "Healing Temple Church of the Nazerene",
+    "address": {
+      "street": "11002 Cherry Hill Rd",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20783"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-010",
+    "name": "Langley Park Elementary School",
+    "address": {
+      "street": "8501 15th Ave",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20783"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-011",
+    "name": "God's People Church",
+    "address": {
+      "street": "5411 Berwyn Road Ste. 104",
+      "city": "Berwyn Heights",
+      "state": "MD",
+      "zip": "20740"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-012",
+    "name": "Clara's Place",
+    "address": {
+      "street": "13508 Youngwood Turn",
+      "city": "Bowie",
+      "state": "MD",
+      "zip": "20715"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-013",
+    "name": "Spellman House Apartment",
+    "address": {
+      "street": "4711 Berwyn House Road",
+      "city": "College Park",
+      "state": "MD",
+      "zip": "20740"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-014",
+    "name": "Capital Christian Fellowship",
+    "address": {
+      "street": "10411 Greenbelt Road",
+      "city": "Lanham",
+      "state": "MD",
+      "zip": "20706"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-015",
+    "name": "College Park Community Center",
+    "address": {
+      "street": "5051 Pierce Ave",
+      "city": "College Park",
+      "state": "MD",
+      "zip": "20740"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-016",
+    "name": "Global Health and Environment Foundation",
+    "address": {
+      "street": "10802 Lanham Severn Road",
+      "city": "Lanham",
+      "state": "MD",
+      "zip": "20706"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-017",
+    "name": "The Samaritan Way",
+    "address": {
+      "street": "7800 Good Luck Road",
+      "city": "Lanham",
+      "state": "MD",
+      "zip": "20706"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-018",
+    "name": "Zion Praise Tabernacle Lutheran Church",
+    "address": {
+      "street": "6600 Laurel Bowie Road",
+      "city": "Bowie",
+      "state": "MD",
+      "zip": "20715"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-019",
+    "name": "Goodluck Community Center",
+    "address": {
+      "street": "8601 Good Luck Rd",
+      "city": "Lanham",
+      "state": "MD",
+      "zip": "20706"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-020",
+    "name": "Olive Foundation",
+    "address": {
+      "street": "9321 Lanham Severn Road",
+      "city": "Lanham",
+      "state": "MD",
+      "zip": "20706"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-021",
+    "name": "Triumphant Baptist Church Food Ministry",
+    "address": {
+      "street": "6509 Riggs Rd",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-022",
+    "name": "Charles Carroll Middle School",
+    "address": {
+      "street": "6130 Lamont Drive",
+      "city": "New Carrollton",
+      "state": "MD",
+      "zip": "20784"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-023",
+    "name": "Agape Assisted Living",
+    "address": {
+      "street": "6427 24th Place",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-024",
+    "name": "Ager Road UMC",
+    "address": {
+      "street": "6301 Ager Road",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-025",
+    "name": "William Wirt Middle School",
+    "address": {
+      "street": "62nd Pl Tuckerman Street",
+      "city": "Riverdale",
+      "state": "MD",
+      "zip": "20737"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-026",
+    "name": "Metropolitan SDA Church",
+    "address": {
+      "street": "6303-G Riggs Rd",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20783"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-027",
+    "name": "Ridgecrest Elementary School",
+    "address": {
+      "street": "6120 Riggs Rd.",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20783"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-028",
+    "name": "This Generation Ministries",
+    "address": {
+      "street": "9470 Annapolis Rd #407",
+      "city": "Lanham",
+      "state": "MD",
+      "zip": "20705"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-029",
+    "name": "Tender Love & Care",
+    "address": {
+      "street": "822 Cox Ave",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20783"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-030",
+    "name": "Ebenezer We Care We Share Community",
+    "address": {
+      "street": "6016 Princess Garden Parkway",
+      "city": "New Carrollton",
+      "state": "MD",
+      "zip": "20784"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-031",
+    "name": "CAC Wosem Lanham",
+    "address": {
+      "street": "9222 Annapolis Road",
+      "city": "Lanham",
+      "state": "MD",
+      "zip": "20706"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-032",
+    "name": "Rolling Crest-Chillum Community Center",
+    "address": {
+      "street": "6120 Sargent Rd",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-033",
+    "name": "Victory Crest",
+    "address": {
+      "street": "6100 Sargent Rd.",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-034",
+    "name": "GapBusters Inc.",
+    "address": {
+      "street": "6200 Sheridan St",
+      "city": "Riverdale",
+      "state": "MD",
+      "zip": "20737"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-035",
+    "name": "Zion Church Inc.",
+    "address": {
+      "street": "17001 Science Dr #119",
+      "city": "Bowie",
+      "state": "MD",
+      "zip": "20715"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-036",
+    "name": "Rollingcrest Commons",
+    "address": {
+      "street": "6060 Sargent Rd.",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-037",
+    "name": "Community Bible Baptist Church",
+    "address": {
+      "street": "7309 Riverdale Road",
+      "city": "Lanham",
+      "state": "MD",
+      "zip": "20706"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-038",
+    "name": "Riverdale Elementary School",
+    "address": {
+      "street": "5006 Riverdale Road",
+      "city": "Riverdale",
+      "state": "MD",
+      "zip": "20739"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-039",
+    "name": "First Pentecostal Church of God of Silver Spring Inc",
+    "address": {
+      "street": "4709 Oglethorpe St.",
+      "city": "Riverdale Park",
+      "state": "MD",
+      "zip": "20737"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-040",
+    "name": "Summer Bridges Tutoring Program",
+    "address": {
+      "street": "5819 East Pine Dr.",
+      "city": "Riverdale",
+      "state": "MD",
+      "zip": "20737"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-041",
+    "name": "River of Life Redeemed Christian Church of God",
+    "address": {
+      "street": "5617 54th Ave",
+      "city": "Riverdale",
+      "state": "MD",
+      "zip": "20737"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-042",
+    "name": "Shiloh Church Of God 7 Day",
+    "address": {
+      "street": "5701 Eastern Ave",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-043",
+    "name": "Friendship Arms Apartments",
+    "address": {
+      "street": "5805 42nd Ave #203",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20781"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-044",
+    "name": "Good Samaritan",
+    "address": {
+      "street": "1417 Chillum Rd",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-045",
+    "name": "Mount Zion Believers Church",
+    "address": {
+      "street": "3321 Toledo Terrace # 1 & 2",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-046",
+    "name": "Gospel Bearers Assembly International",
+    "address": {
+      "street": "2510 50th Ave.",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20781"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-047",
+    "name": "Excel Academy",
+    "address": {
+      "street": "7910 Scott Road",
+      "city": "Landover",
+      "state": "MD",
+      "zip": "20785"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-048",
+    "name": "Queenstown Community Center",
+    "address": {
+      "street": "3103 Queens Chapel Road",
+      "city": "Mount Rainier",
+      "state": "MD",
+      "zip": "20712"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-049",
+    "name": "I Hope Project for Humanity",
+    "address": {
+      "street": "5033 57th Ave",
+      "city": "Bladensburg",
+      "state": "MD",
+      "zip": "20710"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-050",
+    "name": "Community Marketplace at SHABACH!",
+    "address": {
+      "street": "3600 Bright Seat Road",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20785"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-051",
+    "name": "Glenarden Woods Community Center",
+    "address": {
+      "street": "7941 Johnson Ave.",
+      "city": "Glenarden",
+      "state": "MD",
+      "zip": "20706"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-052",
+    "name": "Glenarden Community Center",
+    "address": {
+      "street": "8615 McLain Ave",
+      "city": "Glenarden",
+      "state": "MD",
+      "zip": "20706"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-053",
+    "name": "Glenreed Community Center",
+    "address": {
+      "street": "3201 Reed St",
+      "city": "Lanham",
+      "state": "MD",
+      "zip": "20706"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-054",
+    "name": "4-H Club Park and Planning",
+    "address": {
+      "street": "2411 Pinebrook Ave",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20785"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-055",
+    "name": "Light of the World Ministries",
+    "address": {
+      "street": "12400 Lanham Severn Road",
+      "city": "Bowie",
+      "state": "MD",
+      "zip": "20720"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-056",
+    "name": "Tabernaculo de la Fe",
+    "address": {
+      "street": "2600 Metzerott Rd",
+      "city": "Adelphi",
+      "state": "MD",
+      "zip": "20783"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-057",
+    "name": "St. Michaels and All Angels",
+    "address": {
+      "street": "8501 New Hampshire Ave",
+      "city": "Adelphi",
+      "state": "MD",
+      "zip": "20783"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-058",
+    "name": "Pregnancy Aid Center",
+    "address": {
+      "street": "4809 Greenbelt Road",
+      "city": "College Park",
+      "state": "MD",
+      "zip": "20740"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-059",
+    "name": "Restoration Center",
+    "address": {
+      "street": "111 Centerway Dr.",
+      "city": "Greenbelt",
+      "state": "MD",
+      "zip": "20770"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-060",
+    "name": "ET Health Care Foundation Inc",
+    "address": {
+      "street": "13111 3rd St",
+      "city": "Bowie",
+      "state": "MD",
+      "zip": ""
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-061",
+    "name": "Vansville Community Center",
+    "address": {
+      "street": "6813 Ammendale Rd",
+      "city": "Beltsville",
+      "state": "MD",
+      "zip": "20705"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-062",
+    "name": "Emmanuel UMC",
+    "address": {
+      "street": "11416 Cedar Lane",
+      "city": "Beltsville",
+      "state": "MD",
+      "zip": "20705"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-063",
+    "name": "Elan Foundation",
+    "address": {
+      "street": "11310 Montgomery Rd",
+      "city": "Beltsville",
+      "state": "MD",
+      "zip": "20705"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-064",
+    "name": "Beltsville Community Center",
+    "address": {
+      "street": "3900 Sellman Rd",
+      "city": "Beltsville",
+      "state": "MD",
+      "zip": "20705"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-065",
+    "name": "Rock of Salvation Ministries Inc",
+    "address": {
+      "street": "10764 Baltimore Avenue",
+      "city": "Beltsville",
+      "state": "MD",
+      "zip": "20705"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-066",
+    "name": "Deerfield Run Community Center",
+    "address": {
+      "street": "13000 Laurel-Bowie Rd",
+      "city": "Laurel",
+      "state": "MD",
+      "zip": "20708"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-067",
+    "name": "Park View at Laurel 1",
+    "address": {
+      "street": "9000 Briarcroft Lane",
+      "city": "Laurel",
+      "state": "MD",
+      "zip": "20708"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-068",
+    "name": "Selborne House",
+    "address": {
+      "street": "501 Main Street",
+      "city": "Laurel",
+      "state": "MD",
+      "zip": "20707"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  },
+  {
+    "id": "ff-069",
+    "name": "College Park Youth Service Center",
+    "address": {
+      "street": "4912 Nantucket Rd",
+      "city": "College Park",
+      "state": "MD",
+      "zip": "20740"
+    },
+    "lat": null,
+    "lng": null,
+    "hours": "Contact for hours",
+    "phone": "",
+    "website": null,
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "cafb-partner",
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker.",
+    "type": "customer",
+    "description": "Capital Area Food Bank Partner. Services include Kids' Café, Community Meals, Weekend Backpack, Family Market, Grocery Plus.",
+    "lastVerified": "2026-04-12",
+    "source": {
+      "source_name": "Capital Area Food Bank",
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extracted_from": "https://www.capitalareafoodbank.org/find-food-assistance/"
+    },
+    "wishlist": [],
+    "acceptsPerishable": null,
+    "dropOffHours": "",
+    "missions": [],
+    "volunteersNeeded": null
+  }
+]
