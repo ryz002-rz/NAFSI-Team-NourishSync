@@ -1,0 +1,1397 @@
+[
+  {
+    "id": "loc-001",
+    "name": "PGCDSS North County Food Pantry",
+    "address": {
+      "street": "6505 Bellcrest Road",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": 38.9553,
+    "lng": -76.9713,
+    "hours": "Mon-Fri 8:00 AM - 4:30 PM",
+    "phone": "",
+    "website": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+    "requirements": [
+      "No registration required"
+    ],
+    "foodTypes": [
+      "Fresh produce",
+      "Shelf-stable items",
+      "Essential groceries"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "coords-approximate",
+      "no-id-required",
+      "walk-ins-welcome",
+      "government-run"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "PG County Government",
+      "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+      "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-002",
+    "name": "PGCDSS Central County Food Pantry",
+    "address": {
+      "street": "425 Brightseat Road",
+      "city": "Landover",
+      "state": "MD",
+      "zip": "20785"
+    },
+    "lat": 38.91602,
+    "lng": -76.860318,
+    "hours": "Mon-Fri 8:00 AM - 4:30 PM",
+    "phone": "",
+    "website": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+    "requirements": [
+      "No registration required"
+    ],
+    "foodTypes": [
+      "Fresh produce",
+      "Shelf-stable items",
+      "Essential groceries"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "no-id-required",
+      "walk-ins-welcome",
+      "government-run"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "PG County Government",
+      "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+      "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-003",
+    "name": "PGCDSS South County Food Pantry",
+    "address": {
+      "street": "4235 28th Avenue",
+      "city": "Temple Hills",
+      "state": "MD",
+      "zip": "20748"
+    },
+    "lat": 38.833269,
+    "lng": -76.942396,
+    "hours": "Mon-Fri 8:00 AM - 4:30 PM",
+    "phone": "",
+    "website": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+    "requirements": [
+      "No registration required"
+    ],
+    "foodTypes": [
+      "Fresh produce",
+      "Shelf-stable items",
+      "Essential groceries"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "no-id-required",
+      "walk-ins-welcome",
+      "government-run"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "PG County Government",
+      "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+      "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-004",
+    "name": "AfriThrive Mobile Food Pantry",
+    "address": {
+      "street": "5120 Whitfield Chapel Rd",
+      "city": "Lanham",
+      "state": "MD",
+      "zip": "20706"
+    },
+    "lat": 38.948756,
+    "lng": -76.854957,
+    "hours": "1st and 3rd Sunday 12:00 PM - 2:00 PM",
+    "phone": "",
+    "website": "https://www.afrithrive.org",
+    "requirements": [],
+    "foodTypes": [
+      "Culturally appropriate foods",
+      "Fresh African vegetables"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "mobile-market",
+      "non-english-friendly",
+      "culturally-appropriate"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "PG County Government",
+      "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+      "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-005",
+    "name": "Buddhist Tzu Chi Foundation Food Distribution",
+    "address": {
+      "street": "Rosa L. Parks Elementary School Hyattsville",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20783"
+    },
+    "lat": 38.987,
+    "lng": -76.978,
+    "hours": "4th Saturday of each month 10:00 AM",
+    "phone": "",
+    "website": "https://tzuchi.us/dc",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "coords-approximate"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "PG County Government",
+      "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+      "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-007",
+    "name": "The Fresh Food Market",
+    "address": {
+      "street": "11700 Beltsville Drive",
+      "city": "Beltsville",
+      "state": "MD",
+      "zip": "20705"
+    },
+    "lat": 39.049891,
+    "lng": -76.938915,
+    "hours": "Tue Thu Fri Sat 8:00 AM - 3:00 PM (by appointment)",
+    "phone": "240-201-3300",
+    "website": "https://kgcdc.org/kingdom-cares-fresh-food-market",
+    "requirements": [
+      "Photo ID required",
+      "Proof of address required",
+      "Appointment required"
+    ],
+    "foodTypes": [
+      "Fruits",
+      "Vegetables",
+      "Nutrient-dense foods"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "grocery-style",
+      "appointment-required",
+      "culturally-appropriate"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "PG County Government",
+      "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+      "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-008",
+    "name": "UCAP Food Pantry",
+    "address": {
+      "street": "1400 Doewood Lane",
+      "city": "Capitol Heights",
+      "state": "MD",
+      "zip": "20743"
+    },
+    "lat": 38.8856,
+    "lng": -76.9128,
+    "hours": "Tue & Wed 10:00 AM - 2:30 PM (by appointment)",
+    "phone": "(301) 322-5700",
+    "website": "https://www.ucappgc.org",
+    "requirements": [],
+    "foodTypes": [
+      "Nutritional food options"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "baby-supplies",
+      "hygiene-products",
+      "appointment-required"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "PG County Government / sengov.com",
+      "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+      "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-009",
+    "name": "Gethsemane United Methodist Church Food Pantry",
+    "address": {
+      "street": "910 Addison Road South",
+      "city": "Capitol Heights",
+      "state": "MD",
+      "zip": "20743"
+    },
+    "lat": 38.877223,
+    "lng": -76.894502,
+    "hours": "",
+    "phone": "(301) 336-1219",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Groceries",
+      "Perishable items",
+      "Cereal",
+      "Pasta",
+      "Milk",
+      "Eggs"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-010",
+    "name": "Community Outreach and Development Corp - Labor of Love Center",
+    "address": {
+      "street": "4719 Marlboro Pike",
+      "city": "Capitol Heights",
+      "state": "MD",
+      "zip": "20743"
+    },
+    "lat": 38.873735,
+    "lng": -76.933342,
+    "hours": "Mon-Fri",
+    "phone": "(301) 735-0121",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Meat",
+      "Basic foods",
+      "Fresh produce"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "snap-assistance",
+      "baby-supplies"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-011",
+    "name": "Prince George's County Salvation Army",
+    "address": {
+      "street": "4825 Edmonston Road",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20781"
+    },
+    "lat": 38.947057,
+    "lng": -76.92733,
+    "hours": "",
+    "phone": "(301) 277-6103",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Emergency food",
+      "Soup kitchen meals",
+      "Holiday meals"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "emergency-food",
+      "holiday-meals",
+      "soup-kitchen"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-012",
+    "name": "Oxon Hill Church of Christ Food Pantry",
+    "address": {
+      "street": "4201 Brinkley Road",
+      "city": "Temple Hills",
+      "state": "MD",
+      "zip": "20748"
+    },
+    "lat": 38.799973,
+    "lng": -76.935391,
+    "hours": "",
+    "phone": "(301) 894-5412",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-013",
+    "name": "Southern Friendship Missionary Baptist Church",
+    "address": {
+      "street": "4444 Branch Avenue",
+      "city": "Temple Hills",
+      "state": "MD",
+      "zip": "20748"
+    },
+    "lat": 38.823,
+    "lng": -76.938,
+    "hours": "",
+    "phone": "(301) 423-6142",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "coords-approximate"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-014",
+    "name": "Beltway Church of Christ Food Pantry",
+    "address": {
+      "street": "6000 Davis Boulevard",
+      "city": "Camp Springs",
+      "state": "MD",
+      "zip": "20746"
+    },
+    "lat": 38.816354,
+    "lng": -76.902181,
+    "hours": "",
+    "phone": "(301) 423-2320",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-015",
+    "name": "FISH of Greater Bowie",
+    "address": {
+      "street": "13710 Annapolis Rd",
+      "city": "Bowie",
+      "state": "MD",
+      "zip": "20720"
+    },
+    "lat": 38.972029,
+    "lng": -76.77327,
+    "hours": "",
+    "phone": "(301) 262-8479",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Groceries",
+      "Hot meals",
+      "Sandwiches",
+      "Christmas food baskets"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "meals-on-wheels",
+      "elderly-services",
+      "holiday-meals"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-016",
+    "name": "Largo Community Church Food Pantry",
+    "address": {
+      "street": "1701 Enterprise Road",
+      "city": "Mitchellville",
+      "state": "MD",
+      "zip": "20721"
+    },
+    "lat": 38.900258,
+    "lng": -76.792451,
+    "hours": "",
+    "phone": "(301) 249-2255",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-017",
+    "name": "City of Greenbelt Food Pantry",
+    "address": {
+      "street": "25 Crescent Rd",
+      "city": "Greenbelt",
+      "state": "MD",
+      "zip": "20770"
+    },
+    "lat": 39.000573,
+    "lng": -76.877386,
+    "hours": "",
+    "phone": "(301) 345-6660",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Food",
+      "Rice"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "hygiene-products",
+      "baby-supplies"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-018",
+    "name": "St. Margaret of Scotland Catholic Church Food Bank",
+    "address": {
+      "street": "408 Addison Road South",
+      "city": "Capitol Heights",
+      "state": "MD",
+      "zip": "20743"
+    },
+    "lat": 38.870509,
+    "lng": -76.894135,
+    "hours": "",
+    "phone": "(301) 336-3344",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Shelf-stable food"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "holiday-meals",
+      "hygiene-products"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-019",
+    "name": "Beltsville Adventist Community Center",
+    "address": {
+      "street": "4200 Ammendale Rd",
+      "city": "Beltsville",
+      "state": "MD",
+      "zip": "20705"
+    },
+    "lat": 39.053483,
+    "lng": -76.921454,
+    "hours": "",
+    "phone": "(301) 937-8119",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-020",
+    "name": "No Limits Outreach Ministries",
+    "address": {
+      "street": "7721 Barlowe Road",
+      "city": "Landover",
+      "state": "MD",
+      "zip": "20785"
+    },
+    "lat": 38.918171,
+    "lng": -76.873571,
+    "hours": "",
+    "phone": "(202) 341-5159",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Groceries",
+      "Fruits",
+      "Vegetables"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "meals-on-wheels"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-021",
+    "name": "Cornerstone Peaceful Bible Baptist Church",
+    "address": {
+      "street": "9010 Frank Tippett Road",
+      "city": "Upper Marlboro",
+      "state": "MD",
+      "zip": "20772"
+    },
+    "lat": 38.766875,
+    "lng": -76.82955,
+    "hours": "2nd Wed 4:30 PM - 6:30 PM; 2nd Sat 9:30 AM - 3:00 PM",
+    "phone": "(240) 346-4169",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Dry goods",
+      "Canned goods",
+      "Hot meals"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "hygiene-products",
+      "holiday-meals"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com / foodpantries.org",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-022",
+    "name": "Crossover Church Food Pantry",
+    "address": {
+      "street": "5340 Baltimore Avenue",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20781"
+    },
+    "lat": 38.955132,
+    "lng": -76.940885,
+    "hours": "",
+    "phone": "(301) 927-5620",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-023",
+    "name": "Lutheran Mission Society of Maryland",
+    "address": {
+      "street": "3799 East West Highway",
+      "city": "Hyattsville",
+      "state": "MD",
+      "zip": "20782"
+    },
+    "lat": 38.965885,
+    "lng": -76.950948,
+    "hours": "",
+    "phone": "(301) 277-2302",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Groceries",
+      "Baby formula"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "baby-supplies"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-024",
+    "name": "SEED Food Distribution",
+    "address": {
+      "street": "6201 Riverdale Road Suite 200",
+      "city": "Riverdale",
+      "state": "MD",
+      "zip": "20737"
+    },
+    "lat": 38.960433,
+    "lng": -76.911648,
+    "hours": "Wed & Fri 12:00 PM - 3:00 PM",
+    "phone": "(301) 458-9808",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com / foodpantries.org",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-025",
+    "name": "Jericho Baptist Church Food Pantry",
+    "address": {
+      "street": "8501 Jericho City Drive",
+      "city": "Landover",
+      "state": "MD",
+      "zip": "20785"
+    },
+    "lat": 38.928,
+    "lng": -76.881,
+    "hours": "",
+    "phone": "(301) 333-0500",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Groceries",
+      "Personal hygiene items"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "hygiene-products",
+      "coords-approximate"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-026",
+    "name": "College Park Community Food Bank",
+    "address": {
+      "street": "9704 Rhode Island Ave",
+      "city": "College Park",
+      "state": "MD",
+      "zip": "20740"
+    },
+    "lat": 39.01267,
+    "lng": -76.922389,
+    "hours": "Saturday 9:30 AM - 11:00 AM",
+    "phone": "",
+    "website": "https://www.collegeparkcommunityfoodbank.org",
+    "requirements": [
+      "Zip code and family size only"
+    ],
+    "foodTypes": [
+      "Fresh produce",
+      "Canned produce",
+      "Protein",
+      "Rice",
+      "Pasta"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "no-id-required",
+      "drive-thru"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "The Diamondback (UMD)",
+      "source_url": "https://dbknews.com/2025/11/04/food-banks-prince-georges-county/",
+      "extracted_from": "https://dbknews.com/2025/11/04/food-banks-prince-georges-county/"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-027",
+    "name": "Mission of Love Charities Food Pantry",
+    "address": {
+      "street": "6180 Old Central Ave",
+      "city": "Capitol Heights",
+      "state": "MD",
+      "zip": "20743"
+    },
+    "lat": 38.886534,
+    "lng": -76.902924,
+    "hours": "Mon-Fri",
+    "phone": "",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "The Diamondback (UMD) / 211 Maryland",
+      "source_url": "https://dbknews.com/2025/11/04/food-banks-prince-georges-county/",
+      "extracted_from": "https://dbknews.com/2025/11/04/food-banks-prince-georges-county/"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-028",
+    "name": "Bowie Interfaith Pantry and Emergency Aid Fund",
+    "address": {
+      "street": "3120 Belair Drive",
+      "city": "Bowie",
+      "state": "MD",
+      "zip": "20715"
+    },
+    "lat": 38.975555,
+    "lng": -76.742512,
+    "hours": "Mon Wed Fri 9:00 AM - 11:00 AM",
+    "phone": "(301) 262-6765",
+    "website": "",
+    "requirements": [
+      "PG County resident",
+      "First-time clients arrive by 10:30 AM"
+    ],
+    "foodTypes": [
+      "Emergency food"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "drive-thru",
+      "emergency-food"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com / foodpantries.org",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-030",
+    "name": "Community Support Systems - Brandywine",
+    "address": {
+      "street": "13500 Baden-Westwood Rd",
+      "city": "Brandywine",
+      "state": "MD",
+      "zip": "20613"
+    },
+    "lat": 38.660442,
+    "lng": -76.772391,
+    "hours": "Wed & Fri 9:30 AM - 11:30 AM",
+    "phone": "",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "foodpantries.org",
+      "source_url": "https://www.foodpantries.org/co/md-prince_georges",
+      "extracted_from": "https://www.foodpantries.org/co/md-prince_georges"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-031",
+    "name": "Impact One Church Food Pantry",
+    "address": {
+      "street": "7230 Central Avenue",
+      "city": "Capitol Heights",
+      "state": "MD",
+      "zip": "20743"
+    },
+    "lat": 38.88839,
+    "lng": -76.881286,
+    "hours": "",
+    "phone": "",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-032",
+    "name": "Gospel Assembly Church Food Pantry",
+    "address": {
+      "street": "8740-12 Cherry Lane",
+      "city": "Laurel",
+      "state": "MD",
+      "zip": "20707"
+    },
+    "lat": 39.088627,
+    "lng": -76.853006,
+    "hours": "",
+    "phone": "(301) 605-3756",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-033",
+    "name": "Greater Refuge Ministries Food Pantry",
+    "address": {
+      "street": "9512 Piscataway Road",
+      "city": "Clinton",
+      "state": "MD",
+      "zip": "20735"
+    },
+    "lat": 38.758743,
+    "lng": -76.917011,
+    "hours": "",
+    "phone": "(866) 515-1317",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-034",
+    "name": "Bethel House",
+    "address": {
+      "street": "6810 Floral Park Road",
+      "city": "Brandywine",
+      "state": "MD",
+      "zip": "20613"
+    },
+    "lat": 38.69,
+    "lng": -76.85,
+    "hours": "",
+    "phone": "(301) 372-1700",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Fresh fruits",
+      "Fresh vegetables",
+      "Snacks"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "student-friendly",
+      "coords-approximate"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-035",
+    "name": "Divine Grace Mission",
+    "address": {
+      "street": "4208 Glenn Dale Rd",
+      "city": "Bowie",
+      "state": "MD",
+      "zip": "20720"
+    },
+    "lat": 38.946835,
+    "lng": -76.800998,
+    "hours": "",
+    "phone": "(240) 460-0842",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [
+      "Soup",
+      "Pasta",
+      "Dairy",
+      "Canned meats",
+      "Fresh produce",
+      "Diapers"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "baby-supplies",
+      "hygiene-products"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  }
+]
