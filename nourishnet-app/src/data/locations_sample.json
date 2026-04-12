@@ -1,0 +1,128 @@
+[
+  {
+    "id": "loc-007",
+    "name": "The Fresh Food Market",
+    "address": {
+      "street": "11700 Beltsville Drive",
+      "city": "Beltsville",
+      "state": "MD",
+      "zip": "20705"
+    },
+    "lat": 39.049891,
+    "lng": -76.938915,
+    "hours": "Tue Thu Fri Sat 8:00 AM - 3:00 PM (by appointment)",
+    "phone": "240-201-3300",
+    "website": "https://kgcdc.org/kingdom-cares-fresh-food-market",
+    "requirements": [
+      "Photo ID required",
+      "Proof of address required",
+      "Appointment required"
+    ],
+    "foodTypes": [
+      "Fruits",
+      "Vegetables",
+      "Nutrient-dense foods"
+    ],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": true,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "grocery-style",
+      "appointment-required",
+      "culturally-appropriate"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "PG County Government",
+      "source_url": "https://www.princegeorgescountymd.gov/departments-offices/food-pantry-services",
+      "extracted_from": "https://www.princegeorgescountymd.gov/departments-offices/county-executive/federal-government-shutdown/food-and-basic-needs-clothing-medical-and-emergency"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-031",
+    "name": "Impact One Church Food Pantry",
+    "address": {
+      "street": "7230 Central Avenue",
+      "city": "Capitol Heights",
+      "state": "MD",
+      "zip": "20743"
+    },
+    "lat": 38.88839,
+    "lng": -76.881286,
+    "hours": "",
+    "phone": "",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  },
+  {
+    "id": "loc-013",
+    "name": "Southern Friendship Missionary Baptist Church",
+    "address": {
+      "street": "4444 Branch Avenue",
+      "city": "Temple Hills",
+      "state": "MD",
+      "zip": "20748"
+    },
+    "lat": 38.823,
+    "lng": -76.938,
+    "hours": "",
+    "phone": "(301) 423-6142",
+    "website": "",
+    "requirements": [],
+    "foodTypes": [],
+    "healthAttributes": {
+      "halal": false,
+      "vegan": false,
+      "vegetarian": false,
+      "noBeef": false,
+      "lowGI": false,
+      "freshProduce": false,
+      "dairyFree": false
+    },
+    "tags": [
+      "family-friendly",
+      "coords-approximate"
+    ],
+    "insecurityIndex": 7.4,
+    "type": "customer",
+    "lastVerified": "2026-04-11",
+    "source": {
+      "source_name": "sengov.com Free Food Pantries PG County",
+      "source_url": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county",
+      "extracted_from": "https://help.sengov.com/posts/free-food-pantries-prince-george-s-county"
+    },
+    "insecurityIndexNote": "County-level rate from Feeding America Map the Meal Gap 2021 via Stacker. Not location-specific."
+  }
+]
