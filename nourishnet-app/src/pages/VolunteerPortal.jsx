@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import locations from '../data/locations.json';
+import locations from '../data/locations_expanded.json';
 import { filterBySearch } from '../utils/filterUtils';
 import LocationCard from '../components/shared/LocationCard';
 import MapView from '../components/ryan/MapView';
