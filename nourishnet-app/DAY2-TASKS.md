@@ -56,9 +56,9 @@
 
 ### 👤 Christian — depends on Task 1
 
-- [ ] 3.1 **[Christian]** Enhance `DonorPortal.jsx` to display donor-relevant info: show each location's `wishlist` items as tags, display `acceptsPerishable` badge, show `dropOffHours` alongside regular hours
-- [ ] 3.2 **[Christian]** Add a "High Need" sort option that orders locations by `insecurityIndex` descending so donors can prioritize communities with greatest need
-- [ ] 3.3 **[Christian]** Add i18n keys for donor-specific UI text to all 6 locale files: `donor.wishlist`, `donor.acceptsPerishable`, `donor.dropOffHours`, `donor.highNeed`, `donor.sortByNeed`
+- [x] 3.1 **[Christian]** Enhance `DonorPortal.jsx` to display donor-relevant info: show each location's `wishlist` items as tags, display `acceptsPerishable` badge, show `dropOffHours` alongside regular hours
+- [x] 3.2 **[Christian]** Add a "High Need" sort option that orders locations by `insecurityIndex` descending so donors can prioritize communities with greatest need
+- [x] 3.3 **[Christian]** Add i18n keys for donor-specific UI text to all 6 locale files: `donor.wishlist`, `donor.acceptsPerishable`, `donor.dropOffHours`, `donor.highNeed`, `donor.sortByNeed`
 
 **Deliverables**: Enhanced Donor Portal with wishlist display, need-based sorting, and i18n
 
@@ -68,9 +68,9 @@
 
 ### 👤 Christian — depends on Task 1
 
-- [ ] 4.1 **[Christian]** Enhance `VolunteerPortal.jsx` to display mission cards: for each location with `missions`, render mission title, description, required skills, needed languages, and date
-- [ ] 4.2 **[Christian]** Add skill/language filter dropdowns so volunteers can filter missions by `skillsRequired` and `languagesNeeded` fields
-- [ ] 4.3 **[Christian]** Add i18n keys for volunteer-specific UI text to all 6 locale files: `volunteer.missions`, `volunteer.skills`, `volunteer.languages`, `volunteer.date`, `volunteer.volunteersNeeded`, `volunteer.signUp`
+- [x] 4.1 **[Christian]** Enhance `VolunteerPortal.jsx` to display mission cards: for each location with `missions`, render mission title, description, required skills, needed languages, and date
+- [x] 4.2 **[Christian]** Add skill/language filter dropdowns so volunteers can filter missions by `skillsRequired` and `languagesNeeded` fields
+- [x] 4.3 **[Christian]** Add i18n keys for volunteer-specific UI text to all 6 locale files: `volunteer.missions`, `volunteer.skills`, `volunteer.languages`, `volunteer.date`, `volunteer.volunteersNeeded`, `volunteer.signUp`
 
 **Deliverables**: Enhanced Volunteer Portal with mission cards, skill/language filters, and i18n
 

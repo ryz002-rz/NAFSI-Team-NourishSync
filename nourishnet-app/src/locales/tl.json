@@ -50,6 +50,21 @@
     "count": "mga lokasyon ang nahanap",
     "countSingular": "lokasyon ang nahanap"
   },
+  "donor": {
+    "wishlist": "Listahan ng Kailangan",
+    "acceptsPerishable": "Tumatanggap ng Madaling Masira",
+    "dropOffHours": "Oras ng Pag-iwan",
+    "highNeed": "Lugar na Mataas ang Pangangailangan",
+    "sortByNeed": "Ayusin Ayon sa Pangangailangan"
+  },
+  "volunteer": {
+    "missions": "mga misyon na magagamit",
+    "skills": "Mga Kasanayan",
+    "languages": "Mga Wika",
+    "date": "Petsa",
+    "volunteersNeeded": "Mga Volunteer na Kailangan",
+    "signUp": "Mag-sign Up"
+  },
   "portal": {
     "family": {
       "title": "Maghanap ng Pagkain Malapit sa Iyo",

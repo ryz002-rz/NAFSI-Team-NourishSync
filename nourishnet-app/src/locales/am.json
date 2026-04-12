@@ -50,6 +50,21 @@
     "count": "ቦታዎች ተገኝተዋል",
     "countSingular": "ቦታ ተገኝቷል"
   },
+  "donor": {
+    "wishlist": "የምኞት ዝርዝር",
+    "acceptsPerishable": "የሚበላሹ ምግቦችን ይቀበላል",
+    "dropOffHours": "የማስረከቢያ ሰዓት",
+    "highNeed": "ከፍተኛ ፍላጎት ያለው አካባቢ",
+    "sortByNeed": "በፍላጎት ደርድር"
+  },
+  "volunteer": {
+    "missions": "ተልዕኮዎች ይገኛሉ",
+    "skills": "ክህሎቶች",
+    "languages": "ቋንቋዎች",
+    "date": "ቀን",
+    "volunteersNeeded": "የሚያስፈልጉ በጎ ፈቃደኞች",
+    "signUp": "ይመዝገቡ"
+  },
   "portal": {
     "family": {
       "title": "በአቅራቢያዎ ምግብ ያግኙ",

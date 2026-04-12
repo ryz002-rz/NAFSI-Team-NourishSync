@@ -50,6 +50,21 @@
     "count": "ubicaciones encontradas",
     "countSingular": "ubicación encontrada"
   },
+  "donor": {
+    "wishlist": "Lista de Deseos",
+    "acceptsPerishable": "Acepta Perecederos",
+    "dropOffHours": "Horario de Entrega",
+    "highNeed": "Zona de Alta Necesidad",
+    "sortByNeed": "Ordenar por Necesidad"
+  },
+  "volunteer": {
+    "missions": "misiones disponibles",
+    "skills": "Habilidades",
+    "languages": "Idiomas",
+    "date": "Fecha",
+    "volunteersNeeded": "Voluntarios Necesarios",
+    "signUp": "Inscribirse"
+  },
   "portal": {
     "family": {
       "title": "Encuentra Comida Cerca de Ti",
