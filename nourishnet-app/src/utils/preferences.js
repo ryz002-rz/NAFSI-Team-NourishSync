@@ -8,6 +8,8 @@ export const DEFAULT_PREFS = {
   role: null,
   dietary_tags: [],
   household_size: null,
+  search_query: '',
+  filter_mode: 'AND',
 };
 
 const STORAGE_KEY = 'nourishnet_prefs';

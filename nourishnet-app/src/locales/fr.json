@@ -21,6 +21,18 @@
     "noResults": "Aucun résultat trouvé",
     "comingSoon": "Bientôt Disponible"
   },
+  "impact": {
+    "title": "Calculateur d'Impact",
+    "description": "Estimez l'impact de votre don alimentaire",
+    "co2": "CO₂ Évité",
+    "meals": "Repas Fournis",
+    "water": "Eau Conservée",
+    "inputLabel": "Nourriture donnée (lbs) :",
+    "inputPlaceholder": "ex. 50",
+    "share": "Partagez Votre Impact",
+    "communityTitle": "Total Communautaire",
+    "communityDonated": "Total Donné"
+  },
   "portal": {
     "family": {
       "title": "Trouvez de la Nourriture Près de Vous",

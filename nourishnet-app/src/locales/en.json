@@ -21,6 +21,18 @@
     "noResults": "No results found",
     "comingSoon": "Coming Soon"
   },
+  "impact": {
+    "title": "Impact Calculator",
+    "description": "Estimate the impact of your food donation",
+    "co2": "CO₂ Diverted",
+    "meals": "Meals Provided",
+    "water": "Water Conserved",
+    "inputLabel": "Food donated (lbs):",
+    "inputPlaceholder": "e.g. 50",
+    "share": "Share Your Impact",
+    "communityTitle": "Community Total",
+    "communityDonated": "Total Donated"
+  },
   "portal": {
     "family": {
       "title": "Find Food Near You",

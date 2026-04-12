@@ -80,10 +80,10 @@
 
 ### 👤 Joe — no hard dependencies (can start immediately)
 
-- [ ] 5.1 **[Joe]** Add filter mode toggle to `FilterEngine.jsx`: AND mode (location must match ALL selected tags) vs OR mode (location must match ANY selected tag) — default to AND, persist choice to localStorage via `preferences.js`
-- [ ] 5.2 **[Joe]** Add distance-based filtering UI to `FilterEngine.jsx`: a radius dropdown (1 mi, 5 mi, 10 mi, 25 mi) that works with `filterByDistance` when user location is available
-- [ ] 5.3 **[Joe]** Persist active dietary filters and search query to localStorage using `savePreferences` so filters survive page refresh — restore on component mount via `getPreferences`
-- [ ] 5.4 **[Joe]** Optimize `applyFilters` for large datasets: add early-exit when no filters are active, memoize distance calculations when origin hasn't changed
+- [x] 5.1 **[Joe]** Add filter mode toggle to `FilterEngine.jsx`: AND mode (location must match ALL selected tags) vs OR mode (location must match ANY selected tag) — default to AND, persist choice to localStorage via `preferences.js`
+- [x] 5.2 **[Joe]** Add distance-based filtering UI to `FilterEngine.jsx`: a radius dropdown (1 mi, 5 mi, 10 mi, 25 mi) that works with `filterByDistance` when user location is available
+- [x] 5.3 **[Joe]** Persist active dietary filters and search query to localStorage using `savePreferences` so filters survive page refresh — restore on component mount via `getPreferences`
+- [x] 5.4 **[Joe]** Optimize `applyFilters` for large datasets: add early-exit when no filters are active, memoize distance calculations when origin hasn't changed
 
 **Deliverables**: Production-ready FilterEngine with AND/OR mode, distance UI, and state persistence
 
@@ -93,10 +93,10 @@
 
 ### 👤 Joe
 
-- [ ] 6.1 **[Joe]** Add Spanish keyword mappings to `VoiceSearch.jsx`: `VOICE_KEYWORD_MAP_ES` with entries like `"sin carne"` → `noBeef`, `"vegano"` → `vegan`, `"sin lácteos"` → `dairyFree`, etc.
-- [ ] 6.2 **[Joe]** Detect current i18n language and set `recognition.lang` accordingly (en → `en-US`, es → `es-ES`, fr → `fr-FR`, zh → `zh-CN`)
-- [ ] 6.3 **[Joe]** Add visual feedback: show the recognized transcript text below the mic button for 3 seconds after recognition, and show which filters were activated
-- [ ] 6.4 **[Joe]** Add error recovery: if `no-speech` error occurs, auto-retry once after 500ms; if `not-allowed`, show a helpful message about microphone permissions
+- [x] 6.1 **[Joe]** Add Spanish keyword mappings to `VoiceSearch.jsx`: `VOICE_KEYWORD_MAP_ES` with entries like `"sin carne"` → `noBeef`, `"vegano"` → `vegan`, `"sin lácteos"` → `dairyFree`, etc.
+- [x] 6.2 **[Joe]** Detect current i18n language and set `recognition.lang` accordingly (en → `en-US`, es → `es-ES`, fr → `fr-FR`, zh → `zh-CN`)
+- [x] 6.3 **[Joe]** Add visual feedback: show the recognized transcript text below the mic button for 3 seconds after recognition, and show which filters were activated
+- [x] 6.4 **[Joe]** Add error recovery: if `no-speech` error occurs, auto-retry once after 500ms; if `not-allowed`, show a helpful message about microphone permissions
 
 **Deliverables**: Polished VoiceSearch with multi-language support and better UX feedback
 
@@ -106,9 +106,9 @@
 
 ### 👤 Joe
 
-- [ ] 7.1 **[Joe]** Add i18n support to `ImpactCalculator.jsx`: extract all hardcoded strings to translation keys (`impact.title`, `impact.description`, `impact.co2`, `impact.meals`, `impact.water`, `impact.inputLabel`, `impact.inputPlaceholder`)
-- [ ] 7.2 **[Joe]** Add a "community total" display: aggregate total donations across all donor locations (sum of a `totalDonatedLbs` field if Joshua adds it, otherwise use a static demo value) and show cumulative impact stats
-- [ ] 7.3 **[Joe]** Add share functionality: a "Share Your Impact" button that copies a formatted text summary to clipboard (e.g., "I donated 50 lbs of food, saving 190 lbs of CO₂!")
+- [x] 7.1 **[Joe]** Add i18n support to `ImpactCalculator.jsx`: extract all hardcoded strings to translation keys (`impact.title`, `impact.description`, `impact.co2`, `impact.meals`, `impact.water`, `impact.inputLabel`, `impact.inputPlaceholder`)
+- [x] 7.2 **[Joe]** Add a "community total" display: aggregate total donations across all donor locations (sum of a `totalDonatedLbs` field if Joshua adds it, otherwise use a static demo value) and show cumulative impact stats
+- [x] 7.3 **[Joe]** Add share functionality: a "Share Your Impact" button that copies a formatted text summary to clipboard (e.g., "I donated 50 lbs of food, saving 190 lbs of CO₂!")
 
 **Deliverables**: i18n-ready ImpactCalculator with community stats and share feature
 

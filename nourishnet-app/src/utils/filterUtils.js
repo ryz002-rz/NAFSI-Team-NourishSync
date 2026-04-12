@@ -18,16 +18,18 @@ export const DIETARY_FILTERS = [
 
 /**
  * Filter locations by active dietary/health attribute tags.
- * Uses AND logic — location must match ALL active filters.
+ * Supports AND mode (must match ALL) and OR mode (must match ANY).
  * @param {Array} locations
  * @param {string[]} activeTags - keys from healthAttributes (e.g. ['halal', 'vegan'])
+ * @param {'AND'|'OR'} mode - filter logic mode (default: 'AND')
  * @returns {Array}
  */
-export function filterByDietary(locations, activeTags) {
+export function filterByDietary(locations, activeTags, mode = 'AND') {
   if (!activeTags || activeTags.length === 0) return locations;
+  const matcher = mode === 'OR' ? 'some' : 'every';
   return locations.filter((loc) => {
     if (!loc.healthAttributes) return false;
-    return activeTags.every((tag) => loc.healthAttributes[tag] === true);
+    return activeTags[matcher]((tag) => loc.healthAttributes[tag] === true);
   });
 }
 
@@ -102,21 +104,60 @@ export function filterByDistance(locations, origin, radiusMiles) {
 }
 
 /**
- * Apply all filters in sequence: search → dietary → distance.
+ * Memoized distance cache — avoids recalculating when origin hasn't changed.
+ */
+let _distanceCache = { originKey: null, distances: new Map() };
+
+function _getOriginKey(origin) {
+  return origin ? `${origin.lat},${origin.lng}` : null;
+}
+
+function _getCachedDistance(origin, loc) {
+  const key = _getOriginKey(origin);
+  if (_distanceCache.originKey !== key) {
+    _distanceCache = { originKey: key, distances: new Map() };
+  }
+  if (_distanceCache.distances.has(loc.id)) {
+    return _distanceCache.distances.get(loc.id);
+  }
+  const d = getDistanceMiles(origin.lat, origin.lng, loc.lat, loc.lng);
+  _distanceCache.distances.set(loc.id, d);
+  return d;
+}
+
+/**
+ * Apply all filters in sequence: early-exit → search → dietary → distance.
+ * Memoizes distance calculations when origin hasn't changed.
  * @param {Array} locations
- * @param {{ search?: string, dietaryTags?: string[], origin?: { lat: number, lng: number }, radiusMiles?: number }} filters
+ * @param {{ search?: string, dietaryTags?: string[], filterMode?: 'AND'|'OR', origin?: { lat: number, lng: number }, radiusMiles?: number }} filters
  * @returns {Array}
  */
 export function applyFilters(locations, filters = {}) {
+  // Early exit — no filters active
+  const hasSearch = !!filters.search;
+  const hasDietary = filters.dietaryTags && filters.dietaryTags.length > 0;
+  const hasDistance = filters.origin && filters.radiusMiles;
+  if (!hasSearch && !hasDietary && !hasDistance) return locations;
+
   let result = locations;
-  if (filters.search) {
+  if (hasSearch) {
     result = filterBySearch(result, filters.search);
   }
-  if (filters.dietaryTags && filters.dietaryTags.length > 0) {
-    result = filterByDietary(result, filters.dietaryTags);
+  if (hasDietary) {
+    result = filterByDietary(result, filters.dietaryTags, filters.filterMode || 'AND');
   }
-  if (filters.origin && filters.radiusMiles) {
-    result = filterByDistance(result, filters.origin, filters.radiusMiles);
+  if (hasDistance) {
+    const origin = filters.origin;
+    result = result
+      .map((loc) => ({
+        ...loc,
+        distance:
+          typeof loc.lat === 'number' && typeof loc.lng === 'number'
+            ? _getCachedDistance(origin, loc)
+            : Infinity,
+      }))
+      .filter((loc) => loc.distance <= filters.radiusMiles)
+      .sort((a, b) => a.distance - b.distance);
   }
   return result;
 }

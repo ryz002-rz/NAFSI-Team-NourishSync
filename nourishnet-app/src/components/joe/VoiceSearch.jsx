@@ -1,11 +1,10 @@
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 /**
- * Voice keyword → dietary filter mapping.
- * Spoken words are matched to healthAttribute keys.
+ * Voice keyword → dietary filter mapping (English).
  */
-const VOICE_KEYWORD_MAP = {
+const VOICE_KEYWORD_MAP_EN = {
   halal: 'halal',
   vegan: 'vegan',
   vegetarian: 'vegetarian',
@@ -25,6 +24,50 @@ const VOICE_KEYWORD_MAP = {
 };
 
 /**
+ * Voice keyword → dietary filter mapping (Spanish).
+ */
+const VOICE_KEYWORD_MAP_ES = {
+  halal: 'halal',
+  vegano: 'vegan',
+  vegana: 'vegan',
+  vegetariano: 'vegetarian',
+  vegetariana: 'vegetarian',
+  'sin carne': 'noBeef',
+  'sin carne de res': 'noBeef',
+  'bajo índice glucémico': 'lowGI',
+  'bajo gi': 'lowGI',
+  diabético: 'lowGI',
+  'productos frescos': 'freshProduce',
+  'frutas frescas': 'freshProduce',
+  'verduras frescas': 'freshProduce',
+  verduras: 'freshProduce',
+  frutas: 'freshProduce',
+  'sin lácteos': 'dairyFree',
+  'sin leche': 'dairyFree',
+  'libre de lácteos': 'dairyFree',
+};
+
+/**
+ * i18n language code → BCP-47 recognition language mapping.
+ */
+const LANG_MAP = {
+  en: 'en-US',
+  es: 'es-ES',
+  fr: 'fr-FR',
+  zh: 'zh-CN',
+  am: 'am-ET',
+  tl: 'tl-PH',
+};
+
+/**
+ * Get the keyword map for the given i18n language code.
+ */
+function getKeywordMap(langCode) {
+  if (langCode === 'es') return VOICE_KEYWORD_MAP_ES;
+  return VOICE_KEYWORD_MAP_EN;
+}
+
+/**
  * Check if the Web Speech API is available in this browser.
  */
 export function isSpeechSupported() {
@@ -37,21 +80,22 @@ export function isSpeechSupported() {
 /**
  * Parse transcript text and return matching dietary filter keys + remaining search text.
  * @param {string} transcript
+ * @param {string} langCode - i18n language code (e.g. 'en', 'es')
  * @returns {{ filters: string[], searchText: string }}
  */
-export function parseVoiceInput(transcript) {
+export function parseVoiceInput(transcript, langCode = 'en') {
   const lower = transcript.toLowerCase().trim();
   const matchedFilters = [];
   let remaining = lower;
 
-  // Check multi-word phrases first, then single words
-  const sortedKeywords = Object.keys(VOICE_KEYWORD_MAP).sort(
+  const keywordMap = getKeywordMap(langCode);
+  const sortedKeywords = Object.keys(keywordMap).sort(
     (a, b) => b.length - a.length
   );
 
   for (const keyword of sortedKeywords) {
     if (remaining.includes(keyword)) {
-      const filterKey = VOICE_KEYWORD_MAP[keyword];
+      const filterKey = keywordMap[keyword];
       if (!matchedFilters.includes(filterKey)) {
         matchedFilters.push(filterKey);
       }
@@ -62,19 +106,37 @@ export function parseVoiceInput(transcript) {
   return { filters: matchedFilters, searchText: remaining };
 }
 
+
 /**
  * VoiceSearch — microphone button that uses Web Speech API to capture voice input,
- * then maps keywords to dietary filters and passes remaining text as search query.
+ * maps keywords to dietary filters, and passes remaining text as search query.
+ * Detects current i18n language for recognition and keyword matching.
+ * Shows transcript feedback and activated filters after recognition.
  *
  * Props:
  *   onResult: ({ filters: string[], searchText: string }) => void
- *   lang?: string — BCP-47 language code for recognition (default: 'en-US')
  */
-function VoiceSearch({ onResult, lang = 'en-US' }) {
-  const { t } = useTranslation();
+function VoiceSearch({ onResult }) {
+  const { i18n, t } = useTranslation();
   const [listening, setListening] = useState(false);
   const [error, setError] = useState(null);
+  const [feedback, setFeedback] = useState(null); // { transcript, filters }
   const recognitionRef = useRef(null);
+  const retryRef = useRef(false);
+  const feedbackTimerRef = useRef(null);
+
+  // Clear feedback timer on unmount
+  useEffect(() => {
+    return () => {
+      if (feedbackTimerRef.current) clearTimeout(feedbackTimerRef.current);
+    };
+  }, []);
+
+  const showFeedback = useCallback((transcript, filters) => {
+    if (feedbackTimerRef.current) clearTimeout(feedbackTimerRef.current);
+    setFeedback({ transcript, filters });
+    feedbackTimerRef.current = setTimeout(() => setFeedback(null), 3000);
+  }, []);
 
   const startListening = useCallback(() => {
     if (!isSpeechSupported()) {
@@ -83,35 +145,61 @@ function VoiceSearch({ onResult, lang = 'en-US' }) {
     }
 
     setError(null);
+    setFeedback(null);
     const SpeechRecognition =
       window.SpeechRecognition || window.webkitSpeechRecognition;
     const recognition = new SpeechRecognition();
-    recognition.lang = lang;
+
+    // Set recognition language based on current i18n language
+    const currentLang = i18n.language || 'en';
+    recognition.lang = LANG_MAP[currentLang] || 'en-US';
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
 
     recognition.onresult = (event) => {
       const transcript = event.results[0][0].transcript;
-      const parsed = parseVoiceInput(transcript);
+      const parsed = parseVoiceInput(transcript, currentLang);
       onResult(parsed);
+      showFeedback(transcript, parsed.filters);
       setListening(false);
+      retryRef.current = false;
     };
 
     recognition.onerror = (event) => {
-      setError(event.error === 'no-speech' ? 'No speech detected. Try again.' : `Error: ${event.error}`);
+      // Auto-retry once on no-speech
+      if (event.error === 'no-speech' && !retryRef.current) {
+        retryRef.current = true;
+        setTimeout(() => {
+          try { recognition.start(); } catch { /* ignore */ }
+        }, 500);
+        return;
+      }
+
+      if (event.error === 'not-allowed') {
+        setError('Microphone access denied. Please allow microphone permissions in your browser settings.');
+      } else if (event.error === 'no-speech') {
+        setError('No speech detected. Try again.');
+      } else {
+        setError(`Error: ${event.error}`);
+      }
       setListening(false);
+      retryRef.current = false;
     };
 
     recognition.onend = () => {
-      setListening(false);
+      if (!retryRef.current) {
+        setListening(false);
+      }
     };
 
     recognitionRef.current = recognition;
+    retryRef.current = false;
     recognition.start();
     setListening(true);
-  }, [lang, onResult]);
+  }, [i18n.language, onResult, showFeedback]);
 
   const stopListening = useCallback(() => {
+    retryRef.current = false;
     if (recognitionRef.current) {
       recognitionRef.current.stop();
     }
@@ -119,6 +207,12 @@ function VoiceSearch({ onResult, lang = 'en-US' }) {
   }, []);
 
   if (!isSpeechSupported()) return null;
+
+  const FILTER_LABELS = {
+    halal: 'Halal', vegan: 'Vegan', vegetarian: 'Vegetarian',
+    noBeef: 'No Beef', lowGI: 'Low GI', freshProduce: 'Fresh Produce',
+    dairyFree: 'Dairy Free',
+  };
 
   return (
     <div className="inline-flex flex-col items-center gap-1">
@@ -146,7 +240,21 @@ function VoiceSearch({ onResult, lang = 'en-US' }) {
         </span>
       )}
       {error && (
-        <span className="text-xs text-danger">{error}</span>
+        <span className="text-xs text-danger max-w-[200px] text-center">{error}</span>
+      )}
+      {feedback && (
+        <div className="text-xs text-center max-w-[220px] mt-1 space-y-0.5">
+          <p className="text-neutral-500 italic">"{feedback.transcript}"</p>
+          {feedback.filters.length > 0 && (
+            <div className="flex flex-wrap gap-1 justify-center">
+              {feedback.filters.map((f) => (
+                <span key={f} className="px-1.5 py-0.5 bg-primary-100 text-primary-700 rounded text-[10px] font-medium">
+                  {FILTER_LABELS[f] || f}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
       )}
     </div>
   );

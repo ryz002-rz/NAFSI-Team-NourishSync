@@ -1,19 +1,67 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { DIETARY_FILTERS } from '../../utils/filterUtils';
+import { getPreferences, savePreferences } from '../../utils/preferences';
+
+const RADIUS_OPTIONS = [
+  { value: 1, label: '1 mi' },
+  { value: 5, label: '5 mi' },
+  { value: 10, label: '10 mi' },
+  { value: 25, label: '25 mi' },
+];
 
 /**
- * FilterEngine — renders dietary filter toggles and a search input.
- * Parent component manages state; this component fires callbacks.
+ * FilterEngine — renders dietary filter toggles, AND/OR mode toggle,
+ * distance radius dropdown, and a search input.
+ * Persists filter state to localStorage.
  *
  * Props:
  *   activeTags: string[]           — currently active dietary filter keys
  *   onToggleTag: (key) => void     — called when a dietary tag is toggled
  *   searchQuery: string            — current search text
  *   onSearchChange: (text) => void — called when search input changes
+ *   filterMode: 'AND'|'OR'        — current filter logic mode
+ *   onFilterModeChange: (mode) => void
+ *   radiusMiles: number|null       — current radius filter (null = disabled)
+ *   onRadiusChange: (radius) => void
+ *   hasUserLocation: boolean       — whether user geolocation is available
  */
-function FilterEngine({ activeTags = [], onToggleTag, searchQuery = '', onSearchChange }) {
+function FilterEngine({
+  activeTags = [],
+  onToggleTag,
+  searchQuery = '',
+  onSearchChange,
+  filterMode = 'AND',
+  onFilterModeChange,
+  radiusMiles = null,
+  onRadiusChange,
+  hasUserLocation = false,
+}) {
   const { t } = useTranslation();
+
+  // Restore persisted filters on mount
+  useEffect(() => {
+    const prefs = getPreferences();
+    if (prefs.dietary_tags && prefs.dietary_tags.length > 0 && activeTags.length === 0) {
+      prefs.dietary_tags.forEach((tag) => onToggleTag(tag));
+    }
+    if (prefs.search_query && !searchQuery) {
+      onSearchChange(prefs.search_query);
+    }
+    if (prefs.filter_mode && onFilterModeChange) {
+      onFilterModeChange(prefs.filter_mode);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Persist filters when they change
+  useEffect(() => {
+    savePreferences({
+      dietary_tags: activeTags,
+      search_query: searchQuery,
+      filter_mode: filterMode,
+    });
+  }, [activeTags, searchQuery, filterMode]);
 
   return (
     <div className="space-y-4">
@@ -36,6 +84,47 @@ function FilterEngine({ activeTags = [], onToggleTag, searchQuery = '', onSearch
           className="w-full pl-10 pr-4 py-2.5 text-sm rounded-xl border border-neutral-200 focus:outline-none focus:border-primary-400 focus:ring-2 focus:ring-primary-100 bg-white"
           aria-label={t('common.search')}
         />
+      </div>
+
+      {/* Filter controls row: AND/OR toggle + distance dropdown */}
+      <div className="flex flex-wrap items-center gap-3">
+        {/* AND / OR mode toggle */}
+        {onFilterModeChange && (
+          <div className="inline-flex rounded-lg border border-neutral-200 overflow-hidden text-sm" role="radiogroup" aria-label="Filter mode">
+            {['AND', 'OR'].map((mode) => (
+              <button
+                key={mode}
+                role="radio"
+                aria-checked={filterMode === mode}
+                onClick={() => onFilterModeChange(mode)}
+                className={`px-3 py-1.5 font-medium transition-colors ${
+                  filterMode === mode
+                    ? 'bg-primary-500 text-white'
+                    : 'bg-white text-neutral-500 hover:bg-neutral-50'
+                }`}
+              >
+                {mode}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Distance radius dropdown */}
+        {hasUserLocation && onRadiusChange && (
+          <select
+            value={radiusMiles || ''}
+            onChange={(e) => onRadiusChange(e.target.value ? Number(e.target.value) : null)}
+            className="px-3 py-1.5 text-sm rounded-lg border border-neutral-200 bg-white text-neutral-600 focus:outline-none focus:border-primary-400"
+            aria-label="Filter by distance"
+          >
+            <option value="">Any distance</option>
+            {RADIUS_OPTIONS.map((opt) => (
+              <option key={opt.value} value={opt.value}>
+                Within {opt.label}
+              </option>
+            ))}
+          </select>
+        )}
       </div>
 
       {/* Dietary filter toggles */}

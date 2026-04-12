@@ -21,6 +21,18 @@
     "noResults": "未找到结果",
     "comingSoon": "即将推出"
   },
+  "impact": {
+    "title": "影响计算器",
+    "description": "估算您的食物捐赠的影响",
+    "co2": "减少的CO₂",
+    "meals": "提供的餐食",
+    "water": "节约的水",
+    "inputLabel": "捐赠食物（磅）：",
+    "inputPlaceholder": "例如 50",
+    "share": "分享您的影响",
+    "communityTitle": "社区总计",
+    "communityDonated": "总捐赠量"
+  },
   "portal": {
     "family": {
       "title": "查找您附近的食物",

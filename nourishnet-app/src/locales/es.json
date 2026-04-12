@@ -21,6 +21,18 @@
     "noResults": "No se encontraron resultados",
     "comingSoon": "Próximamente"
   },
+  "impact": {
+    "title": "Calculadora de Impacto",
+    "description": "Estima el impacto de tu donación de alimentos",
+    "co2": "CO₂ Evitado",
+    "meals": "Comidas Proporcionadas",
+    "water": "Agua Conservada",
+    "inputLabel": "Alimentos donados (lbs):",
+    "inputPlaceholder": "ej. 50",
+    "share": "Comparte Tu Impacto",
+    "communityTitle": "Total de la Comunidad",
+    "communityDonated": "Total Donado"
+  },
   "portal": {
     "family": {
       "title": "Encuentra Comida Cerca de Ti",

@@ -21,6 +21,18 @@
     "noResults": "ምንም ውጤት አልተገኘም",
     "comingSoon": "በቅርቡ ይመጣል"
   },
+  "impact": {
+    "title": "ተጽዕኖ ካልኩሌተር",
+    "description": "የምግብ ልገሳዎን ተጽዕኖ ይገምቱ",
+    "co2": "የተቀነሰ CO₂",
+    "meals": "የቀረቡ ምግቦች",
+    "water": "የተቆጠበ ውሃ",
+    "inputLabel": "የተለገሰ ምግብ (ፓውንድ):",
+    "inputPlaceholder": "ለምሳሌ 50",
+    "share": "ተጽዕኖዎን ያጋሩ",
+    "communityTitle": "የማህበረሰብ ድምር",
+    "communityDonated": "ጠቅላላ ልገሳ"
+  },
   "portal": {
     "family": {
       "title": "በአቅራቢያዎ ምግብ ያግኙ",

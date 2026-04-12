@@ -21,6 +21,18 @@
     "noResults": "Walang nahanap na resulta",
     "comingSoon": "Malapit Na"
   },
+  "impact": {
+    "title": "Kalkulator ng Epekto",
+    "description": "Tantiyahin ang epekto ng iyong donasyon ng pagkain",
+    "co2": "CO₂ na Naiwasan",
+    "meals": "Mga Pagkaing Naibigay",
+    "water": "Tubig na Natipid",
+    "inputLabel": "Pagkaing idinonate (lbs):",
+    "inputPlaceholder": "hal. 50",
+    "share": "Ibahagi ang Iyong Epekto",
+    "communityTitle": "Kabuuang Komunidad",
+    "communityDonated": "Kabuuang Idinonate"
+  },
   "portal": {
     "family": {
       "title": "Maghanap ng Pagkain Malapit sa Iyo",

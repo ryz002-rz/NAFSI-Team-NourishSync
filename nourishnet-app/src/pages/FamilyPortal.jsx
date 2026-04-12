@@ -12,6 +12,9 @@ function FamilyPortal() {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeTags, setActiveTags] = useState([]);
   const [showMap, setShowMap] = useState(true);
+  const [filterMode, setFilterMode] = useState('AND');
+  const [radiusMiles, setRadiusMiles] = useState(null);
+  const [userLocation, setUserLocation] = useState(null); // eslint-disable-line no-unused-vars -- wired by Near Me button (Christian's Task 2.3)
 
   const customerLocations = locations.filter(
     (loc) => loc.type === 'customer' || !loc.type
@@ -20,6 +23,9 @@ function FamilyPortal() {
   const filtered = applyFilters(customerLocations, {
     search: searchQuery,
     dietaryTags: activeTags,
+    filterMode,
+    origin: userLocation,
+    radiusMiles,
   });
 
   const handleToggleTag = useCallback((key) => {
@@ -59,6 +65,11 @@ function FamilyPortal() {
             onToggleTag={handleToggleTag}
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
+            filterMode={filterMode}
+            onFilterModeChange={setFilterMode}
+            radiusMiles={radiusMiles}
+            onRadiusChange={setRadiusMiles}
+            hasUserLocation={!!userLocation}
           />
         </div>
         <VoiceSearch onResult={handleVoiceResult} />
