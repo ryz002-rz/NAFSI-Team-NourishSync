@@ -117,9 +117,9 @@ git rebase main
 
 ### 👤 Ryan — depends on Tasks 2 (i18n), 3 (sample data), 4 (Layout)
 
-- [ ] 6.1 **[Ryan]** Create `src/pages/FamilyPortal.jsx` — display translated portal title (`portal.family.title`) and placeholder message (`portal.family.placeholder`), import and render at least one entry from `locations_sample.json` showing name and address
-- [ ] 6.2 **[Ryan]** Create `src/pages/DonorPortal.jsx` — display translated portal title (`portal.donor.title`) and placeholder message (`portal.donor.placeholder`), import and render at least one entry from `locations_sample.json`
-- [ ] 6.3 **[Ryan]** Create `src/pages/VolunteerPortal.jsx` — display translated portal title (`portal.volunteer.title`) and placeholder message (`portal.volunteer.placeholder`), import and render at least one entry from `locations_sample.json`
+- [x] 6.1 **[Ryan]** Create `src/pages/FamilyPortal.jsx` — display translated portal title (`portal.family.title`) and placeholder message (`portal.family.placeholder`), import and render at least one entry from `locations_sample.json` showing name and address
+- [x] 6.2 **[Ryan]** Create `src/pages/DonorPortal.jsx` — display translated portal title (`portal.donor.title`) and placeholder message (`portal.donor.placeholder`), import and render at least one entry from `locations_sample.json`
+- [x] 6.3 **[Ryan]** Create `src/pages/VolunteerPortal.jsx` — display translated portal title (`portal.volunteer.title`) and placeholder message (`portal.volunteer.placeholder`), import and render at least one entry from `locations_sample.json`
 
 > **Git note:** Ryan should wait until Joshua's `data-contract` branch is merged to `main`, then rebase before starting. Ryan also needs Christian's i18n and Layout to be available — either merged or shared via a preview branch.
 
