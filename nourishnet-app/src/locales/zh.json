@@ -1,0 +1,38 @@
+{
+  "gateway": {
+    "title": "NourishNet",
+    "subtitle": "连接社区与食物资源",
+    "selectLanguage": "选择您的语言",
+    "searchLanguage": "搜索语言...",
+    "familyPortal": "寻找食物",
+    "familyPortalDesc": "查找您附近的食品储藏室、餐饮计划和援助服务",
+    "donorPortal": "捐赠",
+    "donorPortalDesc": "将您的捐赠与最需要的社区联系起来",
+    "volunteerPortal": "志愿服务",
+    "volunteerPortalDesc": "加入任务，帮助在您的地区分发食物"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "出了点问题",
+    "backToHome": "返回首页",
+    "nearMe": "附近",
+    "filter": "筛选",
+    "search": "搜索",
+    "noResults": "未找到结果",
+    "comingSoon": "即将推出"
+  },
+  "portal": {
+    "family": {
+      "title": "查找您附近的食物",
+      "placeholder": "浏览您所在地区的食品储藏室和餐饮计划"
+    },
+    "donor": {
+      "title": "捐赠者门户",
+      "placeholder": "与需要您捐赠的组织联系"
+    },
+    "volunteer": {
+      "title": "志愿者门户",
+      "placeholder": "寻找志愿者任务，帮助您的社区"
+    }
+  }
+}

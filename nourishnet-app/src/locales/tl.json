@@ -1,0 +1,38 @@
+{
+  "gateway": {
+    "title": "NourishNet",
+    "subtitle": "Ikinokonekta ang mga komunidad sa mga mapagkukunan ng pagkain",
+    "selectLanguage": "Piliin ang iyong wika",
+    "searchLanguage": "Maghanap ng mga wika...",
+    "familyPortal": "Maghanap ng Pagkain",
+    "familyPortalDesc": "Hanapin ang mga pantry ng pagkain, programa sa pagkain, at tulong malapit sa iyo",
+    "donorPortal": "Mag-donate",
+    "donorPortalDesc": "Ikonekta ang iyong mga donasyon sa mga komunidad na pinaka-nangangailangan",
+    "volunteerPortal": "Mag-volunteer",
+    "volunteerPortalDesc": "Sumali sa mga misyon at tumulong sa pamamahagi ng pagkain sa iyong lugar"
+  },
+  "common": {
+    "loading": "Naglo-load...",
+    "error": "May nangyaring mali",
+    "backToHome": "Bumalik sa Home",
+    "nearMe": "Malapit sa Akin",
+    "filter": "I-filter",
+    "search": "Maghanap",
+    "noResults": "Walang nahanap na resulta",
+    "comingSoon": "Malapit Na"
+  },
+  "portal": {
+    "family": {
+      "title": "Maghanap ng Pagkain Malapit sa Iyo",
+      "placeholder": "Mag-browse ng mga pantry ng pagkain at programa sa pagkain sa iyong lugar"
+    },
+    "donor": {
+      "title": "Portal ng Donor",
+      "placeholder": "Kumonekta sa mga organisasyong nangangailangan ng iyong mga donasyon"
+    },
+    "volunteer": {
+      "title": "Portal ng Volunteer",
+      "placeholder": "Maghanap ng mga misyon ng volunteer at tulungan ang iyong komunidad"
+    }
+  }
+}

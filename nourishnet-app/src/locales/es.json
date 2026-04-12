@@ -1,0 +1,38 @@
+{
+  "gateway": {
+    "title": "NourishNet",
+    "subtitle": "Conectando comunidades con recursos alimentarios",
+    "selectLanguage": "Selecciona tu idioma",
+    "searchLanguage": "Buscar idiomas...",
+    "familyPortal": "Buscar Comida",
+    "familyPortalDesc": "Encuentra despensas de alimentos, programas de comidas y asistencia cerca de ti",
+    "donorPortal": "Donar",
+    "donorPortalDesc": "Conecta tus donaciones con las comunidades que más las necesitan",
+    "volunteerPortal": "Voluntariado",
+    "volunteerPortalDesc": "Únete a misiones y ayuda a distribuir alimentos en tu área"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "backToHome": "Volver al Inicio",
+    "nearMe": "Cerca de Mí",
+    "filter": "Filtrar",
+    "search": "Buscar",
+    "noResults": "No se encontraron resultados",
+    "comingSoon": "Próximamente"
+  },
+  "portal": {
+    "family": {
+      "title": "Encuentra Comida Cerca de Ti",
+      "placeholder": "Explora despensas de alimentos y programas de comidas en tu área"
+    },
+    "donor": {
+      "title": "Portal de Donantes",
+      "placeholder": "Conéctate con organizaciones que necesitan tus donaciones"
+    },
+    "volunteer": {
+      "title": "Portal de Voluntarios",
+      "placeholder": "Encuentra misiones de voluntariado y ayuda a tu comunidad"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "gateway": {
+    "title": "NourishNet",
+    "subtitle": "Connecter les communautés aux ressources alimentaires",
+    "selectLanguage": "Sélectionnez votre langue",
+    "searchLanguage": "Rechercher des langues...",
+    "familyPortal": "Trouver de la Nourriture",
+    "familyPortalDesc": "Trouvez des garde-manger, des programmes de repas et de l'aide près de chez vous",
+    "donorPortal": "Donner",
+    "donorPortalDesc": "Connectez vos dons aux communautés qui en ont le plus besoin",
+    "volunteerPortal": "Bénévolat",
+    "volunteerPortalDesc": "Rejoignez des missions et aidez à distribuer de la nourriture dans votre région"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Quelque chose s'est mal passé",
+    "backToHome": "Retour à l'Accueil",
+    "nearMe": "Près de Moi",
+    "filter": "Filtrer",
+    "search": "Rechercher",
+    "noResults": "Aucun résultat trouvé",
+    "comingSoon": "Bientôt Disponible"
+  },
+  "portal": {
+    "family": {
+      "title": "Trouvez de la Nourriture Près de Vous",
+      "placeholder": "Parcourez les garde-manger et les programmes de repas dans votre région"
+    },
+    "donor": {
+      "title": "Portail des Donateurs",
+      "placeholder": "Connectez-vous avec des organisations qui ont besoin de vos dons"
+    },
+    "volunteer": {
+      "title": "Portail des Bénévoles",
+      "placeholder": "Trouvez des missions de bénévolat et aidez votre communauté"
+    }
+  }
+}

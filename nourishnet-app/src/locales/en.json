@@ -1,0 +1,38 @@
+{
+  "gateway": {
+    "title": "NourishNet",
+    "subtitle": "Connecting communities with food resources",
+    "selectLanguage": "Select your language",
+    "searchLanguage": "Search languages...",
+    "familyPortal": "Find Food",
+    "familyPortalDesc": "Locate food pantries, meal programs, and assistance near you",
+    "donorPortal": "Donate",
+    "donorPortalDesc": "Connect your donations with communities that need them most",
+    "volunteerPortal": "Volunteer",
+    "volunteerPortalDesc": "Join missions and help distribute food in your area"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "backToHome": "Back to Home",
+    "nearMe": "Near Me",
+    "filter": "Filter",
+    "search": "Search",
+    "noResults": "No results found",
+    "comingSoon": "Coming Soon"
+  },
+  "portal": {
+    "family": {
+      "title": "Find Food Near You",
+      "placeholder": "Browse food pantries and meal programs in your area"
+    },
+    "donor": {
+      "title": "Donor Portal",
+      "placeholder": "Connect with organizations that need your donations"
+    },
+    "volunteer": {
+      "title": "Volunteer Portal",
+      "placeholder": "Find volunteer missions and help your community"
+    }
+  }
+}

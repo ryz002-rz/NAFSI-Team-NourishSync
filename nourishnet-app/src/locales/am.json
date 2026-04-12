@@ -1,0 +1,38 @@
+{
+  "gateway": {
+    "title": "NourishNet",
+    "subtitle": "ማህበረሰቦችን ከምግብ ሀብቶች ጋር ማገናኘት",
+    "selectLanguage": "ቋንቋዎን ይምረጡ",
+    "searchLanguage": "ቋንቋዎችን ይፈልጉ...",
+    "familyPortal": "ምግብ ያግኙ",
+    "familyPortalDesc": "በአቅራቢያዎ ያሉ የምግብ ማከማቻዎችን፣ የምግብ ፕሮግራሞችን እና እርዳታዎችን ያግኙ",
+    "donorPortal": "ለግሱ",
+    "donorPortalDesc": "ልገሳዎን ከሚያስፈልጋቸው ማህበረሰቦች ጋር ያገናኙ",
+    "volunteerPortal": "በፈቃደኝነት ያገልግሉ",
+    "volunteerPortalDesc": "ተልዕኮዎችን ይቀላቀሉ እና በአካባቢዎ ምግብ ለማሰራጨት ይረዱ"
+  },
+  "common": {
+    "loading": "በመጫን ላይ...",
+    "error": "የሆነ ችግር ተፈጥሯል",
+    "backToHome": "ወደ መነሻ ተመለስ",
+    "nearMe": "በአቅራቢያዬ",
+    "filter": "አጣራ",
+    "search": "ፈልግ",
+    "noResults": "ምንም ውጤት አልተገኘም",
+    "comingSoon": "በቅርቡ ይመጣል"
+  },
+  "portal": {
+    "family": {
+      "title": "በአቅራቢያዎ ምግብ ያግኙ",
+      "placeholder": "በአካባቢዎ ያሉ የምግብ ማከማቻዎችን እና የምግብ ፕሮግራሞችን ያስሱ"
+    },
+    "donor": {
+      "title": "የለጋሾች መግቢያ",
+      "placeholder": "ልገሳዎን ከሚያስፈልጋቸው ድርጅቶች ጋር ይገናኙ"
+    },
+    "volunteer": {
+      "title": "የበጎ ፈቃደኞች መግቢያ",
+      "placeholder": "የበጎ ፈቃደኝነት ተልዕኮዎችን ያግኙ እና ማህበረሰብዎን ይረዱ"
+    }
+  }
+}
