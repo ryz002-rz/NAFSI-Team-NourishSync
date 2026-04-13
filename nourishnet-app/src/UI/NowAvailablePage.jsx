@@ -1,11 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
+import { translateHours } from '../utils/translateHours';
 import './NowAvailablePage.css';
 import locations from '../data/locations_final_merged.json';
 
 function NowAvailablePage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="na-root">
@@ -22,7 +23,7 @@ function NowAvailablePage() {
               <button className="na-card-details">{t('ui.showDetails')} ›</button>
             </div>
             <div className="na-card-meta">
-              <span>🕐 {loc.hours || t('ui.contactForHours')} 📧 {t('ui.ongoing')}</span>
+              <span>🕐 {translateHours(loc.hours, t, i18n.language) || t('ui.contactForHours')} 📧 {t('ui.ongoing')}</span>
               <span>📍 {loc.address.street}, {loc.address.city}, {loc.address.state} {loc.address.zip}</span>
             </div>
             <div className="na-card-bottom">

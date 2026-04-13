@@ -2,6 +2,7 @@ import React, { useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SearchHeader, { useGeolocation } from './SearchHeader';
+import { translateHours } from '../utils/translateHours';
 import './CustomerPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -16,7 +17,7 @@ const Arrow = () => (
 
 function CustomerPage() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const r1 = useRef(null), r2 = useRef(null), r3 = useRef(null), r4 = useRef(null);
   const drag = useScrollDrag();
   useGeolocation();
@@ -86,6 +87,7 @@ function CustomerPage() {
 }
 
 function LocCard({ loc, t }) {
+  const { i18n } = useTranslation();
   const [expanded, setExpanded] = React.useState(false);
   const navigate = useNavigate();
 
@@ -121,7 +123,7 @@ function LocCard({ loc, t }) {
         </button>
       </div>
       <div className="cust-loc-meta">
-        <span>🕐 {loc.hours || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
+        <span>🕐 {translateHours(loc.hours, t, i18n.language) || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
         <span>📍 {addressLine}</span>
       </div>
 

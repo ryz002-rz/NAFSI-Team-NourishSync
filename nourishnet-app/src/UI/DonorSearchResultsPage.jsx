@@ -2,12 +2,13 @@ import React, { useState, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
+import { translateHours } from '../utils/translateHours';
 import './FoodDetailPage.css';
 import locations from '../data/locations_final_merged.json';
 
 function DonorSearchResultsPage() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [searchParams] = useSearchParams();
   const initialQuery = searchParams.get('q') || '';
   const [query, setQuery] = useState(initialQuery);
@@ -40,7 +41,7 @@ function DonorSearchResultsPage() {
                 <div><span className="fd-card-name">{loc.name}</span><span className="fd-card-partner">{t('ui.partner')}</span></div>
               </div>
               <div className="fd-card-meta">
-                <span>🕐 {loc.hours || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
+                <span>🕐 {translateHours(loc.hours, t, i18n.language) || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
                 <span>📍 {addr}</span>
               </div>
               <div className="fd-card-bottom">

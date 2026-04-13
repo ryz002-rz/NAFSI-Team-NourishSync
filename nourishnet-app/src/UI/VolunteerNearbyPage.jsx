@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
 import VolunteerFilterBar from './VolunteerFilterBar';
 import { getUrgencyLevel } from './MissionCard';
+import { translateHours } from '../utils/translateHours';
 import './NearbyPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -13,7 +14,7 @@ const ALL_LANGUAGES = [...new Set(locsWithMissions.flatMap(l => l.missions.flatM
 
 function VolunteerNearbyPage() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [filters, setFilters] = useState({ skills: new Set(), languages: new Set(), sort: 'urgency' });
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -37,7 +38,7 @@ function VolunteerNearbyPage() {
     <div className="nb-root">
       <SearchHeader backTo="/volunteer" activeNav="home" navPrefix="/volunteer" onSearch={setSearchQuery} />
       <h1 className="nb-title">{t('volunteerPortal.nearbyOpportunities')}</h1>
-      <p className="nb-count">{filtered.length} of {locsWithMissions.length} {t('ui.locations')}</p>
+      <p className="nb-count">{t('volunteerPortal.ofTotal', { count: filtered.length, total: locsWithMissions.length })} {t('ui.locations')}</p>
       <div style={{ padding: '0 40px 8px' }}>
         <VolunteerFilterBar allSkills={ALL_SKILLS} allLanguages={ALL_LANGUAGES} onFilter={setFilters} totalCount={locsWithMissions.length} filteredCount={filtered.length} />
       </div>
@@ -50,6 +51,7 @@ function VolunteerNearbyPage() {
 }
 
 function VolNbCard({ loc, t, navigate }) {
+  const { i18n } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   const addr = [loc.address?.street, loc.address?.city, loc.address?.state, loc.address?.zip].filter(Boolean).join(', ');
   const dirUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(addr)}`;
@@ -61,7 +63,7 @@ function VolNbCard({ loc, t, navigate }) {
       <div className="nb-card-top">
         <div>
           <span className="nb-card-name">{loc.name}</span>
-          <span className="nb-card-partner">{missionCount} {missionCount === 1 ? 'mission' : 'missions'}</span>
+          <span className="nb-card-partner">{missionCount} {missionCount === 1 ? t('volunteerPortal.mission') : t('volunteerPortal.missionPlural')}</span>
           {loc.insecurityIndex >= 4 && (
             <span style={{ fontSize: 11, color: urgency.color, fontWeight: 600, display: 'block' }}>
               {urgency.emoji} {t(`volunteerPortal.${urgency.label}`)}
@@ -76,13 +78,13 @@ function VolNbCard({ loc, t, navigate }) {
         </button>
       </div>
       <div className="nb-card-meta">
-        <span>🕐 {loc.hours || t('ui.contactForHours')}</span>
+        <span>🕐 {translateHours(loc.hours, t, i18n.language) || t('ui.contactForHours')}</span>
         <span>📍 {addr}</span>
       </div>
       <div className={`nb-card-expand${expanded ? ' nb-card-expand--open' : ''}`}>
         <div className="nb-card-expand-inner">
-          {loc.website && (<div className="nb-card-detail-row"><span className="nb-card-detail-label">🔗 Website</span><a href={loc.website} target="_blank" rel="noopener noreferrer" className="nb-card-detail-link">{loc.website}</a></div>)}
-          {loc.phone && (<div className="nb-card-detail-row"><span className="nb-card-detail-label">📞 Phone</span><span className="nb-card-detail-value">{loc.phone}</span></div>)}
+          {loc.website && (<div className="nb-card-detail-row"><span className="nb-card-detail-label">🔗 {t('volunteerPortal.website')}</span><a href={loc.website} target="_blank" rel="noopener noreferrer" className="nb-card-detail-link">{loc.website}</a></div>)}
+          {loc.phone && (<div className="nb-card-detail-row"><span className="nb-card-detail-label">📞 {t('volunteerPortal.phone')}</span><span className="nb-card-detail-value">{loc.phone}</span></div>)}
           {loc.volunteersNeeded != null && (<div className="nb-card-detail-row"><span className="nb-card-detail-label">👥 {t('volunteerPortal.volunteersNeeded')}</span><span className="nb-card-detail-value">{loc.volunteersNeeded}</span></div>)}
           <button className="nb-card-map-btn" onClick={() => navigate(`/volunteer/map?loc=${loc.id}`)}>🗺️ {t('ui.showInMap')}</button>
         </div>

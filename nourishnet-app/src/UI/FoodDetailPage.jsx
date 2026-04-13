@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
 import FilterBar from './FilterBar';
+import { translateHours } from '../utils/translateHours';
 import './FoodDetailPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -10,7 +11,7 @@ const ALL_FOOD_TYPES = [...new Set(locations.flatMap(l => l.foodTypes || []))].s
 
 function FoodDetailPage() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { foodType } = useParams();
   const decoded = decodeURIComponent(foodType);
   const baseFiltered = locations.filter((l) => l.foodTypes && l.foodTypes.some((ft) => ft.toLowerCase() === decoded.toLowerCase()));
@@ -58,6 +59,7 @@ function FoodDetailPage() {
 }
 
 function FdCard({ loc, t, navigate }) {
+  const { i18n } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   const addr = [loc.address?.street, loc.address?.city, loc.address?.state, loc.address?.zip].filter(Boolean).join(', ');
   const dirUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(addr)}`;
@@ -80,7 +82,7 @@ function FdCard({ loc, t, navigate }) {
         </button>
       </div>
       <div className="fd-card-meta">
-        <span>🕐 {loc.hours || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
+        <span>🕐 {translateHours(loc.hours, t, i18n.language) || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
         <span>📍 {addr}</span>
       </div>
       <div className={`fd-card-expand${expanded ? ' fd-card-expand--open' : ''}`}>

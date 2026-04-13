@@ -5,6 +5,7 @@ import { MapContainer, TileLayer, Marker, Popup, Circle, useMap } from 'react-le
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import SearchHeader from './SearchHeader';
+import { translateHours } from '../utils/translateHours';
 import './DonorMapPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -102,7 +103,7 @@ function SetZoom({ zoom }) {
 }
 
 function DonorMapPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const locId = searchParams.get('loc');
@@ -269,7 +270,7 @@ function DonorMapPage() {
                   </button>
                 </div>
                 <div className="mp-detail-meta">
-                  <span>🕐 {currentCard.hours || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
+                  <span>🕐 {translateHours(currentCard.hours, t, i18n.language) || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
                   <span>📍 {addr}</span>
                 </div>
                 <div className={`mp-detail-expand${expanded ? ' mp-detail-expand--open' : ''}`}>

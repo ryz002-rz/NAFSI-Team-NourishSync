@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
+import { translateHours } from '../utils/translateHours';
 import './NearbyPage.css';
 import locations from '../data/locations_final_merged.json';
 
 function NearbyPage() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="nb-root">
@@ -22,6 +23,7 @@ function NearbyPage() {
 }
 
 function NbCard({ loc, t, navigate }) {
+  const { i18n } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   const addr = [loc.address?.street, loc.address?.city, loc.address?.state, loc.address?.zip].filter(Boolean).join(', ');
   const dirUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(addr)}`;
@@ -46,7 +48,7 @@ function NbCard({ loc, t, navigate }) {
         </button>
       </div>
       <div className="nb-card-meta">
-        <span>🕐 {loc.hours || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
+        <span>🕐 {translateHours(loc.hours, t, i18n.language) || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
         <span>📍 {addr}</span>
       </div>
 

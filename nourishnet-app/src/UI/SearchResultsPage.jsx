@@ -2,12 +2,13 @@ import React, { useState, useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
+import { translateHours } from '../utils/translateHours';
 import './FoodDetailPage.css';
 import locations from '../data/locations_final_merged.json';
 
 function SearchResultsPage() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [searchParams] = useSearchParams();
   const initialQuery = searchParams.get('q') || '';
   const [query, setQuery] = useState(initialQuery);
@@ -38,6 +39,7 @@ function SearchResultsPage() {
 }
 
 function ResultCard({ loc, t, navigate }) {
+  const { i18n } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   const addr = [loc.address?.street, loc.address?.city, loc.address?.state, loc.address?.zip].filter(Boolean).join(', ');
   const dirUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(addr)}`;
@@ -59,7 +61,7 @@ function ResultCard({ loc, t, navigate }) {
         </button>
       </div>
       <div className="fd-card-meta">
-        <span>🕐 {loc.hours || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
+        <span>🕐 {translateHours(loc.hours, t, i18n.language) || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
         <span>📍 {addr}</span>
       </div>
       <div className={`fd-card-expand${expanded ? ' fd-card-expand--open' : ''}`}>

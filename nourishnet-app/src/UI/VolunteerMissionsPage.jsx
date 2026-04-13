@@ -69,7 +69,7 @@ function VolunteerMissionsPage() {
     <div className="fd-root">
       <SearchHeader backTo="/volunteer" activeNav="home" navPrefix="/volunteer" onSearch={setSearchQuery} />
       <h1 className="fd-title">{t('volunteerPortal.allMissions')}</h1>
-      <p className="fd-count">{filtered.length} of {allFlatMissions.length} {t('results.missions')}</p>
+      <p className="fd-count">{t('volunteerPortal.ofTotal', { count: filtered.length, total: allFlatMissions.length })} {t('results.missions')}</p>
       <div style={{ padding: '0 40px 8px' }}>
         <VolunteerFilterBar
           allSkills={ALL_SKILLS}

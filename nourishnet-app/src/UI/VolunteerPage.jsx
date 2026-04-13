@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
 import MissionCard from './MissionCard';
+import { translateHours } from '../utils/translateHours';
 import './VolunteerPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -30,7 +31,7 @@ const Arrow = () => (
 
 function VolunteerPage() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const r1 = useRef(null);
   const r2 = useRef(null);
   const r3 = useRef(null);
@@ -116,6 +117,7 @@ function VolunteerPage() {
 
 /* ── Nearby Location Card ── */
 function VolLocCard({ loc, t, navigate }) {
+  const { i18n } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   const addr = [loc.address?.street, loc.address?.city, loc.address?.state, loc.address?.zip].filter(Boolean).join(', ');
   const missionCount = (loc.missions || []).length;
@@ -126,7 +128,7 @@ function VolLocCard({ loc, t, navigate }) {
       <div className="vol-loc-top">
         <div>
           <span className="vol-loc-name">{loc.name}</span>
-          <span className="vol-loc-missions">{missionCount} {missionCount === 1 ? 'mission' : 'missions'}</span>
+          <span className="vol-loc-missions">{missionCount} {missionCount === 1 ? t('volunteerPortal.mission') : t('volunteerPortal.missionPlural')}</span>
         </div>
         <button className="vol-loc-details" onClick={() => setExpanded(!expanded)}>
           {expanded ? t('ui.hideDetails') : t('ui.showDetails')}
@@ -136,14 +138,14 @@ function VolLocCard({ loc, t, navigate }) {
         </button>
       </div>
       <div className="vol-loc-meta">
-        <span>🕐 {loc.hours || t('ui.contactForHours')}</span>
+        <span>🕐 {translateHours(loc.hours, t, i18n.language) || t('ui.contactForHours')}</span>
         <span>📍 {addr}</span>
       </div>
 
       <div className={`vol-loc-expand${expanded ? ' vol-loc-expand--open' : ''}`}>
         <div className="vol-loc-expand-inner">
-          {loc.phone && <div className="vol-loc-detail-row"><span className="vol-loc-detail-label">📞 Phone</span><span className="vol-loc-detail-value">{loc.phone}</span></div>}
-          {loc.website && <div className="vol-loc-detail-row"><span className="vol-loc-detail-label">🔗 Website</span><a href={loc.website} target="_blank" rel="noopener noreferrer" className="vol-loc-detail-link">{loc.website}</a></div>}
+          {loc.phone && <div className="vol-loc-detail-row"><span className="vol-loc-detail-label">📞 {t('volunteerPortal.phone')}</span><span className="vol-loc-detail-value">{loc.phone}</span></div>}
+          {loc.website && <div className="vol-loc-detail-row"><span className="vol-loc-detail-label">🔗 {t('volunteerPortal.website')}</span><a href={loc.website} target="_blank" rel="noopener noreferrer" className="vol-loc-detail-link">{loc.website}</a></div>}
           {loc.volunteersNeeded != null && <div className="vol-loc-detail-row"><span className="vol-loc-detail-label">👥 {t('volunteerPortal.volunteersNeeded')}</span><span className="vol-loc-detail-value">{loc.volunteersNeeded}</span></div>}
         </div>
       </div>

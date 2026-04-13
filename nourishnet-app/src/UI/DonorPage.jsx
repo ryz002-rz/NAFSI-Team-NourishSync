@@ -2,6 +2,7 @@ import React, { useRef, useCallback, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
+import { translateHours } from '../utils/translateHours';
 import './DonorPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -15,7 +16,7 @@ const Arrow = () => (
 
 function DonorPage() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const r1 = useRef(null), r2 = useRef(null), r3 = useRef(null);
   const drag = useDrag();
 
@@ -272,6 +273,7 @@ function DonationWizard({ t, navigate }) {
 
 /* ── Location Card with Donate button ── */
 function DonorLocCard({ loc, t, navigate }) {
+  const { i18n } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   const addr = [loc.address?.street, loc.address?.city, loc.address?.state, loc.address?.zip].filter(Boolean).join(', ');
   const dirUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(addr)}`;
@@ -289,7 +291,7 @@ function DonorLocCard({ loc, t, navigate }) {
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4a7c59" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s', marginLeft: '4px' }}><polyline points="6 9 12 15 18 9" /></svg>
         </button>
       </div>
-      <div className="donor-loc-meta"><span>🕐 {loc.hours || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span><span>📍 {addr}</span></div>
+      <div className="donor-loc-meta"><span>🕐 {translateHours(loc.hours, t, i18n.language) || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span><span>📍 {addr}</span></div>
       <div className={`donor-loc-expand${expanded ? ' donor-loc-expand--open' : ''}`}>
         <div className="donor-loc-expand-inner">
           {website && (<div className="donor-loc-detail-row"><span className="donor-loc-detail-label">🔗 {t('donation.website')}</span><a href={website} target="_blank" rel="noopener noreferrer" className="donor-loc-detail-link">{website}</a></div>)}

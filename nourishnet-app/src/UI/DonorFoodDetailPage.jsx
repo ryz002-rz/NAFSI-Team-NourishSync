@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
 import FilterBar from './FilterBar';
+import { translateHours } from '../utils/translateHours';
 import './FoodDetailPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -10,7 +11,7 @@ const ALL_FOOD_TYPES = [...new Set(locations.flatMap(l => l.foodTypes || []))].s
 
 function DonorFoodDetailPage() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { foodType } = useParams();
   const decoded = decodeURIComponent(foodType);
   const baseFiltered = locations.filter(l => l.foodTypes && l.foodTypes.some(ft => ft.toLowerCase() === decoded.toLowerCase()));
@@ -41,6 +42,7 @@ function DonorFoodDetailPage() {
 }
 
 function DonorCard({ loc, t, navigate, prefix }) {
+  const { i18n } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   const addr = [loc.address?.street, loc.address?.city, loc.address?.state, loc.address?.zip].filter(Boolean).join(', ');
   const dirUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(addr)}`;
@@ -52,7 +54,7 @@ function DonorCard({ loc, t, navigate, prefix }) {
     <div className="fd-card">
       <div className="fd-card-top"><div><span className="fd-card-name">{loc.name}</span><span className="fd-card-partner">{t('ui.partner')}</span></div>
         <button className="fd-card-details" onClick={() => setExpanded(!expanded)}>{expanded ? t('ui.hideDetails') : t('ui.showDetails')}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4a7c59" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s', marginLeft: '4px' }}><polyline points="6 9 12 15 18 9" /></svg></button></div>
-      <div className="fd-card-meta"><span>🕐 {loc.hours || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span><span>📍 {addr}</span></div>
+      <div className="fd-card-meta"><span>🕐 {translateHours(loc.hours, t, i18n.language) || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span><span>📍 {addr}</span></div>
       <div className={`fd-card-expand${expanded ? ' fd-card-expand--open' : ''}`}><div className="fd-card-expand-inner">
         {website && (<div className="fd-card-detail-row"><span className="fd-card-detail-label">🔗 Website</span><a href={website} target="_blank" rel="noopener noreferrer" className="fd-card-detail-link">{website}</a></div>)}
         {requirements && (<div className="fd-card-detail-row"><span className="fd-card-detail-label">📋 Requirements</span><span className="fd-card-detail-value">{requirements}</span></div>)}

@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
 import FilterBar from './FilterBar';
+import { translateHours } from '../utils/translateHours';
 import './FoodDetailPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -10,7 +11,7 @@ const ALL_FOOD_TYPES = [...new Set(locations.flatMap(l => l.foodTypes || []))].s
 
 function DonorHealthDetailPage() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { attr } = useParams();
   const decoded = decodeURIComponent(attr);
   const attrKey = ['halal','vegan','vegetarian','noBeef','lowGI','freshProduce','dairyFree'].find(
@@ -43,7 +44,7 @@ function DonorHealthDetailPage() {
           return (
             <div key={loc.id} className="fd-card">
               <div className="fd-card-top"><div><span className="fd-card-name">{loc.name}</span><span className="fd-card-partner">{t('ui.partner')}</span></div></div>
-              <div className="fd-card-meta"><span>🕐 {loc.hours || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span><span>📍 {addr}</span></div>
+              <div className="fd-card-meta"><span>🕐 {translateHours(loc.hours, t, i18n.language) || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span><span>📍 {addr}</span></div>
               <div className="fd-card-bottom"><div className="fd-card-tags">{(loc.foodTypes||[]).slice(0,5).map(ft => (<button key={ft} className="fd-card-tag" onClick={() => navigate(`/donor/food/${encodeURIComponent(ft)}`)}>{t(`foodType.${ft.toLowerCase()}`, ft)}</button>))}</div>
                 <a className="fd-card-dir" href={dirUrl} target="_blank" rel="noopener noreferrer">{t('ui.getDirections')}</a></div>
             </div>

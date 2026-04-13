@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { translateHours } from '../utils/translateHours';
 import './MissionCard.css';
 
 /**
@@ -25,7 +26,7 @@ export function getUrgencyLevel(insecurityIndex) {
  * @param {Function} [props.onSignUp] - Callback when Sign Up is clicked
  */
 function MissionCard({ mission, location, onSignUp }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [expanded, setExpanded] = useState(false);
   const [signUpStep, setSignUpStep] = useState(0); // 0=button, 1=form, 2=confirmed
@@ -99,7 +100,7 @@ function MissionCard({ mission, location, onSignUp }) {
         <div className="vol-card-expand-inner">
           <div className="vol-card-loc-name">📍 {location.name}</div>
           {addr && <div className="vol-card-loc-addr">{addr}</div>}
-          {location.hours && <div className="vol-card-loc-hours">🕐 {location.hours}</div>}
+          {location.hours && <div className="vol-card-loc-hours">🕐 {translateHours(location.hours, t, i18n.language)}</div>}
           {location.phone && <div className="vol-card-loc-hours">📞 {location.phone}</div>}
           {location.website && <div className="vol-card-loc-hours"><a href={location.website} target="_blank" rel="noopener noreferrer" style={{ color: '#4a7c59', textDecoration: 'underline' }}>🔗 {location.website}</a></div>}
           <button className="vol-card-map-btn" onClick={() => navigate(`/volunteer/map?loc=${location.id}`)}>🗺️ {t('ui.showInMap')}</button>
@@ -127,17 +128,17 @@ function MissionCard({ mission, location, onSignUp }) {
 
             <div className="vol-signup-field">
               <label className="vol-signup-label">👤 {t('volunteerPortal.yourName')}</label>
-              <input className="vol-signup-input" type="text" placeholder="Full name" value={formData.name} onChange={e => updateField('name', e.target.value)} />
+              <input className="vol-signup-input" type="text" placeholder={t('volunteerPortal.fullName')} value={formData.name} onChange={e => updateField('name', e.target.value)} />
             </div>
 
             <div className="vol-signup-field">
               <label className="vol-signup-label">📧 {t('volunteerPortal.yourEmail')}</label>
-              <input className="vol-signup-input" type="email" placeholder="email@example.com" value={formData.email} onChange={e => updateField('email', e.target.value)} />
+              <input className="vol-signup-input" type="email" placeholder={t('volunteerPortal.emailPlaceholder')} value={formData.email} onChange={e => updateField('email', e.target.value)} />
             </div>
 
             <div className="vol-signup-field">
               <label className="vol-signup-label">📞 {t('volunteerPortal.yourPhone')}</label>
-              <input className="vol-signup-input" type="tel" placeholder="(555) 123-4567" value={formData.phone} onChange={e => updateField('phone', e.target.value)} />
+              <input className="vol-signup-input" type="tel" placeholder={t('volunteerPortal.phonePlaceholder')} value={formData.phone} onChange={e => updateField('phone', e.target.value)} />
             </div>
 
             <div className="vol-signup-field">
@@ -154,7 +155,7 @@ function MissionCard({ mission, location, onSignUp }) {
             <div className="vol-signup-field">
               <label className="vol-signup-label">⏰ {t('volunteerPortal.hoursAvailable')}</label>
               <div className="vol-signup-options">
-                {[['1-2', '1–2 hrs'], ['3-4', '3–4 hrs'], ['5+', '5+ hrs'], ['full-day', 'Full day']].map(([key, label]) => (
+                {[['1-2', t('volunteerPortal.hours1to2')], ['3-4', t('volunteerPortal.hours3to4')], ['5+', t('volunteerPortal.hours5plus')], ['full-day', t('volunteerPortal.fullDay')]].map(([key, label]) => (
                   <button key={key} className={`vol-signup-opt${formData.hours === key ? ' vol-signup-opt--active' : ''}`} onClick={() => updateField('hours', key)}>
                     {label}
                   </button>

@@ -7,6 +7,7 @@ import L from 'leaflet';
 import SearchHeader from './SearchHeader';
 import MissionCard from './MissionCard';
 import { getUrgencyLevel } from './MissionCard';
+import { translateHours } from '../utils/translateHours';
 import './VolunteerMapPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -96,7 +97,7 @@ function SetZoom({ zoom }) {
 }
 
 function VolunteerMapPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [searchParams] = useSearchParams();
   const locId = searchParams.get('loc');
   const preSelected = locId ? locsWithMissions.find(l => l.id === locId) : null;
@@ -191,7 +192,7 @@ function VolunteerMapPage() {
             <label className="mp-filter-label">{t('ui.locationRange')}</label>
             <input type="range" min={5} max={55} value={range} onChange={e => handleSliderChange(Number(e.target.value))} className="mp-range" />
             <div className="mp-range-labels"><span>5mi</span><span>10mi</span><span>20mi</span><span>55mi</span></div>
-            <span className="mp-range-status">{filtered.length} locations within {range}mi</span>
+            <span className="mp-range-status">{t('volunteerPortal.locationsWithin', { count: filtered.length, range })}</span>
           </div>
 
           <div className="mp-filter-group">
@@ -233,7 +234,7 @@ function VolunteerMapPage() {
                   <Popup>
                     <strong style={{ fontSize: 14 }}>{loc.name}</strong><br />
                     <span style={{ fontSize: 12, color: '#555' }}>{locAddr}</span><br />
-                    <span style={{ fontSize: 11 }}>{mc} {mc === 1 ? 'mission' : 'missions'}</span><br />
+                    <span style={{ fontSize: 11 }}>{mc} {mc === 1 ? t('volunteerPortal.mission') : t('volunteerPortal.missionPlural')}</span><br />
                     <span style={{ fontSize: 11, color: u.color, fontWeight: 600 }}>{u.emoji} {t(`volunteerPortal.${u.label}`)}</span><br />
                     <a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(locAddr)}`} target="_blank" rel="noopener noreferrer" style={{ color: '#16a34a', fontSize: 13 }}>📍 {t('ui.getDirections')}</a>
                   </Popup>
@@ -251,7 +252,7 @@ function VolunteerMapPage() {
                 <div className="mp-detail-top">
                   <div>
                     <span className="mp-detail-name">{currentCard.name}</span>
-                    <span className="mp-detail-partner">{missionCount} {missionCount === 1 ? 'mission' : 'missions'}</span>
+                    <span className="mp-detail-partner">{missionCount} {missionCount === 1 ? t('volunteerPortal.mission') : t('volunteerPortal.missionPlural')}</span>
                     {urgency && (
                       <span className="vm-urgency-badge" style={{ color: urgency.color }}>
                         {urgency.emoji} {t(`volunteerPortal.${urgency.label}`)}
@@ -264,16 +265,16 @@ function VolunteerMapPage() {
                   </button>
                 </div>
                 <div className="mp-detail-meta">
-                  <span>🕐 {currentCard.hours || t('ui.contactForHours')}</span>
+                  <span>🕐 {translateHours(currentCard.hours, t, i18n.language) || t('ui.contactForHours')}</span>
                   <span>📍 {addr}</span>
                 </div>
                 <div className={`mp-detail-expand${expanded ? ' mp-detail-expand--open' : ''}`}>
                   <div className="mp-detail-expand-inner">
                     {currentCard.website && (
-                      <div className="mp-detail-row"><span className="mp-detail-row-label">🔗 Website</span><a href={currentCard.website} target="_blank" rel="noopener noreferrer" className="mp-detail-row-link">{currentCard.website}</a></div>
+                      <div className="mp-detail-row"><span className="mp-detail-row-label">🔗 {t('volunteerPortal.website')}</span><a href={currentCard.website} target="_blank" rel="noopener noreferrer" className="mp-detail-row-link">{currentCard.website}</a></div>
                     )}
                     {currentCard.phone && (
-                      <div className="mp-detail-row"><span className="mp-detail-row-label">📞 Phone</span><span className="mp-detail-row-value">{currentCard.phone}</span></div>
+                      <div className="mp-detail-row"><span className="mp-detail-row-label">📞 {t('volunteerPortal.phone')}</span><span className="mp-detail-row-value">{currentCard.phone}</span></div>
                     )}
                     <div className="vm-mission-list">
                       {(currentCard.missions || []).map((m, i) => (
