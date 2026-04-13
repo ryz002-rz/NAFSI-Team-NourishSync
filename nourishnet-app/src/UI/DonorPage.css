@@ -47,7 +47,9 @@
 .donor-loc-card {
   flex-shrink: 0; width: 420px; border: 1px solid rgba(74,124,89,0.3); border-radius: 16px;
   padding: 20px; display: flex; flex-direction: column; gap: 8px; background: rgba(255,255,255,0.3);
+  transition: transform 0.25s, box-shadow 0.25s;
 }
+.donor-loc-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(74,124,89,0.12); }
 .donor-loc-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 .donor-loc-name { font-weight: 700; font-size: 15px; color: #4a7c59; display: block; }
 .donor-loc-partner { font-size: 12px; color: #4a7c59; opacity: 0.6; display: block; }

@@ -25,7 +25,7 @@ function PortalPage() {
           </svg>
         </button>
         <span className="portal-logo">{t('ui.nourishOne')}</span>
-        <LanguagePopover />
+        <div className="portal-lang-wrap"><LanguagePopover /></div>
       </header>
 
       <div className="portal-content">
