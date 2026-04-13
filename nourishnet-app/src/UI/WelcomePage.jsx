@@ -54,7 +54,9 @@ function WelcomePage() {
     <div className="welcome-root">
       <header className="welcome-header">
         <button className="welcome-back" onClick={() => navigate('/')} aria-label="Back">
-          <img src={arrowIcon} alt="" className="welcome-back-icon" />
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a7c59" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
         </button>
         <LanguagePopover />
       </header>
@@ -66,10 +68,12 @@ function WelcomePage() {
         ))}
       </div>
       <div className="welcome-center">
-        <h1 className="welcome-title">{t('ui.oneCommunity')}<br />{t('ui.oneTable')}<br />{t('ui.oneFamily')}</h1>
+        <h1 className="welcome-title">{t('ui.oneTool')}<br />{t('ui.oneCommunity')}<br />{t('ui.oneMission')}</h1>
         <button className="welcome-start-btn" onClick={() => navigate('/portal')} aria-label={t('ui.start')}>
           <span className="welcome-start-text">{t('ui.start')}</span>
-          <img src={arrowIcon} alt="" className="welcome-start-arrow" />
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#dcfce8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="welcome-start-arrow">
+            <polyline points="9 6 15 12 9 18" />
+          </svg>
         </button>
       </div>
     </div>

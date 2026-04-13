@@ -1,0 +1,13 @@
+/* Reuse MapPage styles */
+@import './MapPage.css';
+
+/* Volunteer map-specific */
+.vm-urgency-badge { font-size: 11px; font-weight: 600; display: block; margin-top: 2px; }
+
+.vm-mission-list { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.vm-mission-item {
+  font-size: 12px; color: #4a7c59; padding: 6px 10px;
+  background: rgba(74,124,89,0.06); border-radius: 8px;
+}
+.vm-mission-item-title { font-weight: 600; display: block; }
+.vm-mission-item-skills { font-size: 11px; opacity: 0.7; }

@@ -138,9 +138,8 @@
 }
 
 .welcome-start-arrow {
-  width: 18px;
-  height: 18px;
-  transform: scaleX(-1);
+  width: 12px;
+  height: 12px;
 }
 
 /* ── Responsive ── */

@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
 import './NowAvailablePage.css';
-import locations from '../data/locations.json';
+import locations from '../data/locations_final_merged.json';
 
 function NowAvailablePage() {
   const { t } = useTranslation();
@@ -29,7 +29,7 @@ function NowAvailablePage() {
               <div className="na-card-tags">
                 {(loc.foodTypes || []).slice(0, 5).map((ft) => (<span key={ft} className="na-card-tag">{ft}</span>))}
               </div>
-              <a className="na-card-dir" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.lat},${loc.lng}`}
+              <a className="na-card-dir" href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent([loc.address?.street, loc.address?.city, loc.address?.state, loc.address?.zip].filter(Boolean).join(', '))}`}
                 target="_blank" rel="noopener noreferrer">{t('ui.getDirections')}</a>
             </div>
           </div>

@@ -1,0 +1,53 @@
+/* MissionCard — vol- prefix */
+.vol-card {
+  flex-shrink: 0; width: 420px; border: 1px solid rgba(74,124,89,0.3); border-radius: 16px;
+  padding: 20px; display: flex; flex-direction: column; gap: 8px; background: rgba(255,255,255,0.3);
+  transition: transform 0.3s, box-shadow 0.3s; min-height: 220px;
+}
+.vol-card:hover { transform: translateY(-5px); box-shadow: 0 12px 32px rgba(74,124,89,0.15); }
+
+.vol-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.vol-card-header { display: flex; flex-direction: column; gap: 4px; }
+.vol-card-title { font-weight: 700; font-size: 15px; color: #4a7c59; display: block; }
+.vol-card-urgency { font-size: 11px; font-weight: 600; display: block; }
+.vol-card-details {
+  background: none; border: none; cursor: pointer; font-size: 13px; color: #4a7c59;
+  white-space: nowrap; font-weight: 500; display: inline-flex; align-items: center;
+}
+
+.vol-card-desc { font-size: 13px; color: #4a7c59; opacity: 0.75; margin: 0; line-height: 1.4; }
+.vol-card-date { font-size: 12px; color: #4a7c59; opacity: 0.6; }
+
+.vol-card-section { display: flex; flex-direction: column; gap: 4px; }
+.vol-card-label { font-size: 11px; font-weight: 600; color: #4a7c59; opacity: 0.7; }
+.vol-card-badges { display: flex; flex-wrap: wrap; gap: 5px; }
+.vol-card-badge {
+  font-size: 11px; padding: 3px 10px; border-radius: 14px; font-weight: 500;
+}
+.vol-card-badge--skill { background: #4a7c59; color: #dcfce8; }
+.vol-card-badge--lang { background: rgba(74,124,89,0.15); color: #4a7c59; border: 1px solid rgba(74,124,89,0.3); }
+
+/* Expand */
+.vol-card-expand { max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.3s; opacity: 0; }
+.vol-card-expand--open { max-height: 200px; opacity: 1; }
+.vol-card-expand-inner {
+  padding: 10px 0 4px; display: flex; flex-direction: column; gap: 4px;
+  border-top: 1px solid rgba(74,124,89,0.2); margin-top: 6px;
+}
+.vol-card-loc-name { font-size: 13px; font-weight: 600; color: #4a7c59; }
+.vol-card-loc-addr { font-size: 12px; color: #4a7c59; opacity: 0.7; }
+.vol-card-loc-hours { font-size: 12px; color: #4a7c59; opacity: 0.6; }
+
+/* Footer */
+.vol-card-footer { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-top: 8px; }
+.vol-card-volunteers { font-size: 12px; color: #4a7c59; opacity: 0.7; }
+.vol-card-signup {
+  background: #4a7c59; border: none; border-radius: 30px; padding: 10px 24px;
+  font-size: 12px; font-weight: 700; color: #dcfce8; cursor: pointer;
+  letter-spacing: 1px; transition: transform 0.2s, box-shadow 0.3s;
+}
+.vol-card-signup:hover { transform: scale(1.02); box-shadow: 0 4px 16px rgba(74,124,89,0.25); }
+
+@media (max-width: 768px) {
+  .vol-card { width: 320px; }
+}

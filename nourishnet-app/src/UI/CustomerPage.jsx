@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SearchHeader, { useGeolocation } from './SearchHeader';
 import './CustomerPage.css';
-import locations from '../data/locations.json';
+import locations from '../data/locations_final_merged.json';
 
 const FOOD_TYPES = [...new Set(locations.flatMap((l) => l.foodTypes || []))].sort();
 const HEALTH_ATTRS = ['halal','vegan','vegetarian','noBeef','lowGI','freshProduce','dairyFree'];
@@ -50,7 +50,7 @@ function CustomerPage() {
         <div className="cust-hscroll" ref={r2} {...drag(r2)}>
           {FOOD_TYPES.slice(0, 12).map((ft) => (
             <button key={ft} className="cust-green-card" onClick={() => navigate(`/customer/food/${encodeURIComponent(ft)}`)}>
-              <span className="cust-green-label">{ft}</span>
+              <span className="cust-green-label">{t(`foodType.${ft.toLowerCase()}`, ft)}</span>
             </button>
           ))}
         </div>
@@ -60,11 +60,11 @@ function CustomerPage() {
       <section className="cust-section anim-fade-up anim-d3">
         <div className="cust-section-row">
           <h2 className="cust-section-title">{t('ui.healthAttribute')}</h2>
-          <button className="cust-section-arrow"><Arrow /></button>
+          <button className="cust-section-arrow" onClick={() => navigate('/customer/health-types')}><Arrow /></button>
         </div>
         <div className="cust-hscroll" ref={r3} {...drag(r3)}>
           {HEALTH_ATTRS.map((attr) => (
-            <button key={attr} className="cust-green-card">
+            <button key={attr} className="cust-green-card" onClick={() => navigate(`/customer/health/${encodeURIComponent(attr)}`)}>
               <span className="cust-green-label">{t(`filter.${attr}`)}</span>
             </button>
           ))}
@@ -86,6 +86,28 @@ function CustomerPage() {
 }
 
 function LocCard({ loc, t }) {
+  const [expanded, setExpanded] = React.useState(false);
+  const navigate = useNavigate();
+
+  const street = loc.address?.street ?? '';
+  const city = loc.address?.city ?? '';
+  const state = loc.address?.state ?? '';
+  const zip = loc.address?.zip ?? '';
+  const addressLine = [street, city, state, zip].filter(Boolean).join(', ');
+  const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(addressLine)}`;
+
+  const requirements = Array.isArray(loc.requirements) ? loc.requirements.join(', ') : loc.requirements || '';
+  const notes = loc.notes || '';
+  const website = loc.website || '';
+  const sourceName = loc.source?.source_name || '';
+  const sourceUrl = loc.source?.source_url || loc.source?.extracted_from || '';
+
+  const DetailArrow = ({ up }) => (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4a7c59" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ transform: up ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s', marginLeft: '4px' }}>
+      <polyline points="6 9 12 15 18 9" />
+    </svg>
+  );
+
   return (
     <div className="cust-loc-card">
       <div className="cust-loc-top">
@@ -93,17 +115,58 @@ function LocCard({ loc, t }) {
           <span className="cust-loc-name">{loc.name}</span>
           <span className="cust-loc-partner">{t('ui.partner')}</span>
         </div>
-        <button className="cust-loc-details">{t('ui.showDetails')} ›</button>
+        <button className="cust-loc-details" onClick={() => setExpanded(!expanded)}>
+          {expanded ? t('ui.hideDetails') : t('ui.showDetails')}
+          <DetailArrow up={expanded} />
+        </button>
       </div>
       <div className="cust-loc-meta">
-        <span>🕐 {loc.hours || t('ui.contactForHours')} 📧 {t('ui.ongoing')}</span>
-        <span>📍 {loc.address.street}, {loc.address.city}, {loc.address.state} {loc.address.zip}</span>
+        <span>🕐 {loc.hours || t('ui.contactForHours')} 🔁 {t('ui.ongoing')}</span>
+        <span>📍 {addressLine}</span>
       </div>
+
+      {/* Slide-out details */}
+      <div className={`cust-loc-expand${expanded ? ' cust-loc-expand--open' : ''}`}>
+        <div className="cust-loc-expand-inner">
+          {website && (
+            <div className="cust-loc-detail-row">
+              <span className="cust-loc-detail-label">🔗 {t('common.website') || 'Website'}</span>
+              <a href={website} target="_blank" rel="noopener noreferrer" className="cust-loc-detail-link">{website}</a>
+            </div>
+          )}
+          {requirements && (
+            <div className="cust-loc-detail-row">
+              <span className="cust-loc-detail-label">📋 Requirements</span>
+              <span className="cust-loc-detail-value">{requirements}</span>
+            </div>
+          )}
+          {notes && (
+            <div className="cust-loc-detail-row">
+              <span className="cust-loc-detail-label">📝 Notes</span>
+              <span className="cust-loc-detail-value">{notes}</span>
+            </div>
+          )}
+          {(sourceName || sourceUrl) && (
+            <div className="cust-loc-detail-row">
+              <span className="cust-loc-detail-label">📄 Source</span>
+              {sourceUrl ? (
+                <a href={sourceUrl} target="_blank" rel="noopener noreferrer" className="cust-loc-detail-link">{sourceName || sourceUrl}</a>
+              ) : (
+                <span className="cust-loc-detail-value">{sourceName}</span>
+              )}
+            </div>
+          )}
+          <button className="cust-loc-map-btn" onClick={() => navigate(`/customer/map?loc=${loc.id}`)}>🗺️ {t('ui.showInMap')}</button>
+        </div>
+      </div>
+
       <div className="cust-loc-bottom">
         <div className="cust-loc-tags">
-          {(loc.foodTypes || []).slice(0, 5).map((ft) => (<span key={ft} className="cust-loc-tag">{ft}</span>))}
+          {(loc.foodTypes || []).slice(0, 5).map((ft) => (
+            <button key={ft} className="cust-loc-tag" onClick={() => navigate(`/customer/food/${encodeURIComponent(ft)}`)}>{t(`foodType.${ft.toLowerCase()}`, ft)}</button>
+          ))}
         </div>
-        <a className="cust-loc-dir" href={`https://www.google.com/maps/dir/?api=1&destination=${loc.lat},${loc.lng}`}
+        <a className="cust-loc-dir" href={directionsUrl}
           target="_blank" rel="noopener noreferrer">{t('ui.getDirections')}</a>
       </div>
     </div>

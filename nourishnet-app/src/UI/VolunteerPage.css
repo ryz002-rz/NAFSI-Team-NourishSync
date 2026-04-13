@@ -1,0 +1,65 @@
+/* VolunteerPage — vol- prefix, mirrors DonorPage.css */
+.vol-root { min-height: 100vh; background: #dcfce8; font-family: 'Inter', sans-serif; padding-bottom: 40px; }
+.vol-hero { padding: 24px 40px 8px; }
+.vol-title { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 40px; color: #4a7c59; margin: 0; display: inline; }
+.vol-subtitle { display: inline; margin-left: 16px; font-size: 16px; color: #4a7c59; opacity: 0.6; }
+
+.vol-section { padding: 20px 40px; }
+.vol-section-row { display: flex; align-items: center; justify-content: space-between; padding-bottom: 12px; }
+.vol-section-title { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 28px; color: #4a7c59; margin: 0; }
+.vol-section-arrow { background: none; border: none; cursor: pointer; padding: 4px; transition: transform 0.2s; }
+.vol-section-arrow:hover { transform: translateX(4px); }
+
+/* Horizontal scroll */
+.vol-hscroll { display: flex; gap: 16px; overflow-x: auto; cursor: grab; scrollbar-width: none; padding-bottom: 8px; }
+.vol-hscroll::-webkit-scrollbar { display: none; }
+
+/* Green pill cards (skills / languages) */
+.vol-green-card {
+  flex-shrink: 0; width: 200px; height: 140px; background: #4a7c59; border: none; border-radius: 16px;
+  cursor: pointer; display: flex; align-items: flex-start; padding: 20px; transition: transform 0.3s, box-shadow 0.3s;
+}
+.vol-green-card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 12px 32px rgba(74,124,89,0.3); }
+.vol-green-label { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 22px; color: #dcfce8; text-align: left; }
+
+/* Location cards (Nearby Opportunities) */
+.vol-loc-card {
+  flex-shrink: 0; width: 420px; border: 1px solid rgba(74,124,89,0.3); border-radius: 16px;
+  padding: 20px; display: flex; flex-direction: column; gap: 8px; background: rgba(255,255,255,0.3);
+  transition: transform 0.3s, box-shadow 0.3s; min-height: 220px;
+}
+.vol-loc-card:hover { transform: translateY(-5px); box-shadow: 0 12px 32px rgba(74,124,89,0.15); }
+.vol-loc-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.vol-loc-name { font-weight: 700; font-size: 15px; color: #4a7c59; display: block; }
+.vol-loc-missions { font-size: 12px; color: #4a7c59; opacity: 0.6; display: block; }
+.vol-loc-details { background: none; border: none; cursor: pointer; font-size: 13px; color: #4a7c59; white-space: nowrap; font-weight: 500; display: inline-flex; align-items: center; }
+.vol-loc-meta { display: flex; flex-direction: column; gap: 2px; font-size: 13px; color: #4a7c59; opacity: 0.7; }
+.vol-loc-footer { margin-top: auto; display: flex; flex-direction: column; gap: 8px; }
+.vol-loc-bottom { display: flex; flex-direction: column; gap: 6px; }
+.vol-loc-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.vol-loc-tag { font-size: 12px; color: #dcfce8; background: #4a7c59; padding: 4px 12px; border-radius: 20px; border: none; }
+.vol-loc-dir { font-size: 13px; color: #4a7c59; font-weight: 600; text-decoration: underline; white-space: nowrap; align-self: flex-end; }
+
+/* Expand */
+.vol-loc-expand { max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.3s; opacity: 0; }
+.vol-loc-expand--open { max-height: 200px; opacity: 1; }
+.vol-loc-expand-inner { padding: 10px 0 4px; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid rgba(74,124,89,0.2); margin-top: 6px; }
+.vol-loc-detail-row { display: flex; flex-direction: column; gap: 2px; }
+.vol-loc-detail-label { font-size: 12px; font-weight: 600; color: #4a7c59; }
+.vol-loc-detail-value { font-size: 12px; color: #4a7c59; opacity: 0.7; word-break: break-word; }
+.vol-loc-detail-link { font-size: 12px; color: #4a7c59; text-decoration: underline; word-break: break-all; }
+
+/* Animations (reuse donor pattern) */
+.anim-fade-up { opacity: 0; transform: translateY(28px); animation: volFadeUp 0.7s cubic-bezier(0.16,1,0.3,1) forwards; }
+.anim-d1 { animation-delay: 0.1s; }
+.anim-d2 { animation-delay: 0.2s; }
+.anim-d3 { animation-delay: 0.3s; }
+.anim-d4 { animation-delay: 0.4s; }
+@keyframes volFadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 768px) {
+  .vol-section { padding: 16px 20px; }
+  .vol-hero { padding: 16px 20px 8px; }
+  .vol-title { font-size: 28px; }
+  .vol-loc-card { width: 320px; }
+}

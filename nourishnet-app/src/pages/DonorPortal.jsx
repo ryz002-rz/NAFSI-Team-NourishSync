@@ -145,9 +145,9 @@ function DonorPortal() {
                 )}
 
                 {/* High need indicator */}
-                {loc.insecurityIndex && loc.insecurityIndex >= 7 && (
+                {loc.insecurityIndex && loc.insecurityIndex >= 4 && (
                   <span className="inline-block px-2.5 py-1 text-xs font-medium rounded-full bg-red-50 text-red-700 border border-red-200">
-                    🔴 {t('donor.highNeed')}
+                    🔴 {t('donor.highNeed')} (Level {loc.insecurityIndex})
                   </span>
                 )}
 
@@ -191,7 +191,7 @@ function DonorPortal() {
             <DonationLogger locationName={donatingTo.name} />
 
             <a
-              href={`https://www.google.com/maps/dir/?api=1&destination=${donatingTo.lat},${donatingTo.lng}`}
+              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent([donatingTo.address?.street, donatingTo.address?.city, donatingTo.address?.state, donatingTo.address?.zip].filter(Boolean).join(', '))}`}
               target="_blank" rel="noopener noreferrer"
               className="block mt-3 text-center py-2 text-sm font-medium rounded-xl border border-primary-200 text-primary-600 hover:bg-primary-50 transition-colors"
             >

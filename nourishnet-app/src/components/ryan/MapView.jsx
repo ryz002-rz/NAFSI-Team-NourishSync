@@ -111,7 +111,7 @@ function MapView({ locations = [], showUserLocation = true }) {
                 {loc.hours && <p style={{ margin: '2px 0 0', fontSize: '0.8em', color: '#666' }}>🕐 {translateHours(loc.hours, t, i18n.language)}</p>}
                 {badges.length > 0 && <p style={{ margin: '4px 0 0', fontSize: '0.8em' }}>{badges.join(' · ')}</p>}
                 <a
-                  href={`https://www.google.com/maps/dir/?api=1&destination=${loc.lat},${loc.lng}`}
+                  href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent([loc.address?.street, loc.address?.city, loc.address?.state, loc.address?.zip].filter(Boolean).join(', '))}`}
                   target="_blank" rel="noopener noreferrer"
                   style={{ fontSize: '0.85em', color: '#16a34a', display: 'inline-block', marginTop: '4px' }}
                 >📍 {t('map.getDirections')}</a>

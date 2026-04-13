@@ -4,10 +4,27 @@ import { useTranslation } from 'react-i18next';
 import LanguagePopover from './LanguagePopover';
 import './SearchHeader.css';
 
-function SearchHeader({ backTo, activeNav = 'home', navPrefix = '/customer' }) {
+function SearchHeader({ backTo, activeNav = 'home', navPrefix = '/customer', onSearch, initialQuery }) {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const [listening, setListening] = useState(false);
+  const [query, setQuery] = useState(initialQuery || '');
+
+  const handleChange = (e) => {
+    const val = e.target.value;
+    setQuery(val);
+    if (onSearch) onSearch(val);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' && query.trim()) {
+      if (onSearch) {
+        onSearch(query);
+      } else {
+        navigate(`${navPrefix}/search?q=${encodeURIComponent(query.trim())}`);
+      }
+    }
+  };
 
   const handleVoice = useCallback(() => {
     if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
@@ -24,15 +41,18 @@ function SearchHeader({ backTo, activeNav = 'home', navPrefix = '/customer' }) {
     recognition.onerror = () => setListening(false);
     recognition.onresult = (e) => {
       const text = e.results[0][0].transcript;
-      const input = document.querySelector('.sh-search-input');
-      if (input) { input.value = text; input.dispatchEvent(new Event('input', { bubbles: true })); }
+      setQuery(text);
+      if (onSearch) {
+        onSearch(text);
+      } else {
+        navigate(`${navPrefix}/search?q=${encodeURIComponent(text.trim())}`);
+      }
     };
     recognition.start();
-  }, [t]);
+  }, [t, onSearch]);
 
   return (
     <header className="sh-header">
-      {/* Left: back arrow + nav pill */}
       <div className="sh-left">
         <button className="sh-back" onClick={() => navigate(backTo)} aria-label="Back">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a7c59" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -47,12 +67,11 @@ function SearchHeader({ backTo, activeNav = 'home', navPrefix = '/customer' }) {
           <button className="sh-nav-btn">{t('ui.aboutUs')}</button>
         </nav>
       </div>
-
-      {/* Center: search bar */}
       <div className="sh-center">
         <div className="sh-search-bar">
           <span className="sh-search-icon">🔍</span>
-          <input className="sh-search-input" placeholder={t('ui.search')} aria-label={t('ui.search')} />
+          <input className="sh-search-input" placeholder={t('ui.search')} aria-label={t('ui.search')}
+            value={query} onChange={handleChange} onKeyDown={handleKeyDown} />
           <button className={`sh-mic-btn${listening ? ' sh-mic-btn--active' : ''}`}
             onClick={handleVoice} aria-label="Voice search">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#dcfce8" strokeWidth="2">
@@ -63,8 +82,6 @@ function SearchHeader({ backTo, activeNav = 'home', navPrefix = '/customer' }) {
           </button>
         </div>
       </div>
-
-      {/* Right: language popover */}
       <div className="sh-right">
         <LanguagePopover />
       </div>

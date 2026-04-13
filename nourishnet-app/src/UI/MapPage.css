@@ -1,46 +1,120 @@
 .mp-root { height: 100vh; display: flex; flex-direction: column; background: #dcfce8; font-family: 'Inter', sans-serif; overflow: hidden; }
-
-/* Body layout */
 .mp-body { display: flex; flex: 1; overflow: hidden; padding: 0 24px 24px; gap: 16px; }
 
 /* Sidebar */
 .mp-sidebar {
-  width: 260px; flex-shrink: 0; overflow-y: auto;
+  width: 280px; flex-shrink: 0; overflow-y: auto;
   border: 1px solid rgba(74,124,89,0.3); border-radius: 16px;
   padding: 20px; display: flex; flex-direction: column; gap: 16px;
+  scrollbar-width: thin; scrollbar-color: rgba(74,124,89,0.3) transparent;
 }
 .mp-filter-title { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 20px; color: #4a7c59; margin: 0; }
 .mp-filter-group { display: flex; flex-direction: column; gap: 6px; }
 .mp-filter-label { font-size: 13px; font-weight: 600; color: #4a7c59; }
-.mp-toggle { display: flex; align-items: center; gap: 6px; width: 56px; height: 28px; border-radius: 14px; background: #ccc; border: none; cursor: pointer; position: relative; padding: 0; }
-.mp-toggle--on { background: #4a7c59; }
-.mp-toggle-knob { width: 22px; height: 22px; border-radius: 50%; background: white; position: absolute; top: 3px; left: 3px; transition: left 0.2s; }
-.mp-toggle--on .mp-toggle-knob { left: 31px; }
-.mp-toggle-text { position: absolute; width: 100%; text-align: center; font-size: 10px; color: white; font-weight: 600; }
-.mp-zip-input { border: 1px solid #4a7c59; border-radius: 8px; padding: 8px 12px; background: none; font-size: 13px; color: #4a7c59; width: 100%; }
+
+/* Toggle — redesigned */
+.mp-toggle {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: none; border: none; cursor: pointer; padding: 0;
+}
+.mp-toggle-track {
+  position: relative; width: 48px; height: 26px; border-radius: 13px;
+  background: #ccc; transition: background 0.2s; display: block;
+}
+.mp-toggle--on .mp-toggle-track { background: #4a7c59; }
+.mp-toggle-knob {
+  position: absolute; top: 3px; left: 3px;
+  width: 20px; height: 20px; border-radius: 50%; background: white;
+  transition: left 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.mp-toggle--on .mp-toggle-knob { left: 25px; }
+.mp-toggle-label { font-size: 12px; font-weight: 700; color: #4a7c59; letter-spacing: 0.5px; }
+
+/* ZIP */
+.mp-zip-row { display: flex; gap: 8px; }
+.mp-zip-input { border: 1px solid rgba(74,124,89,0.4); border-radius: 20px; padding: 8px 16px; background: none; font-size: 13px; color: #4a7c59; flex: 1; min-width: 0; }
 .mp-zip-input::placeholder { color: #999; }
-.mp-range { width: 100%; accent-color: #4a7c59; }
+.mp-zip-input:focus { outline: none; border-color: #4a7c59; }
+.mp-zip-btn {
+  background: #4a7c59; color: #dcfce8; border: none; border-radius: 20px;
+  padding: 8px 16px; font-size: 12px; font-weight: 600; cursor: pointer;
+  white-space: nowrap; transition: background 0.2s;
+}
+.mp-zip-btn:hover { background: #3a6a49; }
+
+/* Coverage legend */
+.mp-legend { display: flex; flex-direction: column; gap: 4px; margin-top: 6px; }
+.mp-legend-item { display: flex; align-items: center; gap: 8px; }
+.mp-legend-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+.mp-legend-text { font-size: 11px; color: #4a7c59; }
+
+/* Range slider */
+.mp-range { width: 100%; accent-color: #4a7c59; cursor: pointer; }
 .mp-range-labels { display: flex; justify-content: space-between; font-size: 11px; color: #4a7c59; opacity: 0.6; }
+.mp-range-status { font-size: 11px; color: #4a7c59; opacity: 0.5; font-style: italic; }
+
+/* Tags — stroke default, filled when active */
 .mp-tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
-.mp-tag { font-size: 11px; color: #dcfce8; background: #4a7c59; padding: 4px 10px; border-radius: 16px; cursor: pointer; }
-.mp-tag:hover { opacity: 0.8; }
-.mp-clear-btn { background: none; border: 1px solid #4a7c59; border-radius: 20px; padding: 8px 16px; font-size: 13px; color: #4a7c59; cursor: pointer; align-self: center; margin-top: auto; }
+.mp-tag {
+  font-size: 11px; color: #4a7c59; background: transparent;
+  border: 1.5px solid #4a7c59; padding: 4px 10px; border-radius: 16px;
+  cursor: pointer; transition: all 0.2s; font-weight: 500;
+}
+.mp-tag:hover { background: rgba(74,124,89,0.08); }
+.mp-tag--active { background: #4a7c59; color: #dcfce8; border-color: #4a7c59; }
+.mp-tag--active:hover { background: #3a6a49; }
+
+/* Clear */
+.mp-clear-btn { background: none; border: 1px solid #4a7c59; border-radius: 20px; padding: 8px 20px; font-size: 13px; color: #4a7c59; cursor: pointer; align-self: center; margin-top: auto; transition: background 0.2s; }
 .mp-clear-btn:hover { background: rgba(74,124,89,0.06); }
 
 /* Map area */
 .mp-map-area { flex: 1; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
-.mp-leaflet { flex: 1; border-radius: 16px; border: 1px solid rgba(74,124,89,0.3); min-height: 0; }
+.mp-leaflet { flex: 1; border-radius: 16px; border: 1px solid rgba(74,124,89,0.3); min-height: 0; z-index: 1; }
+
+/* Detail wrap */
+.mp-detail-wrap { display: flex; align-items: stretch; gap: 8px; flex-shrink: 0; }
+.mp-detail-arrow {
+  background: none; border: 1px solid rgba(74,124,89,0.3); border-radius: 50%;
+  width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; flex-shrink: 0; transition: background 0.2s, transform 0.2s; align-self: center;
+}
+.mp-detail-arrow:hover { background: rgba(74,124,89,0.08); transform: scale(1.1); }
 
 /* Detail card */
-.mp-detail-card { border: 1px solid rgba(74,124,89,0.3); border-radius: 16px; padding: 16px 20px; display: flex; flex-direction: column; gap: 6px; background: rgba(255,255,255,0.3); flex-shrink: 0; }
+.mp-detail-card {
+  flex: 1; border: 1px solid rgba(74,124,89,0.3); border-radius: 16px;
+  padding: 16px 20px; display: flex; flex-direction: column; gap: 6px;
+  background: rgba(255,255,255,0.3); position: relative;
+}
 .mp-detail-top { display: flex; justify-content: space-between; align-items: flex-start; }
 .mp-detail-name { font-weight: 700; font-size: 15px; color: #4a7c59; display: block; }
 .mp-detail-partner { font-size: 12px; color: #4a7c59; opacity: 0.6; display: block; }
-.mp-detail-link { background: none; border: none; cursor: pointer; font-size: 13px; color: #4a7c59; font-weight: 500; }
+.mp-detail-details { background: none; border: none; cursor: pointer; font-size: 13px; color: #4a7c59; font-weight: 500; white-space: nowrap; display: inline-flex; align-items: center; transition: color 0.2s; }
+.mp-detail-details:hover { color: #2d5a3a; }
 .mp-detail-meta { font-size: 13px; color: #4a7c59; opacity: 0.7; display: flex; flex-direction: column; gap: 2px; }
-.mp-detail-bottom { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; }
+
+/* Expand */
+.mp-detail-expand { max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease; opacity: 0; }
+.mp-detail-expand--open { max-height: 300px; opacity: 1; }
+.mp-detail-expand-inner { padding: 10px 0 4px; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid rgba(74,124,89,0.2); margin-top: 6px; }
+.mp-detail-row { display: flex; flex-direction: column; gap: 2px; }
+.mp-detail-row-label { font-size: 12px; font-weight: 600; color: #4a7c59; }
+.mp-detail-row-value { font-size: 12px; color: #4a7c59; opacity: 0.7; word-break: break-word; }
+.mp-detail-row-link { font-size: 12px; color: #4a7c59; text-decoration: underline; word-break: break-all; }
+.mp-detail-row-link:hover { color: #2d5a3a; }
+
+/* Bottom */
+.mp-detail-bottom { display: flex; flex-direction: column; gap: 6px; margin-top: auto; }
 .mp-detail-tags { display: flex; gap: 6px; flex-wrap: wrap; }
 .mp-detail-tag { font-size: 11px; color: #dcfce8; background: #4a7c59; padding: 4px 10px; border-radius: 16px; }
-.mp-detail-dir { font-size: 13px; color: #4a7c59; font-weight: 600; text-decoration: underline; }
+.mp-detail-dir { font-size: 13px; color: #4a7c59; font-weight: 600; text-decoration: underline; white-space: nowrap; align-self: flex-end; }
+.mp-detail-dir:hover { color: #2d5a3a; }
+.mp-detail-counter { position: absolute; top: 8px; right: 16px; font-size: 11px; color: #4a7c59; opacity: 0.5; }
+.mp-no-results { text-align: center; padding: 20px; color: #4a7c59; opacity: 0.6; font-size: 14px; }
 
-@media (max-width: 768px) { .mp-body { flex-direction: column; } .mp-sidebar { width: 100%; max-height: 200px; } }
+@media (max-width: 768px) {
+  .mp-body { flex-direction: column; }
+  .mp-sidebar { width: 100%; max-height: 240px; }
+  .mp-detail-arrow { width: 30px; height: 30px; }
+}

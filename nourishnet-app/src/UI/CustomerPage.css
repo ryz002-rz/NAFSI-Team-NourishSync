@@ -20,31 +20,53 @@
 .cust-loc-card {
   flex-shrink: 0; width: 420px; border: 1px solid rgba(74,124,89,0.3); border-radius: 16px;
   padding: 20px; display: flex; flex-direction: column; gap: 8px; background: rgba(255,255,255,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; min-height: 220px;
 }
 .cust-loc-card:hover { transform: translateY(-5px); box-shadow: 0 12px 32px rgba(74,124,89,0.15); }
 .cust-loc-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 .cust-loc-name { font-weight: 700; font-size: 15px; color: #4a7c59; display: block; }
 .cust-loc-partner { font-size: 12px; color: #4a7c59; opacity: 0.6; display: block; }
-.cust-loc-details { background: none; border: none; cursor: pointer; font-size: 13px; color: #4a7c59; white-space: nowrap; font-weight: 500; transition: color 0.2s; }
+.cust-loc-details { background: none; border: none; cursor: pointer; font-size: 13px; color: #4a7c59; white-space: nowrap; font-weight: 500; transition: color 0.2s; display: inline-flex; align-items: center; }
 .cust-loc-details:hover { color: #2d5a3a; }
 .cust-loc-meta { display: flex; flex-direction: column; gap: 2px; font-size: 13px; color: #4a7c59; opacity: 0.7; }
-.cust-loc-bottom { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; }
+.cust-loc-bottom { display: flex; flex-direction: column; gap: 6px; margin-top: auto; }
 .cust-loc-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.cust-loc-tag { font-size: 12px; color: #dcfce8; background: #4a7c59; padding: 4px 12px; border-radius: 20px; transition: transform 0.2s; }
-.cust-loc-tag:hover { transform: scale(1.05); }
-.cust-loc-dir { font-size: 13px; color: #4a7c59; font-weight: 600; text-decoration: underline; white-space: nowrap; transition: color 0.2s; }
+.cust-loc-tag { font-size: 12px; color: #dcfce8; background: #4a7c59; padding: 4px 12px; border-radius: 20px; transition: transform 0.2s, background 0.2s; border: none; cursor: pointer; }
+.cust-loc-tag:hover { transform: scale(1.05); background: #3a6a49; }
+.cust-loc-dir { font-size: 13px; color: #4a7c59; font-weight: 600; text-decoration: underline; white-space: nowrap; transition: color 0.2s; align-self: flex-end; }
 .cust-loc-dir:hover { color: #2d5a3a; }
+
+/* Slide-out details */
+.cust-loc-expand {
+  max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  opacity: 0;
+}
+.cust-loc-expand--open { max-height: 300px; opacity: 1; }
+.cust-loc-expand-inner {
+  padding: 12px 0 4px; display: flex; flex-direction: column; gap: 8px;
+  border-top: 1px solid rgba(74,124,89,0.2); margin-top: 8px;
+}
+.cust-loc-detail-row { display: flex; flex-direction: column; gap: 2px; }
+.cust-loc-detail-label { font-size: 12px; font-weight: 600; color: #4a7c59; }
+.cust-loc-detail-value { font-size: 12px; color: #4a7c59; opacity: 0.7; word-break: break-word; }
+.cust-loc-detail-link { font-size: 12px; color: #4a7c59; text-decoration: underline; word-break: break-all; transition: color 0.2s; }
+.cust-loc-detail-link:hover { color: #2d5a3a; }
+.cust-loc-map-btn {
+  background: none; border: 1px solid rgba(74,124,89,0.3); border-radius: 8px;
+  padding: 6px 14px; font-size: 12px; color: #4a7c59; font-weight: 600; cursor: pointer;
+  margin-top: 4px; align-self: flex-start; transition: background 0.2s;
+}
+.cust-loc-map-btn:hover { background: rgba(74,124,89,0.08); }
 
 /* Green cards (Food Type + Health Attributes) */
 .cust-green-card {
   flex-shrink: 0; width: 200px; height: 140px;
   background: #4a7c59; border: none; border-radius: 16px;
-  cursor: pointer; display: flex; align-items: flex-end; padding: 20px;
+  cursor: pointer; display: flex; align-items: flex-start; padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .cust-green-card:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 12px 32px rgba(74,124,89,0.3); }
-.cust-green-label { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 22px; color: #dcfce8; }
+.cust-green-label { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 22px; color: #dcfce8; text-align: left; }
 
 /* ── Animations ── */
 .anim-fade-up {

@@ -26,12 +26,14 @@ const LANGUAGE_MESSAGES = {
 function LandingPage() {
   const [selectedLang, setSelectedLang] = useState(null);
   const [animating, setAnimating] = useState(false);
+  const [fadingOut, setFadingOut] = useState(false);
   const { i18n } = useTranslation();
   const navigate = useNavigate();
 
   const handleSelect = useCallback((lang) => {
     setSelectedLang(lang);
     setAnimating(true);
+    setFadingOut(false);
     i18n.changeLanguage(lang.code);
     try {
       const existing = JSON.parse(localStorage.getItem('nourishnet_prefs')) || {};
@@ -41,12 +43,20 @@ function LandingPage() {
     }
   }, [i18n]);
 
+  const handleBack = useCallback(() => {
+    setFadingOut(true);
+    setTimeout(() => {
+      setSelectedLang(null);
+      setFadingOut(false);
+    }, 300);
+  }, []);
+
   const handleContinue = useCallback(() => {
     navigate('/welcome');
   }, [navigate]);
 
   return (
-    <div className="landing-root">
+    <div className="landing-root" onClick={selectedLang && !fadingOut ? handleBack : undefined}>
       <div className="landing-bg">
         <img src={bgImage} alt="" className="landing-bg-img" />
         <div className="landing-bg-overlay" />
@@ -61,6 +71,7 @@ function LandingPage() {
           <SelectedView
             lang={selectedLang}
             animating={animating}
+            fadingOut={fadingOut}
             onAnimEnd={() => setAnimating(false)}
             onContinue={handleContinue}
           />
@@ -87,14 +98,19 @@ function LanguageGrid({ onSelect }) {
   );
 }
 
-function SelectedView({ lang, animating, onAnimEnd, onContinue }) {
+function SelectedView({ lang, animating, fadingOut, onAnimEnd, onContinue }) {
+  const className = `selected-view${animating ? ' selected-view--enter' : ''}${fadingOut ? ' selected-view--exit' : ''}`;
+  const stopAndContinue = (e) => {
+    e.stopPropagation();
+    onContinue();
+  };
   return (
-    <div className={`selected-view${animating ? ' selected-view--enter' : ''}`} onAnimationEnd={onAnimEnd}>
-      <div className="selected-panel selected-panel--info">
+    <div className={className} onAnimationEnd={onAnimEnd} onClick={(e) => e.stopPropagation()}>
+      <button className="selected-panel selected-panel--info" onClick={stopAndContinue} aria-label={`Continue with ${lang.label}`}>
         <span className="selected-panel-lang">{lang.label}</span>
         <span className="selected-panel-msg">{LANGUAGE_MESSAGES[lang.code]}</span>
-      </div>
-      <button className="selected-panel selected-panel--arrow" onClick={onContinue} aria-label="Continue">
+      </button>
+      <button className="selected-panel selected-panel--arrow" onClick={stopAndContinue} aria-label="Continue">
         <img src={arrowIcon} alt="Continue" className="selected-arrow-icon" />
       </button>
     </div>
