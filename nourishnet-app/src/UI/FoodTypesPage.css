@@ -1,0 +1,57 @@
+.ft-root { min-height: 100vh; background: #dcfce8; font-family: 'Inter', sans-serif; }
+
+.ft-header {
+  display: flex; align-items: center; gap: 16px;
+  padding: 16px 32px; flex-wrap: wrap;
+}
+.ft-back { background: none; border: none; cursor: pointer; padding: 8px; display: flex; }
+.ft-back-icon { width: 22px; height: 22px; }
+.ft-nav-pill { display: flex; border: 1px solid #4a7c59; border-radius: 30px; overflow: hidden; }
+.ft-nav-btn {
+  background: none; border: none; cursor: pointer;
+  padding: 10px 20px; font-size: 14px; color: #4a7c59; font-weight: 400;
+}
+.ft-nav-btn--active { font-weight: 700; }
+.ft-header-right { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+.ft-search-bar {
+  display: flex; align-items: center; gap: 8px;
+  border: 1px solid #4a7c59; border-radius: 30px; padding: 8px 20px; min-width: 200px;
+}
+.ft-search-icon { font-size: 14px; }
+.ft-search-input { border: none; background: none; outline: none; font-size: 14px; color: #4a7c59; width: 100%; }
+.ft-search-input::placeholder { color: #999; }
+.ft-voice-btn {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: #4a7c59; border: none; cursor: pointer;
+  font-size: 18px; display: flex; align-items: center; justify-content: center;
+}
+
+.ft-title {
+  font-family: 'Inria Serif', serif; font-weight: 700;
+  font-size: 36px; color: #4a7c59; margin: 0;
+  padding: 24px 40px 16px; text-align: center;
+}
+
+.ft-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 20px; padding: 0 60px 60px;
+}
+
+.ft-card {
+  background: #4a7c59; border: none; border-radius: 16px;
+  padding: 40px 24px; cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 140px; display: flex; align-items: flex-end;
+}
+.ft-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(74,124,89,0.25); }
+
+.ft-card-label {
+  font-family: 'Inria Serif', serif; font-weight: 700;
+  font-size: 28px; color: #dcfce8;
+}
+
+@media (max-width: 768px) {
+  .ft-grid { grid-template-columns: repeat(2, 1fr); padding: 0 20px 40px; gap: 12px; }
+  .ft-card-label { font-size: 20px; }
+  .ft-card { min-height: 100px; padding: 24px 16px; }
+}
