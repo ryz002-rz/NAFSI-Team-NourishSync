@@ -71,7 +71,7 @@ function SearchHeader({ backTo, activeNav = 'home', navPrefix = '/customer', onS
       <div className="sh-center">
         <div className="sh-search-bar">
           <span className="sh-search-icon">🔍</span>
-          <input className="sh-search-input" placeholder={t('ui.search')} aria-label={t('ui.search')}
+          <input className="sh-search-input" placeholder={t('ui.searchPlaceholder')} aria-label={t('ui.search')}
             value={query} onChange={handleChange} onKeyDown={handleKeyDown} />
           <button className={`sh-mic-btn${listening ? ' sh-mic-btn--active' : ''}`}
             onClick={handleVoice} aria-label="Voice search">

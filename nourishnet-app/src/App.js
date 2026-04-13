@@ -27,6 +27,10 @@ import VolunteerSkillDetailPage from './UI/VolunteerSkillDetailPage';
 import VolunteerLanguageDetailPage from './UI/VolunteerLanguageDetailPage';
 import VolunteerMapPage from './UI/VolunteerMapPage';
 import VolunteerSearchResultsPage from './UI/VolunteerSearchResultsPage';
+import VolunteerSkillsPage from './UI/VolunteerSkillsPage';
+import VolunteerLanguagesPage from './UI/VolunteerLanguagesPage';
+import VolunteerUrgentPage from './UI/VolunteerUrgentPage';
+import VolunteerNearbyPage from './UI/VolunteerNearbyPage';
 import './utils/i18n';
 
 function App() {
@@ -69,6 +73,11 @@ function App() {
         <Route path="/volunteer/language/:languageName" element={<VolunteerLanguageDetailPage />} />
         <Route path="/volunteer/map" element={<VolunteerMapPage />} />
         <Route path="/volunteer/search" element={<VolunteerSearchResultsPage />} />
+        <Route path="/volunteer/skills" element={<VolunteerSkillsPage />} />
+        <Route path="/volunteer/languages" element={<VolunteerLanguagesPage />} />
+        <Route path="/volunteer/urgent" element={<VolunteerUrgentPage />} />
+        <Route path="/volunteer/nearby" element={<VolunteerNearbyPage />} />
+        <Route path="/volunteer/about" element={<AboutPage />} />
 
         {/* Redirects */}
         <Route path="/family" element={<Navigate to="/customer" replace />} />

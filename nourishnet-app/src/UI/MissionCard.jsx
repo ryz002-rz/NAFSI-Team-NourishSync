@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './MissionCard.css';
 
@@ -25,9 +26,21 @@ export function getUrgencyLevel(insecurityIndex) {
  */
 function MissionCard({ mission, location, onSignUp }) {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [expanded, setExpanded] = useState(false);
+  const [signUpStep, setSignUpStep] = useState(0); // 0=button, 1=form, 2=confirmed
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', transportation: '', hours: '' });
 
   if (!mission || !location) return null;
+
+  const handleSubmit = () => {
+    if (onSignUp) onSignUp(mission, location, formData);
+    setSignUpStep(2);
+    setTimeout(() => setSignUpStep(0), 5000);
+  };
+
+  const updateField = (field, value) => setFormData(prev => ({ ...prev, [field]: value }));
+  const canSubmit = formData.name.trim() && formData.transportation && formData.hours;
 
   const urgency = getUrgencyLevel(location.insecurityIndex || 0);
   const addr = [location.address?.street, location.address?.city, location.address?.state, location.address?.zip].filter(Boolean).join(', ');
@@ -63,7 +76,7 @@ function MissionCard({ mission, location, onSignUp }) {
           <span className="vol-card-label">{t('volunteerPortal.skillsRequired')}</span>
           <div className="vol-card-badges">
             {skills.map(skill => (
-              <span key={skill} className="vol-card-badge vol-card-badge--skill">{skill}</span>
+              <span key={skill} className="vol-card-badge vol-card-badge--skill">{t(`skill.${skill}`, skill)}</span>
             ))}
           </div>
         </div>
@@ -75,7 +88,7 @@ function MissionCard({ mission, location, onSignUp }) {
           <span className="vol-card-label">{t('volunteerPortal.languagesNeeded')}</span>
           <div className="vol-card-badges">
             {languages.map(lang => (
-              <span key={lang} className="vol-card-badge vol-card-badge--lang">{lang}</span>
+              <span key={lang} className="vol-card-badge vol-card-badge--lang">{t(`lang.${lang}`, lang)}</span>
             ))}
           </div>
         </div>
@@ -87,18 +100,87 @@ function MissionCard({ mission, location, onSignUp }) {
           <div className="vol-card-loc-name">📍 {location.name}</div>
           {addr && <div className="vol-card-loc-addr">{addr}</div>}
           {location.hours && <div className="vol-card-loc-hours">🕐 {location.hours}</div>}
+          {location.phone && <div className="vol-card-loc-hours">📞 {location.phone}</div>}
+          {location.website && <div className="vol-card-loc-hours"><a href={location.website} target="_blank" rel="noopener noreferrer" style={{ color: '#4a7c59', textDecoration: 'underline' }}>🔗 {location.website}</a></div>}
+          <button className="vol-card-map-btn" onClick={() => navigate(`/volunteer/map?loc=${location.id}`)}>🗺️ {t('ui.showInMap')}</button>
         </div>
       </div>
 
       <div className="vol-card-footer">
-        {location.volunteersNeeded != null && (
+        {location.volunteersNeeded != null && signUpStep === 0 && (
           <span className="vol-card-volunteers">
             👥 {t('volunteerPortal.volunteersNeeded')}: {location.volunteersNeeded}
           </span>
         )}
-        <button className="vol-card-signup" onClick={() => onSignUp && onSignUp(mission, location)}>
-          {t('volunteerPortal.signUp')}
-        </button>
+
+        {/* Step 0: Sign Up button */}
+        {signUpStep === 0 && (
+          <button className="vol-card-signup" onClick={() => setSignUpStep(1)}>
+            {t('volunteerPortal.signUp')}
+          </button>
+        )}
+
+        {/* Step 1: Sign Up form */}
+        {signUpStep === 1 && (
+          <div className="vol-signup-form">
+            <div className="vol-signup-title">📋 {t('volunteerPortal.signUpFor')} {mission.title}</div>
+
+            <div className="vol-signup-field">
+              <label className="vol-signup-label">👤 {t('volunteerPortal.yourName')}</label>
+              <input className="vol-signup-input" type="text" placeholder="Full name" value={formData.name} onChange={e => updateField('name', e.target.value)} />
+            </div>
+
+            <div className="vol-signup-field">
+              <label className="vol-signup-label">📧 {t('volunteerPortal.yourEmail')}</label>
+              <input className="vol-signup-input" type="email" placeholder="email@example.com" value={formData.email} onChange={e => updateField('email', e.target.value)} />
+            </div>
+
+            <div className="vol-signup-field">
+              <label className="vol-signup-label">📞 {t('volunteerPortal.yourPhone')}</label>
+              <input className="vol-signup-input" type="tel" placeholder="(555) 123-4567" value={formData.phone} onChange={e => updateField('phone', e.target.value)} />
+            </div>
+
+            <div className="vol-signup-field">
+              <label className="vol-signup-label">🚗 {t('volunteerPortal.transportation')}</label>
+              <div className="vol-signup-options">
+                {[['own-car', '🚗', t('volunteerPortal.ownCar')], ['public-transit', '🚌', t('volunteerPortal.publicTransit')], ['need-ride', '🤝', t('volunteerPortal.needRide')]].map(([key, icon, label]) => (
+                  <button key={key} className={`vol-signup-opt${formData.transportation === key ? ' vol-signup-opt--active' : ''}`} onClick={() => updateField('transportation', key)}>
+                    <span>{icon}</span> <span>{label}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="vol-signup-field">
+              <label className="vol-signup-label">⏰ {t('volunteerPortal.hoursAvailable')}</label>
+              <div className="vol-signup-options">
+                {[['1-2', '1–2 hrs'], ['3-4', '3–4 hrs'], ['5+', '5+ hrs'], ['full-day', 'Full day']].map(([key, label]) => (
+                  <button key={key} className={`vol-signup-opt${formData.hours === key ? ' vol-signup-opt--active' : ''}`} onClick={() => updateField('hours', key)}>
+                    {label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="vol-signup-actions">
+              <button className="vol-signup-cancel" onClick={() => { setSignUpStep(0); setFormData({ name: '', email: '', phone: '', transportation: '', hours: '' }); }}>
+                ← {t('volunteerPortal.cancel')}
+              </button>
+              <button className="vol-signup-submit" onClick={handleSubmit} disabled={!canSubmit}>
+                ✅ {t('volunteerPortal.confirmSignUp')}
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Step 2: Confirmed */}
+        {signUpStep === 2 && (
+          <div className="vol-signup-thankyou">
+            <span className="vol-signup-thankyou-icon">🎉</span>
+            <div className="vol-signup-thankyou-title">{t('volunteerPortal.thankYou')}</div>
+            <div className="vol-signup-thankyou-msg">{t('volunteerPortal.thankYouMsg')}</div>
+          </div>
+        )}
       </div>
     </div>
   );

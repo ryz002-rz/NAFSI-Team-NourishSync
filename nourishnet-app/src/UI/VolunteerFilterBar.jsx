@@ -92,7 +92,7 @@ function VolunteerFilterBar({ allSkills, allLanguages, onFilter, totalCount, fil
               <div className="vol-fb-pills">
                 {allSkills.map(skill => (
                   <button key={skill} className={`vol-fb-pill${selectedSkills.has(skill) ? ' vol-fb-pill--active' : ''}`} onClick={() => toggleSkill(skill)}>
-                    {skill}
+                    {t(`skill.${skill}`, skill)}
                   </button>
                 ))}
               </div>
@@ -106,7 +106,7 @@ function VolunteerFilterBar({ allSkills, allLanguages, onFilter, totalCount, fil
               <div className="vol-fb-pills">
                 {allLanguages.map(lang => (
                   <button key={lang} className={`vol-fb-pill${selectedLanguages.has(lang) ? ' vol-fb-pill--active' : ''}`} onClick={() => toggleLanguage(lang)}>
-                    {lang}
+                    {t(`lang.${lang}`, lang)}
                   </button>
                 ))}
               </div>

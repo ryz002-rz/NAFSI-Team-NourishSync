@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from 'react';
-import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
 import VolunteerFilterBar from './VolunteerFilterBar';
@@ -7,32 +6,22 @@ import MissionCard from './MissionCard';
 import './FoodDetailPage.css';
 import locations from '../data/locations_final_merged.json';
 
-const locsWithMissions = locations.filter(l => l.missions && l.missions.length > 0);
-const ALL_SKILLS = [...new Set(locsWithMissions.flatMap(l => l.missions.flatMap(m => m.skillsRequired || [])))].sort();
-const ALL_LANGUAGES = [...new Set(locsWithMissions.flatMap(l => l.missions.flatMap(m => m.languagesNeeded || [])))].sort();
+const urgentLocs = locations.filter(l => l.missions && l.missions.length > 0 && (l.insecurityIndex || 0) >= 4);
 
-function VolunteerLanguageDetailPage() {
+const allFlat = urgentLocs
+  .sort((a, b) => (b.insecurityIndex || 0) - (a.insecurityIndex || 0))
+  .flatMap(loc => loc.missions.map(m => ({ mission: m, location: loc, urgencyLevel: loc.insecurityIndex || 0 })));
+
+const ALL_SKILLS = [...new Set(allFlat.flatMap(f => f.mission.skillsRequired || []))].sort();
+const ALL_LANGUAGES = [...new Set(allFlat.flatMap(f => f.mission.languagesNeeded || []))].sort();
+
+function VolunteerUrgentPage() {
   const { t } = useTranslation();
-  const { languageName } = useParams();
-  const decoded = decodeURIComponent(languageName);
   const [filters, setFilters] = useState({ skills: new Set(), languages: new Set(), sort: 'urgency' });
   const [searchQuery, setSearchQuery] = useState('');
 
-  const baseMissions = useMemo(() => {
-    const result = [];
-    locsWithMissions.forEach(loc => {
-      if (!loc.missions) return;
-      loc.missions.forEach(m => {
-        if ((m.languagesNeeded || []).some(l => l.toLowerCase() === decoded.toLowerCase())) {
-          result.push({ mission: m, location: loc, urgencyLevel: loc.insecurityIndex || 0 });
-        }
-      });
-    });
-    return result;
-  }, [decoded]);
-
   const filtered = useMemo(() => {
-    let result = [...baseMissions];
+    let result = [...allFlat];
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
       result = result.filter(({ mission: m, location: loc }) =>
@@ -46,14 +35,14 @@ function VolunteerLanguageDetailPage() {
     if (filters.sort === 'name') result.sort((a, b) => (a.location.name || '').localeCompare(b.location.name || ''));
     else result.sort((a, b) => b.urgencyLevel - a.urgencyLevel);
     return result;
-  }, [baseMissions, filters, searchQuery]);
+  }, [filters, searchQuery]);
 
   return (
     <div className="fd-root">
-      <SearchHeader backTo="/volunteer/languages" activeNav="home" navPrefix="/volunteer" onSearch={setSearchQuery} />
-      <h1 className="fd-title">{decoded}</h1>
-      <p className="fd-count">{filtered.length} of {baseMissions.length} {t('results.missions')}</p>
-      <VolunteerFilterBar allSkills={ALL_SKILLS} allLanguages={ALL_LANGUAGES} onFilter={setFilters} totalCount={baseMissions.length} filteredCount={filtered.length} />
+      <SearchHeader backTo="/volunteer" activeNav="home" navPrefix="/volunteer" onSearch={setSearchQuery} />
+      <h1 className="fd-title">{t('volunteerPortal.urgentMissions')}</h1>
+      <p className="fd-count">{filtered.length} of {allFlat.length} {t('results.missions')}</p>
+      <VolunteerFilterBar allSkills={ALL_SKILLS} allLanguages={ALL_LANGUAGES} onFilter={setFilters} totalCount={allFlat.length} filteredCount={filtered.length} />
       <div className="fd-list">
         {filtered.map((item, idx) => (
           <MissionCard key={`${item.location.id}-${idx}`} mission={item.mission} location={item.location} />
@@ -64,4 +53,4 @@ function VolunteerLanguageDetailPage() {
   );
 }
 
-export default VolunteerLanguageDetailPage;
+export default VolunteerUrgentPage;

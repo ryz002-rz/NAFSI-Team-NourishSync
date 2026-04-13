@@ -51,7 +51,7 @@ function VolunteerPage() {
       <section className="vol-section anim-fade-up anim-d1">
         <div className="vol-section-row">
           <h2 className="vol-section-title">{t('volunteerPortal.urgentMissions')}</h2>
-          <button className="vol-section-arrow" onClick={() => navigate('/volunteer/missions?sort=urgency')} aria-label={t('volunteerPortal.urgentMissions')}>
+          <button className="vol-section-arrow" onClick={() => navigate('/volunteer/urgent')} aria-label={t('volunteerPortal.urgentMissions')}>
             <Arrow />
           </button>
         </div>
@@ -66,7 +66,7 @@ function VolunteerPage() {
       <section className="vol-section anim-fade-up anim-d2">
         <div className="vol-section-row">
           <h2 className="vol-section-title">{t('volunteerPortal.nearbyOpportunities')}</h2>
-          <button className="vol-section-arrow" onClick={() => navigate('/volunteer/missions')} aria-label={t('volunteerPortal.nearbyOpportunities')}>
+          <button className="vol-section-arrow" onClick={() => navigate('/volunteer/nearby')} aria-label={t('volunteerPortal.nearbyOpportunities')}>
             <Arrow />
           </button>
         </div>
@@ -81,14 +81,14 @@ function VolunteerPage() {
       <section className="vol-section anim-fade-up anim-d3">
         <div className="vol-section-row">
           <h2 className="vol-section-title">{t('volunteerPortal.browseBySkill')}</h2>
-          <button className="vol-section-arrow" onClick={() => navigate('/volunteer/missions')} aria-label={t('volunteerPortal.browseBySkill')}>
+          <button className="vol-section-arrow" onClick={() => navigate('/volunteer/skills')} aria-label={t('volunteerPortal.browseBySkill')}>
             <Arrow />
           </button>
         </div>
         <div className="vol-hscroll" ref={r3} {...drag(r3)}>
           {ALL_SKILLS.map(skill => (
             <button key={skill} className="vol-green-card" onClick={() => navigate(`/volunteer/skill/${encodeURIComponent(skill)}`)}>
-              <span className="vol-green-label">{skill}</span>
+              <span className="vol-green-label">{t(`skill.${skill}`, skill)}</span>
             </button>
           ))}
         </div>
@@ -98,14 +98,14 @@ function VolunteerPage() {
       <section className="vol-section anim-fade-up anim-d4">
         <div className="vol-section-row">
           <h2 className="vol-section-title">{t('volunteerPortal.browseByLanguage')}</h2>
-          <button className="vol-section-arrow" onClick={() => navigate('/volunteer/missions')} aria-label={t('volunteerPortal.browseByLanguage')}>
+          <button className="vol-section-arrow" onClick={() => navigate('/volunteer/languages')} aria-label={t('volunteerPortal.browseByLanguage')}>
             <Arrow />
           </button>
         </div>
         <div className="vol-hscroll" ref={r4} {...drag(r4)}>
           {ALL_LANGUAGES.map(lang => (
             <button key={lang} className="vol-green-card" onClick={() => navigate(`/volunteer/language/${encodeURIComponent(lang)}`)}>
-              <span className="vol-green-label">{lang}</span>
+              <span className="vol-green-label">{t(`lang.${lang}`, lang)}</span>
             </button>
           ))}
         </div>

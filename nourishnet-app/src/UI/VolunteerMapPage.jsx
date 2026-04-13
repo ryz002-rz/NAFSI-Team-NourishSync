@@ -198,7 +198,7 @@ function VolunteerMapPage() {
             <label className="mp-filter-label">{t('volunteerPortal.filterBySkill')}</label>
             <div className="mp-tag-list">
               {ALL_SKILLS.map(s => (
-                <button key={s} className={`mp-tag${selectedSkills.has(s) ? ' mp-tag--active' : ''}`} onClick={() => toggleSkill(s)}>{s}</button>
+                <button key={s} className={`mp-tag${selectedSkills.has(s) ? ' mp-tag--active' : ''}`} onClick={() => toggleSkill(s)}>{t(`skill.${s}`, s)}</button>
               ))}
             </div>
           </div>
@@ -207,7 +207,7 @@ function VolunteerMapPage() {
             <label className="mp-filter-label">{t('volunteerPortal.filterByLanguage')}</label>
             <div className="mp-tag-list">
               {ALL_LANGUAGES.map(l => (
-                <button key={l} className={`mp-tag${selectedLanguages.has(l) ? ' mp-tag--active' : ''}`} onClick={() => toggleLanguage(l)}>{l}</button>
+                <button key={l} className={`mp-tag${selectedLanguages.has(l) ? ' mp-tag--active' : ''}`} onClick={() => toggleLanguage(l)}>{t(`lang.${l}`, l)}</button>
               ))}
             </div>
           </div>
