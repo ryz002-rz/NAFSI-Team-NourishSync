@@ -44,7 +44,8 @@ function SearchHeader({ backTo, activeNav = 'home', navPrefix = '/customer' }) {
             onClick={() => navigate(navPrefix)}>{t('ui.home')}</button>
           <button className={`sh-nav-btn${activeNav === 'map' ? ' sh-nav-btn--active' : ''}`}
             onClick={() => navigate(`${navPrefix}/map`)}>{t('ui.map')}</button>
-          <button className="sh-nav-btn">{t('ui.aboutUs')}</button>
+          <button className={`sh-nav-btn${activeNav === 'about' ? ' sh-nav-btn--active' : ''}`}
+          onClick={() => navigate(`${navPrefix}/about`)}>{t('ui.aboutUs')}</button>
         </nav>
       </div>
 
