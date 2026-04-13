@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { translateHours } from '../utils/translateHours';
+import { translateMissionTitle, translateMissionDesc } from '../utils/missionI18n';
 import './MissionCard.css';
 
 /**
@@ -52,7 +53,7 @@ function MissionCard({ mission, location, onSignUp }) {
     <div className="vol-card">
       <div className="vol-card-top">
         <div className="vol-card-header">
-          <span className="vol-card-title">{mission.title}</span>
+          <span className="vol-card-title">{translateMissionTitle(mission.title, t)}</span>
           <span className="vol-card-urgency" style={{ color: urgency.color }}>
             {urgency.emoji} {t(`volunteerPortal.${urgency.label}`)}
           </span>
@@ -65,7 +66,7 @@ function MissionCard({ mission, location, onSignUp }) {
         </button>
       </div>
 
-      <p className="vol-card-desc">{mission.description}</p>
+      <p className="vol-card-desc">{translateMissionDesc(mission.title, mission.description, t)}</p>
 
       {mission.date && (
         <span className="vol-card-date">📅 {mission.date}</span>
@@ -124,7 +125,7 @@ function MissionCard({ mission, location, onSignUp }) {
         {/* Step 1: Sign Up form */}
         {signUpStep === 1 && (
           <div className="vol-signup-form">
-            <div className="vol-signup-title">📋 {t('volunteerPortal.signUpFor')} {mission.title}</div>
+            <div className="vol-signup-title">📋 {t('volunteerPortal.signUpFor')} {translateMissionTitle(mission.title, t)}</div>
 
             <div className="vol-signup-field">
               <label className="vol-signup-label">👤 {t('volunteerPortal.yourName')}</label>

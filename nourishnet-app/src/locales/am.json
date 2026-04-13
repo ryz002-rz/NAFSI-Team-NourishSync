@@ -382,6 +382,48 @@
     "Amharic": "አማርኛ",
     "Tagalog": "ታጋሎግ"
   },
+  "mission": {
+    "title": {
+      "client_intake_assistant": "የደንበኛ ምዝገባ ረዳት",
+      "delivery_route_helper": "የማድረሻ መስመር ረዳት",
+      "warehouse_organizer": "የመጋዘን አደራጅ",
+      "fresh_produce_sorter": "የትኩስ ምርት መደርደሪያ",
+      "food_distribution_volunteer": "የምግብ ስርጭት በጎ ፈቃደኛ",
+      "youth_cap_volunteer": "የወጣቶች CAP በጎ ፈቃደኛ",
+      "nutrition_education_assistant": "የአመጋገብ ትምህርት ረዳት",
+      "donation_pickup_driver": "የልገሳ ማንሻ ሹፌር",
+      "meal_prep_volunteer": "የምግብ ዝግጅት በጎ ፈቃደኛ",
+      "event_setup_crew": "የዝግጅት ማዘጋጃ ቡድን",
+      "food_distribution_assistant": "የምግብ ስርጭት ረዳት",
+      "childcare_helper": "የልጆች እንክብካቤ ረዳት",
+      "community_outreach_coordinator": "የማህበረሰብ ግንኙነት አስተባባሪ",
+      "data_entry_volunteer": "የመረጃ ማስገቢያ በጎ ፈቃደኛ",
+      "food_pantry_volunteer": "የምግብ ማከማቻ በጎ ፈቃደኛ",
+      "weekend_distribution_volunteer": "የሳምንት መጨረሻ ስርጭት በጎ ፈቃደኛ",
+      "mobile_pantry_driver": "የተንቀሳቃሽ ምግብ ማከማቻ ሹፌር",
+      "translation_support": "የትርጉም ድጋፍ"
+    },
+    "desc": {
+      "client_intake_assistant": "አዳዲስ ደንበኞችን ለመመዝገብ እና በምዝገባ ሂደቱ ውስጥ ለመምራት ይረዱ።",
+      "delivery_route_helper": "በታቀዱ መስመሮች ላይ የምግብ ሳጥኖችን ለመጫን እና ለማድረስ ይረዱ።",
+      "warehouse_organizer": "በመጋዘን ውስጥ የተለገሱ ምግቦችን ይደርድሩ፣ ይሰይሙ እና ያደራጁ።",
+      "fresh_produce_sorter": "ለስርጭት ትኩስ ፍራፍሬዎችን እና አትክልቶችን ይመርምሩ፣ ይደርድሩ እና ያሽጉ።",
+      "food_distribution_volunteer": "በ1ኛ እና 3ኛ እሑድ በተንቀሳቃሽ ምግብ ማከማቻ ዝግጅቶች ላይ ባህላዊ ተስማሚ ምግብ ለማሰራጨት ይረዱ።",
+      "youth_cap_volunteer": "ለወጣቶች የማህበረሰብ ግንኙነቶችን የሚገነቡ አገልግሎት ተኮር የበጎ ፈቃደኝነት ዕድሎች።",
+      "nutrition_education_assistant": "የአመጋገብ ወርክሾፖችን እና የማብሰያ ማሳያዎችን ለማመቻቸት ይረዱ።",
+      "donation_pickup_driver": "ከአካባቢ ንግዶች የምግብ ልገሳዎችን ያንሱ እና ወደ ምግብ ማከማቻ ያጓጉዙ።",
+      "meal_prep_volunteer": "በማህበረሰብ ማብሰያ ቤት ለስርጭት የተመጣጠነ ምግብ ያዘጋጁ።",
+      "event_setup_crew": "ለምግብ ስርጭት ዝግጅቶች ጠረጴዛዎችን፣ ምልክቶችን እና ቁሳቁሶችን ያዘጋጁ።",
+      "food_distribution_assistant": "ለሚያስፈልጋቸው የማህበረሰብ አባላት የምግብ ጥቅሎችን ለመደርደር እና ለማሰራጨት ይረዱ።",
+      "childcare_helper": "ወላጆቻቸው የምግብ እርዳታ አገልግሎቶችን ሲያገኙ ልጆችን ይከታተሉ።",
+      "community_outreach_coordinator": "ስለሚገኙ የምግብ ሀብቶች ግንዛቤ ለማሳደግ ከአካባቢ ነዋሪዎች ጋር ይገናኙ።",
+      "data_entry_volunteer": "የደንበኛ መረጃ እና የእቃ ክምችት መረጃ ወደ ክትትል ስርዓቱ ያስገቡ።",
+      "food_pantry_volunteer": "በAccokeek ምግብ ማከማቻ ውስጥ ምግብ ለማሰራጨት ይረዱ። 2-4 ሰዓት ፈረቃዎች።",
+      "weekend_distribution_volunteer": "በአካባቢው ቤተሰቦችን የሚያገለግሉ የሳምንት መጨረሻ የምግብ ስርጭት ዝግጅቶችን ይረዱ።",
+      "mobile_pantry_driver": "ለበቂ አገልግሎት ወደማያገኙ ሰፈሮች የምግብ ቁሳቁሶችን ያሽከርክሩ እና ያድርሱ።",
+      "translation_support": "በምግብ ማከማቻ ውስጥ እንግሊዝኛ ለማይናገሩ ጎብኚዎች የቋንቋ እርዳታ ይስጡ።"
+    }
+  },
   "hours": {
     "monday": "ሰኞ",
     "tuesday": "ማክሰኞ",

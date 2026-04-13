@@ -382,6 +382,48 @@
     "Amharic": "Amharique",
     "Tagalog": "Tagalog"
   },
+  "mission": {
+    "title": {
+      "client_intake_assistant": "Assistant d'Accueil des Clients",
+      "delivery_route_helper": "Aide à la Livraison",
+      "warehouse_organizer": "Organisateur d'Entrepôt",
+      "fresh_produce_sorter": "Trieur de Produits Frais",
+      "food_distribution_volunteer": "Bénévole de Distribution Alimentaire",
+      "youth_cap_volunteer": "Bénévole Jeunesse CAP",
+      "nutrition_education_assistant": "Assistant en Éducation Nutritionnelle",
+      "donation_pickup_driver": "Chauffeur de Collecte de Dons",
+      "meal_prep_volunteer": "Bénévole de Préparation de Repas",
+      "event_setup_crew": "Équipe d'Installation d'Événements",
+      "food_distribution_assistant": "Assistant de Distribution Alimentaire",
+      "childcare_helper": "Aide à la Garde d'Enfants",
+      "community_outreach_coordinator": "Coordinateur de Sensibilisation Communautaire",
+      "data_entry_volunteer": "Bénévole de Saisie de Données",
+      "food_pantry_volunteer": "Bénévole de Garde-manger",
+      "weekend_distribution_volunteer": "Bénévole de Distribution du Week-end",
+      "mobile_pantry_driver": "Chauffeur de Garde-manger Mobile",
+      "translation_support": "Soutien à la Traduction"
+    },
+    "desc": {
+      "client_intake_assistant": "Aider à inscrire les nouveaux clients et les guider dans le processus d'accueil.",
+      "delivery_route_helper": "Aider au chargement et à la livraison de caisses alimentaires sur les itinéraires prévus.",
+      "warehouse_organizer": "Trier, étiqueter et organiser les denrées alimentaires données dans l'entrepôt.",
+      "fresh_produce_sorter": "Inspecter, trier et emballer les fruits et légumes frais pour la distribution.",
+      "food_distribution_volunteer": "Aider à distribuer des aliments culturellement adaptés lors d'événements de garde-manger mobile les 1er et 3e dimanches.",
+      "youth_cap_volunteer": "Opportunités de bénévolat orientées vers le service pour les jeunes, créant des liens communautaires.",
+      "nutrition_education_assistant": "Aider à animer des ateliers de nutrition et des démonstrations culinaires.",
+      "donation_pickup_driver": "Collecter les dons alimentaires auprès des commerces locaux et les transporter au garde-manger.",
+      "meal_prep_volunteer": "Préparer des repas nutritifs pour la distribution à la cuisine communautaire.",
+      "event_setup_crew": "Installer tables, signalisation et fournitures pour les événements de distribution alimentaire.",
+      "food_distribution_assistant": "Aider à trier et distribuer des colis alimentaires aux membres de la communauté dans le besoin.",
+      "childcare_helper": "Surveiller les enfants pendant que leurs parents accèdent aux services d'aide alimentaire.",
+      "community_outreach_coordinator": "Entrer en contact avec les résidents locaux pour sensibiliser aux ressources alimentaires disponibles.",
+      "data_entry_volunteer": "Saisir les informations des clients et les données d'inventaire dans le système de suivi.",
+      "food_pantry_volunteer": "Aider à la distribution alimentaire au garde-manger d'Accokeek. Créneaux de 2 à 4 heures.",
+      "weekend_distribution_volunteer": "Aider lors des événements de distribution alimentaire du week-end au service des familles de la région.",
+      "mobile_pantry_driver": "Conduire et livrer des fournitures alimentaires dans les quartiers mal desservis.",
+      "translation_support": "Fournir une assistance linguistique aux visiteurs non anglophones au garde-manger."
+    }
+  },
   "hours": {
     "monday": "Lundi",
     "tuesday": "Mardi",

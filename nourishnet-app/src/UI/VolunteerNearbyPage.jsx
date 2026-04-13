@@ -5,6 +5,7 @@ import SearchHeader from './SearchHeader';
 import VolunteerFilterBar from './VolunteerFilterBar';
 import { getUrgencyLevel } from './MissionCard';
 import { translateHours } from '../utils/translateHours';
+import { translateMissionTitle } from '../utils/missionI18n';
 import './NearbyPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -91,7 +92,7 @@ function VolNbCard({ loc, t, navigate }) {
       </div>
       <div className="nb-card-bottom">
         <div className="nb-card-tags">
-          {(loc.missions || []).slice(0, 3).map((m, i) => (<span key={i} className="nb-card-tag">{m.title}</span>))}
+          {(loc.missions || []).slice(0, 3).map((m, i) => (<span key={i} className="nb-card-tag">{translateMissionTitle(m.title, t)}</span>))}
         </div>
         <a className="nb-card-dir" href={dirUrl} target="_blank" rel="noopener noreferrer">{t('ui.getDirections')}</a>
       </div>

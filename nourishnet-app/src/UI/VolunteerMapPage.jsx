@@ -8,6 +8,7 @@ import SearchHeader from './SearchHeader';
 import MissionCard from './MissionCard';
 import { getUrgencyLevel } from './MissionCard';
 import { translateHours } from '../utils/translateHours';
+import { translateMissionTitle } from '../utils/missionI18n';
 import './VolunteerMapPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -279,7 +280,7 @@ function VolunteerMapPage() {
                     <div className="vm-mission-list">
                       {(currentCard.missions || []).map((m, i) => (
                         <div key={i} className="vm-mission-item">
-                          <span className="vm-mission-item-title">{m.title}</span>
+                          <span className="vm-mission-item-title">{translateMissionTitle(m.title, t)}</span>
                           <span className="vm-mission-item-skills">{(m.skillsRequired || []).join(', ')}</span>
                         </div>
                       ))}

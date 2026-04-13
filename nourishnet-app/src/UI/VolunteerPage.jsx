@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
 import MissionCard from './MissionCard';
 import { translateHours } from '../utils/translateHours';
+import { translateMissionTitle } from '../utils/missionI18n';
 import './VolunteerPage.css';
 import locations from '../data/locations_final_merged.json';
 
@@ -154,7 +155,7 @@ function VolLocCard({ loc, t, navigate }) {
         <div className="vol-loc-bottom">
           <div className="vol-loc-tags">
             {(loc.missions || []).slice(0, 3).map((m, i) => (
-              <span key={i} className="vol-loc-tag">{m.title}</span>
+              <span key={i} className="vol-loc-tag">{translateMissionTitle(m.title, t)}</span>
             ))}
           </div>
           <a className="vol-loc-dir" href={dirUrl} target="_blank" rel="noopener noreferrer">{t('ui.getDirections')}</a>

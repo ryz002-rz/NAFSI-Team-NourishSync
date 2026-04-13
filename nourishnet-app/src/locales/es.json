@@ -382,6 +382,48 @@
     "Amharic": "Amárico",
     "Tagalog": "Tagalo"
   },
+  "mission": {
+    "title": {
+      "client_intake_assistant": "Asistente de Registro de Clientes",
+      "delivery_route_helper": "Ayudante de Ruta de Entrega",
+      "warehouse_organizer": "Organizador de Almacén",
+      "fresh_produce_sorter": "Clasificador de Productos Frescos",
+      "food_distribution_volunteer": "Voluntario de Distribución de Alimentos",
+      "youth_cap_volunteer": "Voluntario Juvenil CAP",
+      "nutrition_education_assistant": "Asistente de Educación Nutricional",
+      "donation_pickup_driver": "Conductor de Recogida de Donaciones",
+      "meal_prep_volunteer": "Voluntario de Preparación de Comidas",
+      "event_setup_crew": "Equipo de Montaje de Eventos",
+      "food_distribution_assistant": "Asistente de Distribución de Alimentos",
+      "childcare_helper": "Ayudante de Cuidado Infantil",
+      "community_outreach_coordinator": "Coordinador de Alcance Comunitario",
+      "data_entry_volunteer": "Voluntario de Entrada de Datos",
+      "food_pantry_volunteer": "Voluntario de Despensa de Alimentos",
+      "weekend_distribution_volunteer": "Voluntario de Distribución de Fin de Semana",
+      "mobile_pantry_driver": "Conductor de Despensa Móvil",
+      "translation_support": "Apoyo de Traducción"
+    },
+    "desc": {
+      "client_intake_assistant": "Ayudar a registrar nuevos clientes y guiarlos en el proceso de admisión.",
+      "delivery_route_helper": "Asistir con la carga y entrega de cajas de alimentos en rutas programadas.",
+      "warehouse_organizer": "Clasificar, etiquetar y organizar alimentos donados en el almacén.",
+      "fresh_produce_sorter": "Inspeccionar, clasificar y empaquetar frutas y verduras frescas para distribución.",
+      "food_distribution_volunteer": "Ayudar a distribuir alimentos culturalmente apropiados en eventos de despensa móvil los domingos 1° y 3°.",
+      "youth_cap_volunteer": "Oportunidades de voluntariado orientadas al servicio para jóvenes, construyendo conexiones comunitarias.",
+      "nutrition_education_assistant": "Ayudar a facilitar talleres de nutrición y demostraciones de cocina.",
+      "donation_pickup_driver": "Recoger donaciones de alimentos de negocios locales y transportarlas a la despensa.",
+      "meal_prep_volunteer": "Preparar comidas nutritivas para distribución en la cocina comunitaria.",
+      "event_setup_crew": "Montar mesas, señalización y suministros para eventos de distribución de alimentos.",
+      "food_distribution_assistant": "Ayudar a clasificar y distribuir paquetes de alimentos a miembros de la comunidad necesitados.",
+      "childcare_helper": "Supervisar niños mientras sus padres acceden a servicios de asistencia alimentaria.",
+      "community_outreach_coordinator": "Conectar con residentes locales para crear conciencia sobre los recursos alimentarios disponibles.",
+      "data_entry_volunteer": "Ingresar información de clientes y datos de inventario en el sistema de seguimiento.",
+      "food_pantry_volunteer": "Ayudar con la distribución de alimentos en la despensa de Accokeek. Turnos de 2-4 horas.",
+      "weekend_distribution_volunteer": "Asistir con eventos de distribución de alimentos de fin de semana sirviendo a familias del área.",
+      "mobile_pantry_driver": "Conducir y entregar suministros alimentarios a vecindarios desatendidos.",
+      "translation_support": "Proporcionar asistencia lingüística a visitantes que no hablan inglés en la despensa de alimentos."
+    }
+  },
   "hours": {
     "monday": "Lunes",
     "tuesday": "Martes",

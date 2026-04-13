@@ -382,6 +382,48 @@
     "Amharic": "Amharic",
     "Tagalog": "Tagalog"
   },
+  "mission": {
+    "title": {
+      "client_intake_assistant": "Katulong sa Pagtanggap ng Kliyente",
+      "delivery_route_helper": "Katulong sa Ruta ng Paghahatid",
+      "warehouse_organizer": "Tagapag-ayos ng Bodega",
+      "fresh_produce_sorter": "Tagapag-uri ng Sariwang Produkto",
+      "food_distribution_volunteer": "Boluntaryo sa Pamamahagi ng Pagkain",
+      "youth_cap_volunteer": "Kabataang Boluntaryo ng CAP",
+      "nutrition_education_assistant": "Katulong sa Edukasyon sa Nutrisyon",
+      "donation_pickup_driver": "Driver ng Pagkuha ng Donasyon",
+      "meal_prep_volunteer": "Boluntaryo sa Paghahanda ng Pagkain",
+      "event_setup_crew": "Grupo ng Pag-setup ng Event",
+      "food_distribution_assistant": "Katulong sa Pamamahagi ng Pagkain",
+      "childcare_helper": "Katulong sa Pag-aalaga ng Bata",
+      "community_outreach_coordinator": "Koordineytor ng Pakikipag-ugnayan sa Komunidad",
+      "data_entry_volunteer": "Boluntaryo sa Pag-encode ng Data",
+      "food_pantry_volunteer": "Boluntaryo sa Pantry ng Pagkain",
+      "weekend_distribution_volunteer": "Boluntaryo sa Pamamahagi sa Weekend",
+      "mobile_pantry_driver": "Driver ng Mobile Pantry",
+      "translation_support": "Suporta sa Pagsasalin"
+    },
+    "desc": {
+      "client_intake_assistant": "Tumulong sa pagpaparehistro ng mga bagong kliyente at gabayan sila sa proseso ng pagtanggap.",
+      "delivery_route_helper": "Tumulong sa pagkarga at paghahatid ng mga kahon ng pagkain sa mga nakatakdang ruta.",
+      "warehouse_organizer": "Mag-uri, mag-label, at mag-ayos ng mga idinonate na pagkain sa bodega.",
+      "fresh_produce_sorter": "Suriin, pag-uri-uriin, at i-package ang mga sariwang prutas at gulay para sa pamamahagi.",
+      "food_distribution_volunteer": "Tumulong sa pamamahagi ng kulturang angkop na pagkain sa mga mobile pantry event tuwing ika-1 at ika-3 Linggo.",
+      "youth_cap_volunteer": "Mga oportunidad sa boluntaryo na nakatuon sa serbisyo para sa kabataan, nagtatayo ng koneksyon sa komunidad.",
+      "nutrition_education_assistant": "Tumulong sa pagpapadali ng mga workshop sa nutrisyon at demonstrasyon sa pagluluto.",
+      "donation_pickup_driver": "Kunin ang mga donasyong pagkain mula sa mga lokal na negosyo at dalhin sa pantry.",
+      "meal_prep_volunteer": "Maghanda ng masustansyang pagkain para sa pamamahagi sa community kitchen.",
+      "event_setup_crew": "Mag-setup ng mga mesa, karatula, at mga supply para sa mga event ng pamamahagi ng pagkain.",
+      "food_distribution_assistant": "Tumulong sa pag-uri at pamamahagi ng mga pakete ng pagkain sa mga miyembro ng komunidad na nangangailangan.",
+      "childcare_helper": "Bantayan ang mga bata habang ang kanilang mga magulang ay kumukuha ng serbisyo sa tulong sa pagkain.",
+      "community_outreach_coordinator": "Makipag-ugnayan sa mga lokal na residente upang itaas ang kamalayan tungkol sa mga available na mapagkukunan ng pagkain.",
+      "data_entry_volunteer": "I-encode ang impormasyon ng kliyente at data ng imbentaryo sa tracking system.",
+      "food_pantry_volunteer": "Tumulong sa pamamahagi ng pagkain sa Accokeek pantry. 2-4 oras na shift.",
+      "weekend_distribution_volunteer": "Tumulong sa mga event ng pamamahagi ng pagkain sa weekend na nagsisilbi sa mga pamilya sa lugar.",
+      "mobile_pantry_driver": "Magmaneho at maghatid ng mga supply ng pagkain sa mga kulang sa serbisyong kapitbahayan.",
+      "translation_support": "Magbigay ng tulong sa wika sa mga bisitang hindi nagsasalita ng Ingles sa food pantry."
+    }
+  },
   "hours": {
     "monday": "Lunes",
     "tuesday": "Martes",

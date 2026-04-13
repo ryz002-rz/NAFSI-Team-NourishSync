@@ -382,6 +382,48 @@
     "Amharic": "Amharic",
     "Tagalog": "Tagalog"
   },
+  "mission": {
+    "title": {
+      "client_intake_assistant": "Client Intake Assistant",
+      "delivery_route_helper": "Delivery Route Helper",
+      "warehouse_organizer": "Warehouse Organizer",
+      "fresh_produce_sorter": "Fresh Produce Sorter",
+      "food_distribution_volunteer": "Food Distribution Volunteer",
+      "youth_cap_volunteer": "Youth CAP Volunteer",
+      "nutrition_education_assistant": "Nutrition Education Assistant",
+      "donation_pickup_driver": "Donation Pickup Driver",
+      "meal_prep_volunteer": "Meal Prep Volunteer",
+      "event_setup_crew": "Event Setup Crew",
+      "food_distribution_assistant": "Food Distribution Assistant",
+      "childcare_helper": "Childcare Helper",
+      "community_outreach_coordinator": "Community Outreach Coordinator",
+      "data_entry_volunteer": "Data Entry Volunteer",
+      "food_pantry_volunteer": "Food Pantry Volunteer",
+      "weekend_distribution_volunteer": "Weekend Distribution Volunteer",
+      "mobile_pantry_driver": "Mobile Pantry Driver",
+      "translation_support": "Translation Support"
+    },
+    "desc": {
+      "client_intake_assistant": "Help register new clients and guide them through the intake process.",
+      "delivery_route_helper": "Assist with loading and delivering food boxes along scheduled routes.",
+      "warehouse_organizer": "Sort, label, and organize donated food items in the storage facility.",
+      "fresh_produce_sorter": "Inspect, sort, and package fresh fruits and vegetables for distribution.",
+      "food_distribution_volunteer": "Help distribute culturally appropriate food at mobile pantry events on 1st and 3rd Sundays",
+      "youth_cap_volunteer": "Service-oriented volunteer opportunities building community connections for youth",
+      "nutrition_education_assistant": "Help facilitate nutrition workshops and cooking demonstrations.",
+      "donation_pickup_driver": "Pick up food donations from local businesses and transport them to the pantry.",
+      "meal_prep_volunteer": "Prepare nutritious meals for distribution at the community kitchen.",
+      "event_setup_crew": "Set up tables, signage, and supplies for food distribution events.",
+      "food_distribution_assistant": "Help sort and distribute food packages to community members in need.",
+      "childcare_helper": "Supervise children while their parents access food assistance services.",
+      "community_outreach_coordinator": "Connect with local residents to raise awareness about available food resources.",
+      "data_entry_volunteer": "Enter client information and inventory data into the tracking system.",
+      "food_pantry_volunteer": "Help with food distribution at the Accokeek pantry. 2-4 hour shifts.",
+      "weekend_distribution_volunteer": "Assist with weekend food distribution events serving families in the area.",
+      "mobile_pantry_driver": "Drive and deliver food supplies to underserved neighborhoods.",
+      "translation_support": "Provide language assistance to non-English speaking visitors at the food pantry."
+    }
+  },
   "hours": {
     "monday": "Monday",
     "tuesday": "Tuesday",

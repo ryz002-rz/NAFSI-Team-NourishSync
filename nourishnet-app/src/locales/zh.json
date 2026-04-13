@@ -382,6 +382,48 @@
     "Amharic": "阿姆哈拉语",
     "Tagalog": "他加禄语"
   },
+  "mission": {
+    "title": {
+      "client_intake_assistant": "客户登记助理",
+      "delivery_route_helper": "配送路线助手",
+      "warehouse_organizer": "仓库整理员",
+      "fresh_produce_sorter": "新鲜农产品分拣员",
+      "food_distribution_volunteer": "食品分发志愿者",
+      "youth_cap_volunteer": "青年社区行动志愿者",
+      "nutrition_education_assistant": "营养教育助理",
+      "donation_pickup_driver": "捐赠物品取件司机",
+      "meal_prep_volunteer": "备餐志愿者",
+      "event_setup_crew": "活动布置人员",
+      "food_distribution_assistant": "食品分发助理",
+      "childcare_helper": "儿童看护助手",
+      "community_outreach_coordinator": "社区外展协调员",
+      "data_entry_volunteer": "数据录入志愿者",
+      "food_pantry_volunteer": "食品储藏室志愿者",
+      "weekend_distribution_volunteer": "周末分发志愿者",
+      "mobile_pantry_driver": "流动食品储藏室司机",
+      "translation_support": "翻译支持"
+    },
+    "desc": {
+      "client_intake_assistant": "帮助登记新客户并引导他们完成登记流程。",
+      "delivery_route_helper": "协助按计划路线装载和配送食品箱。",
+      "warehouse_organizer": "在仓库中分类、标记和整理捐赠的食品。",
+      "fresh_produce_sorter": "检查、分拣和包装新鲜水果蔬菜以供分发。",
+      "food_distribution_volunteer": "在每月第1和第3个周日的流动食品储藏室活动中帮助分发文化适宜的食品。",
+      "youth_cap_volunteer": "面向青年的服务型志愿者机会，建立社区联系。",
+      "nutrition_education_assistant": "协助举办营养研讨会和烹饪示范活动。",
+      "donation_pickup_driver": "从当地商家取回食品捐赠并运送到食品储藏室。",
+      "meal_prep_volunteer": "在社区厨房准备营养餐食以供分发。",
+      "event_setup_crew": "为食品分发活动布置桌子、标牌和物资。",
+      "food_distribution_assistant": "帮助分拣和分发食品包给有需要的社区成员。",
+      "childcare_helper": "在家长获取食品援助服务时照看儿童。",
+      "community_outreach_coordinator": "与当地居民联系，提高对可用食品资源的认识。",
+      "data_entry_volunteer": "将客户信息和库存数据录入跟踪系统。",
+      "food_pantry_volunteer": "在Accokeek食品储藏室帮助分发食品。每班2-4小时。",
+      "weekend_distribution_volunteer": "协助周末食品分发活动，服务该地区的家庭。",
+      "mobile_pantry_driver": "驾车向服务不足的社区运送食品物资。",
+      "translation_support": "为食品储藏室的非英语访客提供语言协助。"
+    }
+  },
   "hours": {
     "monday": "星期一",
     "tuesday": "星期二",
