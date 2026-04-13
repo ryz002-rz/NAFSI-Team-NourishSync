@@ -1,110 +1,34 @@
 .about-root { min-height: 100vh; background: #dcfce8; font-family: 'Inter', sans-serif; }
-<<<<<<< Updated upstream
-.about-heading { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 56px; color: #4a7c59; margin: 0; padding: 40px 40px 48px; text-align: center; }
-.about-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 0 40px 60px; max-width: 1200px; margin: 0 auto; align-items: start; }
+.about-heading { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 56px; color: #4a7c59; margin: 0; padding: 40px 40px 16px; text-align: center; }
 
-/* Single background card containing everything */
-=======
-.about-heading { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 56px; color: #4a7c59; margin: 0; padding: 40px 40px 24px; text-align: center; }
-
-/* GitHub Repo Link */
-.about-repo {
-  display: flex; align-items: center; gap: 12px;
-  padding: 0 40px 36px; text-decoration: none;
-  max-width: 1200px; margin: 0 auto; transition: opacity 0.2s;
-}
+.about-repo { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 0 40px 36px; text-decoration: none; transition: opacity 0.2s; }
 .about-repo:hover { opacity: 0.7; }
 .about-repo-logo { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; }
 .about-repo-text { font-size: 22px; font-weight: 600; color: #1a1a1a; }
 
 .about-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 0 40px 60px; max-width: 1200px; margin: 0 auto; align-items: start; }
 
-/* Card */
->>>>>>> Stashed changes
-.about-card {
-  border: 1px solid rgba(74,124,89,0.25); border-radius: 20px;
-  background: rgba(255,255,255,0.4); padding: 16px;
-  display: flex; flex-direction: column;
-  transition: box-shadow 0.3s, transform 0.3s;
-}
+.about-card { border: 1px solid rgba(74,124,89,0.25); border-radius: 20px; background: rgba(255,255,255,0.4); padding: 16px; display: flex; flex-direction: column; transition: box-shadow 0.3s, transform 0.3s; }
 .about-card:hover { box-shadow: 0 10px 32px rgba(74,124,89,0.12); transform: translateY(-4px); }
 
-<<<<<<< Updated upstream
-/* Image inside the card — large by default, shrinks on expand */
-.about-img {
-  width: 100%; aspect-ratio: 1; object-fit: cover;
-  border-radius: 15px; display: block;
-  transition: width 0.5s cubic-bezier(0.16,1,0.3,1), height 0.5s cubic-bezier(0.16,1,0.3,1);
-}
-.about-img--small {
-  width: 55%; aspect-ratio: 1;
-}
-
-/* Name row with arrow */
-.about-name-row {
-  display: flex; align-items: flex-start; justify-content: space-between;
-  padding-top: 14px; gap: 8px;
-}
-=======
-.about-img {
-  width: 100%; aspect-ratio: 1; object-fit: cover;
-  border-radius: 15px; display: block;
-  transition: width 0.5s cubic-bezier(0.16,1,0.3,1);
-}
+.about-img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 15px; display: block; transition: width 0.5s cubic-bezier(0.16,1,0.3,1); }
 .about-img--small { width: 55%; }
 
 .about-name-row { display: flex; align-items: flex-start; justify-content: space-between; padding-top: 14px; gap: 8px; }
->>>>>>> Stashed changes
 .about-name { font-weight: 700; font-size: 18px; color: #1a1a1a; display: block; }
-.about-role {
-  display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1.5px;
-  color: #4a7c59; text-transform: uppercase;
-<<<<<<< Updated upstream
-  background: rgba(74,124,89,0.1); padding: 4px 10px; border-radius: 8px;
-  margin-top: 4px;
-}
-.about-arrow-btn {
-  background: none; border: none; cursor: pointer; padding: 4px;
-  flex-shrink: 0; margin-top: 2px; transition: transform 0.2s;
-}
-.about-arrow-btn:hover { transform: scale(1.15); }
-
-/* Expanded bio area */
-.about-expand { animation: bioIn 0.4s ease-out; }
-.about-line { width: 100%; height: 1px; background: rgba(74,124,89,0.2); margin: 14px 0; }
-.about-bio { font-size: 13px; color: #4a7c59; line-height: 1.65; margin: 0; }
-.about-close {
-  display: flex; justify-content: flex-end; width: 100%;
-  background: none; border: none; cursor: pointer; padding: 10px 0 0;
-=======
-  background: rgba(74,124,89,0.1); padding: 4px 10px; border-radius: 8px; margin-top: 4px;
->>>>>>> Stashed changes
-}
+.about-role { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; color: #4a7c59; text-transform: uppercase; background: rgba(74,124,89,0.1); padding: 4px 10px; border-radius: 8px; margin-top: 4px; }
 .about-arrow-btn { background: none; border: none; cursor: pointer; padding: 4px; flex-shrink: 0; margin-top: 2px; transition: transform 0.2s; }
 .about-arrow-btn:hover { transform: scale(1.15); }
 
-<<<<<<< Updated upstream
-.anim-up { opacity: 0; transform: translateY(28px); animation: aUp 0.7s cubic-bezier(0.16,1,0.3,1) forwards; }
-@keyframes aUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes bioIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-
-=======
-/* Expanded */
 .about-expand { animation: bioIn 0.4s ease-out; }
 .about-line { width: 100%; height: 1px; background: rgba(74,124,89,0.2); margin: 14px 0; }
 .about-bio { font-size: 13px; color: #4a7c59; line-height: 1.65; margin: 0; }
-
-.about-social-row { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; }
-.about-socials { display: flex; gap: 10px; }
-.about-social-icon { width: 24px; height: 24px; border-radius: 4px; object-fit: contain; transition: transform 0.2s; cursor: pointer; }
-.about-social-icon:hover { transform: scale(1.15); }
-.about-social-placeholder { opacity: 0.4; cursor: default; }
+.about-close-row { display: flex; justify-content: flex-end; margin-top: 10px; }
 .about-close { background: none; border: none; cursor: pointer; padding: 4px; }
 
 .anim-up { opacity: 0; transform: translateY(28px); animation: aUp 0.7s cubic-bezier(0.16,1,0.3,1) forwards; }
 @keyframes aUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes bioIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
->>>>>>> Stashed changes
 @media (max-width: 900px) { .about-grid { grid-template-columns: repeat(2, 1fr); padding: 0 20px 40px; } .about-heading { font-size: 36px; } }
 @media (max-width: 560px) { .about-grid { grid-template-columns: 1fr; max-width: 320px; } }
