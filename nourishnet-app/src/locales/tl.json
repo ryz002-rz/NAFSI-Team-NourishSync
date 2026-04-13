@@ -261,6 +261,22 @@
     "usda food boxes": "USDA Food Boxes",
     "vegetables": "Gulay"
   },
+  "about": {
+    "ourLeadership": "Ang Aming Pamunuan",
+    "githubRepo": "Link ng Github Repo",
+    "role": {
+      "leadDeveloper": "PUNONG DEVELOPER",
+      "uxEngineer": "UX ENGINEER",
+      "dataEngineer": "DATA ENGINEER",
+      "logicDeveloper": "LOGIC DEVELOPER"
+    },
+    "bio": {
+      "christian": "Ika-4 na taon ng Cognitive Science, Design & Interaction sa UC San Diego. May karanasan sa UX, system design, frontend/backend development, at nag-host ng maraming web project na may custom domain.",
+      "ryan": "Ika-2 taon ng Data Science sa UC San Diego. Mahusay sa UI/UX, product management, at prompt engineering, kasalukuyang gumagawa ng fashion app na may karanasan sa product development.",
+      "joshua": "Ika-3 taon ng Data Science sa UC San Diego. May background sa data analysis, Python/SQL, at data visualization, na may consulting experience sa UCSD Center for Energy Research.",
+      "joe": "Computer Engineering sa University of Washington. Tagalikha ng #1 earthquake warning iOS app ng Taiwan na may 2M+ users, na may karanasan sa firmware, robotics, at full-stack development."
+    }
+  },
   "level": {
     "level": "Antas",
     "veryLow": "Napakababa",

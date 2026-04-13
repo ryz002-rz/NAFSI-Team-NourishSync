@@ -261,6 +261,22 @@
     "usda food boxes": "USDA食品箱",
     "vegetables": "蔬菜"
   },
+  "about": {
+    "ourLeadership": "我们的团队",
+    "githubRepo": "Github 仓库链接",
+    "role": {
+      "leadDeveloper": "首席开发者",
+      "uxEngineer": "用户体验工程师",
+      "dataEngineer": "数据工程师",
+      "logicDeveloper": "逻辑开发者"
+    },
+    "bio": {
+      "christian": "加州大学圣地亚哥分校认知科学、设计与交互专业大四学生。在用户体验、系统设计、前后端开发方面经验丰富，曾托管多个自定义域名的网站项目。",
+      "ryan": "加州大学圣地亚哥分校数据科学专业大二学生。擅长UI/UX、产品管理和提示工程，目前正在开发一款时尚应用，具有产品开发经验。",
+      "joshua": "加州大学圣地亚哥分校数据科学专业大三学生。具有数据分析、Python/SQL和数据可视化背景，曾在UCSD能源研究中心担任顾问。",
+      "joe": "华盛顿大学计算机工程专业。台湾排名第一的地震预警iOS应用创建者，用户超过200万，具有固件、机器人和全栈开发经验。"
+    }
+  },
   "level": {
     "level": "等级",
     "veryLow": "非常低",

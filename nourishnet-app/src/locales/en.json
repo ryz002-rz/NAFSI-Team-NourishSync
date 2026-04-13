@@ -261,6 +261,22 @@
     "usda food boxes": "USDA Food Boxes",
     "vegetables": "Vegetables"
   },
+  "about": {
+    "ourLeadership": "Our Leadership",
+    "githubRepo": "Github Repo Link",
+    "role": {
+      "leadDeveloper": "LEAD DEVELOPER",
+      "uxEngineer": "UX ENGINEER",
+      "dataEngineer": "DATA ENGINEER",
+      "logicDeveloper": "LOGIC DEVELOPER"
+    },
+    "bio": {
+      "christian": "4th Year Cognitive Science, Design & Interaction at UC San Diego. Experienced in UX, system design, frontend/backend development, and has hosted multiple web projects with custom domains.",
+      "ryan": "2nd Year Data Science at UC San Diego. Skilled in UI/UX, product management, and prompt engineering, currently building a fashion app with experience in product development.",
+      "joshua": "3rd Year Data Science at UC San Diego. Background in data analysis, Python/SQL, and data visualization, with consulting experience at UCSD's Center for Energy Research.",
+      "joe": "Computer Engineering at University of Washington. Creator of Taiwan's #1 earthquake warning iOS app with 2M+ users, with experience in firmware, robotics, and full-stack development."
+    }
+  },
   "level": {
     "level": "Level",
     "veryLow": "Very Low",

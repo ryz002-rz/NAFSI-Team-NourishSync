@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import SearchHeader from './SearchHeader';
 import './AboutPage.css';
 import imgChristian from './assets/christian.jpg';
@@ -10,27 +11,24 @@ import githubLogo from './assets/github-logo.png';
 const REPO_URL = 'https://github.com/ryz002-rz/NAFSI-Team-NourishSync';
 
 const TEAM = [
-  { id: 'christian', name: 'Christian Lee', role: 'LEAD DEVELOPER', img: imgChristian,
-    bio: '4th Year Cognitive Science, Design & Interaction at UC San Diego. Experienced in UX, system design, frontend/backend development, and has hosted multiple web projects with custom domains.' },
-  { id: 'ryan', name: 'Ryan Zhang', role: 'UX ENGINEER', img: imgRyan,
-    bio: '2nd Year Data Science at UC San Diego. Skilled in UI/UX, product management, and prompt engineering, currently building a fashion app with experience in product development.' },
-  { id: 'joshua', name: 'Joshua Huang', role: 'DATA ENGINEER', img: imgJoshua,
-    bio: '3rd Year Data Science at UC San Diego. Background in data analysis, Python/SQL, and data visualization, with consulting experience at UCSD\'s Center for Energy Research.' },
-  { id: 'joe', name: 'Joe Lin', role: 'LOGIC DEVELOPER', img: imgJoe,
-    bio: 'Computer Engineering at University of Washington. Creator of Taiwan\'s #1 earthquake warning iOS app with 2M+ users, with experience in firmware, robotics, and full-stack development.' },
+  { id: 'christian', name: 'Christian Lee', roleKey: 'leadDeveloper', img: imgChristian },
+  { id: 'ryan', name: 'Ryan Zhang', roleKey: 'uxEngineer', img: imgRyan },
+  { id: 'joshua', name: 'Joshua Huang', roleKey: 'dataEngineer', img: imgJoshua },
+  { id: 'joe', name: 'Joe Lin', roleKey: 'logicDeveloper', img: imgJoe },
 ];
 
 function AboutPage() {
+  const { t } = useTranslation();
   const [expanded, setExpanded] = useState(null);
   const toggle = (id) => setExpanded(expanded === id ? null : id);
 
   return (
     <div className="about-root">
       <SearchHeader backTo="/portal" activeNav="about" navPrefix="/customer" />
-      <h1 className="about-heading anim-up">Our leadership</h1>
+      <h1 className="about-heading anim-up">{t('about.ourLeadership')}</h1>
       <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className="about-repo anim-up">
         <img src={githubLogo} alt="GitHub" className="about-repo-logo" />
-        <span className="about-repo-text">Github Repo link</span>
+        <span className="about-repo-text">{t('about.githubRepo')}</span>
       </a>
       <div className="about-grid">
         {TEAM.map((m, i) => {
@@ -41,7 +39,7 @@ function AboutPage() {
               <div className="about-name-row">
                 <div>
                   <span className="about-name">{m.name}</span>
-                  <span className="about-role">{m.role}</span>
+                  <span className="about-role">{t(`about.role.${m.roleKey}`)}</span>
                 </div>
                 {!open && (
                   <button className="about-arrow-btn" onClick={() => toggle(m.id)}>
@@ -54,7 +52,7 @@ function AboutPage() {
               {open && (
                 <div className="about-expand">
                   <div className="about-line" />
-                  <p className="about-bio">{m.bio}</p>
+                  <p className="about-bio">{t(`about.bio.${m.id}`)}</p>
                   <div className="about-close-row">
                     <button className="about-close" onClick={() => toggle(m.id)}>
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

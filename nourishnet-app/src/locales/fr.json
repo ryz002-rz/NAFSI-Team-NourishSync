@@ -261,6 +261,22 @@
     "usda food boxes": "Boîtes Alimentaires USDA",
     "vegetables": "Légumes"
   },
+  "about": {
+    "ourLeadership": "Notre Équipe",
+    "githubRepo": "Lien du Dépôt Github",
+    "role": {
+      "leadDeveloper": "DÉVELOPPEUR PRINCIPAL",
+      "uxEngineer": "INGÉNIEUR UX",
+      "dataEngineer": "INGÉNIEUR DONNÉES",
+      "logicDeveloper": "DÉVELOPPEUR LOGIQUE"
+    },
+    "bio": {
+      "christian": "Étudiant en 4e année de Sciences Cognitives, Design et Interaction à UC San Diego. Expérimenté en UX, conception de systèmes, développement frontend/backend, et a hébergé plusieurs projets web avec des domaines personnalisés.",
+      "ryan": "Étudiant en 2e année de Science des Données à UC San Diego. Compétent en UI/UX, gestion de produits et ingénierie de prompts, développe actuellement une application de mode avec une expérience en développement de produits.",
+      "joshua": "Étudiant en 3e année de Science des Données à UC San Diego. Expérience en analyse de données, Python/SQL et visualisation de données, avec une expérience de conseil au Centre de Recherche Énergétique de l'UCSD.",
+      "joe": "Génie Informatique à l'Université de Washington. Créateur de l'application iOS d'alerte sismique n°1 de Taïwan avec plus de 2M d'utilisateurs, avec une expérience en firmware, robotique et développement full-stack."
+    }
+  },
   "level": {
     "level": "Niveau",
     "veryLow": "Très Faible",

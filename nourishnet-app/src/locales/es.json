@@ -261,6 +261,22 @@
     "usda food boxes": "Cajas de Alimentos USDA",
     "vegetables": "Verduras"
   },
+  "about": {
+    "ourLeadership": "Nuestro Liderazgo",
+    "githubRepo": "Enlace al Repositorio de Github",
+    "role": {
+      "leadDeveloper": "DESARROLLADOR PRINCIPAL",
+      "uxEngineer": "INGENIERO UX",
+      "dataEngineer": "INGENIERO DE DATOS",
+      "logicDeveloper": "DESARROLLADOR LÓGICO"
+    },
+    "bio": {
+      "christian": "Estudiante de 4to año de Ciencia Cognitiva, Diseño e Interacción en UC San Diego. Con experiencia en UX, diseño de sistemas, desarrollo frontend/backend, y ha alojado múltiples proyectos web con dominios personalizados.",
+      "ryan": "Estudiante de 2do año de Ciencia de Datos en UC San Diego. Hábil en UI/UX, gestión de productos e ingeniería de prompts, actualmente desarrollando una aplicación de moda con experiencia en desarrollo de productos.",
+      "joshua": "Estudiante de 3er año de Ciencia de Datos en UC San Diego. Con experiencia en análisis de datos, Python/SQL y visualización de datos, con experiencia de consultoría en el Centro de Investigación Energética de UCSD.",
+      "joe": "Ingeniería Informática en la Universidad de Washington. Creador de la aplicación iOS de alerta de terremotos #1 de Taiwán con más de 2M de usuarios, con experiencia en firmware, robótica y desarrollo full-stack."
+    }
+  },
   "level": {
     "level": "Nivel",
     "veryLow": "Muy Bajo",
