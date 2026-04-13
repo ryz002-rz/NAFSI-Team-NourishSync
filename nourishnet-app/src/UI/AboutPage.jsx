@@ -36,11 +36,21 @@ function AboutPage() {
                   <span className="about-name">{m.name}</span>
                   <span className="about-role">{m.role}</span>
                 </div>
+<<<<<<< Updated upstream
                 <button className="about-arrow-btn" onClick={() => toggle(m.id)}>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a7c59" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="9 6 15 12 9 18" />
                   </svg>
                 </button>
+=======
+                {!open && (
+                  <button className="about-arrow-btn" onClick={() => toggle(m.id)}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4a7c59" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="9 6 15 12 9 18" />
+                    </svg>
+                  </button>
+                )}
+>>>>>>> Stashed changes
               </div>
               {open && (
                 <div className="about-expand">
@@ -48,7 +58,11 @@ function AboutPage() {
                   <p className="about-bio">{m.bio}</p>
                   <button className="about-close" onClick={() => toggle(m.id)}>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+<<<<<<< Updated upstream
                       <polyline points="6 9 12 15 18 9" />
+=======
+                      <polyline points="18 15 12 9 6 15" />
+>>>>>>> Stashed changes
                     </svg>
                   </button>
                 </div>
