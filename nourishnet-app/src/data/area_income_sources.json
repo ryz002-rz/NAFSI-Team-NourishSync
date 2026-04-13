@@ -1,0 +1,119 @@
+[
+  {
+    "locationName": "All PG County locations",
+    "area": "Prince George's County, MD",
+    "sourceUrl": "https://stacker.com/maryland/prince-georges-county-md/food-insecurity-rates-prince-georges-county-md",
+    "metricType": "food insecurity rate",
+    "value": "7.4%",
+    "year": "2021",
+    "notes": "Feeding America Map the Meal Gap data compiled by Stacker. 70,930 food-insecure people in PG County."
+  },
+  {
+    "locationName": "All PG County locations",
+    "area": "Prince George's County, MD",
+    "sourceUrl": "https://stacker.com/maryland/prince-georges-county-md/food-insecurity-rates-prince-georges-county-md",
+    "metricType": "cost per meal",
+    "value": "$4.06",
+    "year": "2021",
+    "notes": "Feeding America Map the Meal Gap. Average cost per meal in PG County."
+  },
+  {
+    "locationName": "All PG County locations",
+    "area": "Prince George's County, MD",
+    "sourceUrl": "https://stacker.com/maryland/prince-georges-county-md/food-insecurity-rates-prince-georges-county-md",
+    "metricType": "annual food budget shortfall",
+    "value": "$50,910,000",
+    "year": "2021",
+    "notes": "Feeding America Map the Meal Gap. Total annual food budget shortfall for PG County."
+  },
+  {
+    "locationName": "All PG County locations",
+    "area": "Prince George's County, MD",
+    "sourceUrl": "https://www.pgchealthzone.org/demographicdata",
+    "metricType": "median household income",
+    "value": "$105,789",
+    "year": "2023",
+    "notes": "PG County Health Department via Claritas, updated March 2026. County-level median household income for all races/ethnicities."
+  },
+  {
+    "locationName": "All PG County locations",
+    "area": "Prince George's County, MD",
+    "sourceUrl": "https://www.pgchealthzone.org/demographicdata",
+    "metricType": "median household income (Black/African American)",
+    "value": "$105,611",
+    "year": "2023",
+    "notes": "PG County Health Department via Claritas. Black/African American median household income."
+  },
+  {
+    "locationName": "All PG County locations",
+    "area": "Prince George's County, MD",
+    "sourceUrl": "https://www.pgchealthzone.org/demographicdata",
+    "metricType": "median household income (Hispanic/Latino)",
+    "value": "$97,992",
+    "year": "2023",
+    "notes": "PG County Health Department via Claritas. Hispanic/Latino median household income."
+  },
+  {
+    "locationName": "All PG County locations",
+    "area": "Prince George's County, MD",
+    "sourceUrl": "https://www.pgchealthzone.org/demographicdata",
+    "metricType": "families below poverty",
+    "value": "7.55%",
+    "year": "2023",
+    "notes": "PG County Health Department via Claritas. 16,986 families (7.55% of all families) below poverty level."
+  },
+  {
+    "locationName": "All PG County locations",
+    "area": "Prince George's County, MD",
+    "sourceUrl": "https://www.pgchealthzone.org/demographicdata",
+    "metricType": "total households",
+    "value": "343,614",
+    "year": "2023",
+    "notes": "PG County Health Department via Claritas. Derived from county population and household data."
+  },
+  {
+    "locationName": "All PG County locations",
+    "area": "Prince George's County, MD",
+    "sourceUrl": "https://www.pgchealthzone.org/demographicdata",
+    "metricType": "households with own children",
+    "value": "25.22%",
+    "year": "2023",
+    "notes": "PG County Health Department via Claritas. 86,636 households (25.22%) have own children."
+  },
+  {
+    "locationName": "All Maryland locations",
+    "area": "Maryland (statewide)",
+    "sourceUrl": "https://stacker.com/maryland/prince-georges-county-md/food-insecurity-rates-prince-georges-county-md",
+    "metricType": "food insecurity rate",
+    "value": "9.7%",
+    "year": "2021",
+    "notes": "Feeding America Map the Meal Gap. Maryland statewide rate. 600,970 food-insecure people."
+  },
+  {
+    "locationName": "All Maryland locations",
+    "area": "Maryland (statewide)",
+    "sourceUrl": "https://stacker.com/maryland/prince-georges-county-md/food-insecurity-rates-prince-georges-county-md",
+    "metricType": "cost per meal",
+    "value": "$3.76",
+    "year": "2021",
+    "notes": "Feeding America Map the Meal Gap. Maryland statewide average cost per meal."
+  },
+  {
+    "locationName": "All Maryland locations",
+    "area": "Maryland (statewide)",
+    "sourceUrl": "https://www.pgchealthzone.org/demographicdata",
+    "metricType": "median household income",
+    "value": "$107,134",
+    "year": "2023",
+    "notes": "PG County Health Department via Claritas. Maryland statewide median household income."
+  },
+  {
+    "locationName": "All Maryland locations",
+    "area": "Maryland (statewide)",
+    "sourceUrl": "https://www.pgchealthzone.org/demographicdata",
+    "metricType": "families below poverty",
+    "value": "6.56%",
+    "year": "2023",
+    "notes": "PG County Health Department via Claritas. 102,960 families (6.56%) below poverty statewide."
+  }
+]

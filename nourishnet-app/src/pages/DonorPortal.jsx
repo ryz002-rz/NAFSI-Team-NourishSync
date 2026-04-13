@@ -2,13 +2,22 @@ import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import locations from '../data/locations_final_merged.json';
 import { filterBySearch } from '../utils/filterUtils';
-import ImpactCalculator from '../components/joe/ImpactCalculator';
 import LocationCard from '../components/shared/LocationCard';
+import DonationLogger from '../components/ryan/DonationLogger';
+import MapView from '../components/ryan/MapView';
+
+function formatAddr(address) {
+  if (!address) return '';
+  if (typeof address === 'string') return address;
+  return [address.street, address.city, address.state, address.zip].filter(Boolean).join(', ');
+}
 
 function DonorPortal() {
   const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState('');
   const [sortByNeed, setSortByNeed] = useState(false);
+  const [showMap, setShowMap] = useState(true);
+  const [donatingTo, setDonatingTo] = useState(null);
 
   const filtered = useMemo(() => {
     let result = filterBySearch(locations, searchQuery);
@@ -31,9 +40,9 @@ function DonorPortal() {
         </p>
       </div>
 
-      {/* Impact Calculator */}
+      {/* Log Your Donation + Impact Calculator (merged) */}
       <div className="mb-6">
-        <ImpactCalculator />
+        <DonationLogger />
       </div>
 
       {/* Search + Sort */}
@@ -69,10 +78,25 @@ function DonorPortal() {
         </button>
       </div>
 
-      {/* Results */}
-      <p className="text-sm text-neutral-500 mb-4">
-        {filtered.length} {filtered.length === 1 ? t('results.organizationSingular') : t('results.organizations')}
-      </p>
+      {/* Results count + map toggle */}
+      <div className="flex items-center justify-between mb-4">
+        <p className="text-sm text-neutral-500">
+          {filtered.length} {filtered.length === 1 ? t('results.organizationSingular') : t('results.organizations')}
+        </p>
+        <button
+          onClick={() => setShowMap((v) => !v)}
+          className="text-sm text-warm-600 hover:text-warm-700 font-medium"
+        >
+          {showMap ? 'Hide Map' : 'Show Map'}
+        </button>
+      </div>
+
+      {/* Map */}
+      {showMap && (
+        <div className="mb-6 rounded-2xl overflow-hidden border border-neutral-200" style={{ height: '400px' }}>
+          <MapView locations={filtered} />
+        </div>
+      )}
 
       {filtered.length === 0 ? (
         <div className="text-center py-12 text-neutral-400">
@@ -126,9 +150,54 @@ function DonorPortal() {
                     🔴 {t('donor.highNeed')}
                   </span>
                 )}
+
+                {/* Donate Here button */}
+                <button
+                  onClick={(e) => { e.stopPropagation(); setDonatingTo(loc); }}
+                  className="w-full mt-2 py-2 text-sm font-semibold rounded-xl bg-warm-500 text-white hover:bg-warm-600 transition-colors"
+                >
+                  🎁 Donate Here
+                </button>
               </div>
             </div>
           ))}
+        </div>
+      )}
+
+      {/* Donate-to-location modal */}
+      {donatingTo && (
+        <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/40" onClick={() => setDonatingTo(null)}>
+          <div className="bg-white w-full sm:max-w-lg sm:rounded-2xl rounded-t-2xl max-h-[90vh] overflow-y-auto p-5" onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-start justify-between mb-4">
+              <div>
+                <h3 className="text-lg font-bold text-neutral-800">{donatingTo.name}</h3>
+                <p className="text-sm text-neutral-500">{formatAddr(donatingTo.address)}</p>
+                {donatingTo.hours && <p className="text-xs text-neutral-400 mt-1">🕐 {donatingTo.hours}</p>}
+              </div>
+              <button onClick={() => setDonatingTo(null)} className="text-neutral-400 hover:text-neutral-600 text-xl leading-none">✕</button>
+            </div>
+
+            {donatingTo.wishlist && donatingTo.wishlist.length > 0 && (
+              <div className="mb-4 p-3 bg-warm-50 rounded-xl">
+                <p className="text-xs font-semibold text-warm-700 mb-1">They need:</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {donatingTo.wishlist.map((item, i) => (
+                    <span key={i} className="px-2 py-0.5 text-xs rounded-full bg-white text-warm-700 border border-warm-200">{item}</span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <DonationLogger locationName={donatingTo.name} />
+
+            <a
+              href={`https://www.google.com/maps/dir/?api=1&destination=${donatingTo.lat},${donatingTo.lng}`}
+              target="_blank" rel="noopener noreferrer"
+              className="block mt-3 text-center py-2 text-sm font-medium rounded-xl border border-primary-200 text-primary-600 hover:bg-primary-50 transition-colors"
+            >
+              📍 Get Directions
+            </a>
+          </div>
         </div>
       )}
     </div>
