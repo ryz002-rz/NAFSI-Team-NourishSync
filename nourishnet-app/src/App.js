@@ -1,6 +1,5 @@
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/christian/Layout';
-import Gateway from './components/christian/Gateway';
 import LandingPage from './UI/LandingPage';
 import WelcomePage from './UI/WelcomePage';
 import PortalPage from './UI/PortalPage';
@@ -13,17 +12,16 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        {/* New UI flow — no Layout wrapper */}
-        <Route path="/landing" element={<LandingPage />} />
+        {/* New UI flow — landing is the root */}
+        <Route path="/" element={<LandingPage />} />
         <Route path="/welcome" element={<WelcomePage />} />
         <Route path="/portal" element={<PortalPage />} />
 
-        {/* Existing app with Layout */}
-        <Route path="/" element={<Layout><Gateway /></Layout>} />
+        {/* Existing portals with Layout wrapper */}
         <Route path="/family" element={<Layout><FamilyPortal /></Layout>} />
         <Route path="/donor" element={<Layout><DonorPortal /></Layout>} />
         <Route path="/volunteer" element={<Layout><VolunteerPortal /></Layout>} />
-        <Route path="*" element={<Navigate to="/landing" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </HashRouter>
   );
