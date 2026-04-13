@@ -8,6 +8,7 @@ import FoodDetailPage from './UI/FoodDetailPage';
 import NearbyPage from './UI/NearbyPage';
 import MapPage from './UI/MapPage';
 import DonorPage from './UI/DonorPage';
+import DonorMapPage from './UI/DonorMapPage';
 import Layout from './components/christian/Layout';
 import VolunteerPortal from './pages/VolunteerPortal';
 import './utils/i18n';
@@ -30,6 +31,7 @@ function App() {
 
         {/* Donor */}
         <Route path="/donor" element={<DonorPage />} />
+        <Route path="/donor/map" element={<DonorMapPage />} />
 
         {/* Volunteer (existing) */}
         <Route path="/volunteer" element={<Layout><VolunteerPortal /></Layout>} />

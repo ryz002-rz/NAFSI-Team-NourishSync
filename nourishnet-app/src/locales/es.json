@@ -161,6 +161,15 @@
     "highNeedAreas": "Áreas de Alta Necesidad",
     "highNeed": "Alta Necesidad",
     "impactCalculator": "Calculadora de Impacto",
-    "impactCalcDesc": "Estime el impacto de sus donaciones de alimentos"
+    "impactCalcDesc": "Estime el impacto de sus donaciones de alimentos",
+    "whatDonating": "¿Qué vas a donar?",
+    "takePhoto": "Tomar una Foto",
+    "typeItems": "Escribir Artículos",
+    "quantity": "Cantidad",
+    "donateBtn": "DONAR",
+    "nowAvailable": "Disponible Ahora",
+    "dietaryOptions": "Opciones Dietéticas",
+    "openNow": "Abierto Ahora",
+    "closed": "Cerrado"
   }
 }

@@ -161,6 +161,15 @@
     "highNeedAreas": "Zones à Fort Besoin",
     "highNeed": "Fort Besoin",
     "impactCalculator": "Calculateur d'Impact",
-    "impactCalcDesc": "Estimez l'impact de vos dons alimentaires"
+    "impactCalcDesc": "Estimez l'impact de vos dons alimentaires",
+    "whatDonating": "Que souhaitez-vous donner ?",
+    "takePhoto": "Prendre une Photo",
+    "typeItems": "Saisir les Articles",
+    "quantity": "Quantité",
+    "donateBtn": "DONNER",
+    "nowAvailable": "Disponible Maintenant",
+    "dietaryOptions": "Options Alimentaires",
+    "openNow": "Ouvert Maintenant",
+    "closed": "Fermé"
   }
 }

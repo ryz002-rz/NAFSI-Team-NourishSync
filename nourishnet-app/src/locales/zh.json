@@ -161,6 +161,15 @@
     "highNeedAreas": "高需求地区",
     "highNeed": "高需求",
     "impactCalculator": "影响计算器",
-    "impactCalcDesc": "估算您的食物捐赠的影响"
+    "impactCalcDesc": "估算您的食物捐赠的影响",
+    "whatDonating": "您要捐赠什么？",
+    "takePhoto": "拍照",
+    "typeItems": "输入物品",
+    "quantity": "数量",
+    "donateBtn": "捐赠",
+    "nowAvailable": "现在可用",
+    "dietaryOptions": "饮食选项",
+    "openNow": "营业中",
+    "closed": "已关闭"
   }
 }

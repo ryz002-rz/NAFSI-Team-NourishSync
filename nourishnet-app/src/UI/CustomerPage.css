@@ -1,18 +1,15 @@
 .cust-root { min-height: 100vh; background: #dcfce8; font-family: 'Inter', sans-serif; }
 
-/* Hero */
 .cust-hero { padding: 24px 40px 8px; }
 .cust-title { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 40px; color: #4a7c59; margin: 0; display: inline; }
 .cust-subtitle { display: inline; margin-left: 16px; font-size: 16px; color: #4a7c59; opacity: 0.6; }
 
-/* Sections */
 .cust-section { padding: 20px 0; }
 .cust-section-row { display: flex; align-items: center; justify-content: space-between; padding: 0 40px 12px; }
 .cust-section-title { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 28px; color: #4a7c59; margin: 0; }
 .cust-section-arrow { background: none; border: none; cursor: pointer; padding: 8px; }
 .cust-arrow-flip { width: 20px; height: 20px; transform: scaleX(-1); }
 
-/* Horizontal scroll */
 .cust-hscroll { display: flex; gap: 16px; overflow-x: auto; padding: 0 40px 8px; cursor: grab; scrollbar-width: none; }
 .cust-hscroll::-webkit-scrollbar { display: none; }
 
@@ -26,8 +23,31 @@
 .cust-loc-partner { font-size: 12px; color: #4a7c59; opacity: 0.6; display: block; }
 .cust-loc-details { background: none; border: none; cursor: pointer; font-size: 13px; color: #4a7c59; white-space: nowrap; font-weight: 500; }
 .cust-loc-meta { display: flex; flex-direction: column; gap: 2px; font-size: 13px; color: #4a7c59; opacity: 0.7; }
-.cust-loc-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.cust-loc-bottom { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; }
+.cust-loc-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .cust-loc-tag { font-size: 12px; color: #dcfce8; background: #4a7c59; padding: 4px 12px; border-radius: 20px; }
+.cust-loc-dir { font-size: 13px; color: #4a7c59; font-weight: 600; text-decoration: underline; white-space: nowrap; }
+
+/* Food type cards (horizontal) */
+.cust-food-card {
+  flex-shrink: 0; width: 180px; height: 120px;
+  background: #4a7c59; border: none; border-radius: 16px;
+  cursor: pointer; display: flex; align-items: flex-end; padding: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.cust-food-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(74,124,89,0.25); }
+.cust-food-label { font-family: 'Inria Serif', serif; font-weight: 700; font-size: 20px; color: #dcfce8; }
+
+/* Dietary cards */
+.cust-diet-card {
+  flex-shrink: 0; width: 160px; height: 100px;
+  border: 1px solid #4a7c59; border-radius: 16px;
+  background: transparent; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s;
+}
+.cust-diet-card:hover { background: rgba(74,124,89,0.06); }
+.cust-diet-label { font-size: 15px; font-weight: 600; color: #4a7c59; }
 
 @media (max-width: 768px) {
   .cust-hero, .cust-section-row { padding-left: 20px; padding-right: 20px; }

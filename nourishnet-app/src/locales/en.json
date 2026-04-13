@@ -161,6 +161,15 @@
     "highNeedAreas": "High Need Areas",
     "highNeed": "High Need",
     "impactCalculator": "Impact Calculator",
-    "impactCalcDesc": "Estimate the impact of your food donations"
+    "impactCalcDesc": "Estimate the impact of your food donations",
+    "whatDonating": "What are you donating?",
+    "takePhoto": "Take a Photo",
+    "typeItems": "Type Items",
+    "quantity": "Quantity",
+    "donateBtn": "DONATE",
+    "nowAvailable": "Now Available",
+    "dietaryOptions": "Dietary Options",
+    "openNow": "Open Now",
+    "closed": "Closed"
   }
 }

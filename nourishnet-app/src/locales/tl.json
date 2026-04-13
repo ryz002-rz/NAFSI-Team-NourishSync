@@ -161,6 +161,15 @@
     "highNeedAreas": "Mga Lugar na Mataas ang Pangangailangan",
     "highNeed": "Mataas ang Pangangailangan",
     "impactCalculator": "Kalkulator ng Epekto",
-    "impactCalcDesc": "Tantiyahin ang epekto ng iyong mga donasyon ng pagkain"
+    "impactCalcDesc": "Tantiyahin ang epekto ng iyong mga donasyon ng pagkain",
+    "whatDonating": "Ano ang ido-donate mo?",
+    "takePhoto": "Kumuha ng Larawan",
+    "typeItems": "I-type ang mga Bagay",
+    "quantity": "Dami",
+    "donateBtn": "MAG-DONATE",
+    "nowAvailable": "Available Na",
+    "dietaryOptions": "Mga Pagpipilian sa Diyeta",
+    "openNow": "Bukas Ngayon",
+    "closed": "Sarado"
   }
 }

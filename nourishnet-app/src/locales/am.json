@@ -161,6 +161,15 @@
     "highNeedAreas": "ከፍተኛ ፍላጎት ያላቸው አካባቢዎች",
     "highNeed": "ከፍተኛ ፍላጎት",
     "impactCalculator": "ተጽዕኖ ካልኩሌተር",
-    "impactCalcDesc": "የምግብ ልገሳዎን ተጽዕኖ ይገምቱ"
+    "impactCalcDesc": "የምግብ ልገሳዎን ተጽዕኖ ይገምቱ",
+    "whatDonating": "ምን እየለገሱ ነው?",
+    "takePhoto": "ፎቶ ያንሱ",
+    "typeItems": "ዕቃዎችን ይጻፉ",
+    "quantity": "ብዛት",
+    "donateBtn": "ለግሱ",
+    "nowAvailable": "አሁን ይገኛል",
+    "dietaryOptions": "የአመጋገብ አማራጮች",
+    "openNow": "አሁን ክፍት ነው",
+    "closed": "ዝግ ነው"
   }
 }
