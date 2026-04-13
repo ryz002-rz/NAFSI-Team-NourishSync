@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './FoodTypesPage.css';
 import LanguagePopover from './LanguagePopover';
 import arrowIcon from './assets/arrow-right.svg';
@@ -9,6 +10,7 @@ const FOOD_TYPES = [...new Set(locations.flatMap((l) => l.foodTypes || []))].sor
 
 function FoodTypesPage() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <div className="ft-root">
@@ -17,22 +19,17 @@ function FoodTypesPage() {
           <img src={arrowIcon} alt="" className="ft-back-icon" />
         </button>
         <nav className="ft-nav-pill">
-          <button className="ft-nav-btn ft-nav-btn--active">Home</button>
-          <button className="ft-nav-btn" onClick={() => navigate('/customer/map')}>Map</button>
-          <button className="ft-nav-btn">About Us</button>
+          <button className="ft-nav-btn ft-nav-btn--active">{t('ui.home')}</button>
+          <button className="ft-nav-btn" onClick={() => navigate('/customer/map')}>{t('ui.map')}</button>
+          <button className="ft-nav-btn">{t('ui.aboutUs')}</button>
         </nav>
         <div className="ft-header-right">
-          <div className="ft-search-bar">
-            <span className="ft-search-icon">🔍</span>
-            <input className="ft-search-input" placeholder="Search" aria-label="Search" />
-          </div>
-          <button className="ft-voice-btn" aria-label="Voice search">🎙</button>
+          <div className="ft-search-bar"><span className="ft-search-icon">🔍</span><input className="ft-search-input" placeholder={t('ui.search')} /></div>
+          <button className="ft-voice-btn">🎙</button>
           <LanguagePopover />
         </div>
       </header>
-
-      <h1 className="ft-title">Food Type</h1>
-
+      <h1 className="ft-title">{t('ui.foodType')}</h1>
       <div className="ft-grid">
         {FOOD_TYPES.map((ft) => (
           <button key={ft} className="ft-card" onClick={() => navigate(`/customer/food/${encodeURIComponent(ft)}`)}>
