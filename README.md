@@ -268,4 +268,4 @@ Built for the NourishNet Data Challenge 2026. All data sourced from public gover
 
 ---
 
-*Built with care at the University of Maryland — April 11–13, 2026.*
+*Built with care at UCSD — April 11–13, 2026.*
