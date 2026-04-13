@@ -209,6 +209,79 @@ All 737 locations have all 7 boolean keys. Values were determined as follows:
 `nearMe` is a **frontend runtime filter**, not a stored data attribute. It uses `navigator.geolocation` + distance calculation at query time. It does not belong in `healthAttributes` and is intentionally excluded from the schema.
 ---
 
+### 10. `area_income_sources.json` — Area-Level Economic Data
+
+| Field | Value |
+|-------|-------|
+| Purpose | Area-level economic and income-related data linked to pantry service areas. Provides socioeconomic context for food insecurity analysis. |
+| Created from | Targeted re-scrape of all source links in `locations.json` and the NourishNet Data Challenge CSV. Only data explicitly stated on credible source pages was collected. |
+| Used for | Enriching location data with socioeconomic context. Supporting need-based prioritization, donor heatmaps, and impact dashboards. |
+| Edit directly? | **Yes — add new verified data points as they are found** |
+| Pipeline status | **Reference / Supplementary** |
+| Record count | 13 data points |
+| Notes | This is NOT a per-location dataset. It contains area-level metrics (county and state) that apply broadly to groups of locations. See details below. |
+
+#### Schema
+
+Each entry contains:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `locationName` | string | Which locations this applies to (e.g., "All PG County locations") |
+| `area` | string | Geographic area the metric covers (e.g., "Prince George's County, MD") |
+| `sourceUrl` | string | URL where the data was found |
+| `metricType` | string | What is being measured (e.g., "median household income", "food insecurity rate") |
+| `value` | string | The data value as stated on the source page |
+| `year` | string | Year the data represents |
+| `notes` | string | Additional context, source attribution, methodology notes |
+
+#### Data included
+
+| Metric | Area | Value | Year | Source |
+|--------|------|-------|------|--------|
+| Food insecurity rate | PG County | 7.4% | 2021 | Feeding America via Stacker |
+| Cost per meal | PG County | $4.06 | 2021 | Feeding America via Stacker |
+| Annual food budget shortfall | PG County | $50,910,000 | 2021 | Feeding America via Stacker |
+| Median household income | PG County | $105,789 | 2023 | PG County Health Dept / Claritas |
+| Median income (Black/African American) | PG County | $105,611 | 2023 | PG County Health Dept / Claritas |
+| Median income (Hispanic/Latino) | PG County | $97,992 | 2023 | PG County Health Dept / Claritas |
+| Families below poverty | PG County | 7.55% | 2023 | PG County Health Dept / Claritas |
+| Total households | PG County | 343,614 | 2023 | PG County Health Dept / Claritas |
+| Households with own children | PG County | 25.22% | 2023 | PG County Health Dept / Claritas |
+| Food insecurity rate | Maryland | 9.7% | 2021 | Feeding America via Stacker |
+| Cost per meal | Maryland | $3.76 | 2021 | Feeding America via Stacker |
+| Median household income | Maryland | $107,134 | 2023 | PG County Health Dept / Claritas |
+| Families below poverty | Maryland | 6.56% | 2023 | PG County Health Dept / Claritas |
+
+#### How the data was collected
+
+1. All source links from `locations.json` and the NourishNet Data Challenge CSV (29 unique URLs) were visited
+2. Each page was checked for area-level economic indicators (income, poverty, unemployment, food insecurity, SNAP usage)
+3. Only 3 sources contained extractable economic data:
+   - **Stacker / Feeding America** — food insecurity rates, cost per meal, budget shortfall
+   - **PG County Health Zone** (pgchealthzone.org) — median income by race, poverty rate, household data (Claritas data, updated March 2026)
+   - **Maryland Food Bank** — qualitative context only (no specific numbers beyond Feeding America)
+4. 26 other sources contained no economic data (pantry listings, portal landing pages, interactive maps, PDFs)
+
+#### Accuracy and limitations
+
+- All values are **source-backed** — nothing fabricated, estimated, or inferred
+- Geographic granularity is **county-level** (PG County) or **statewide** (Maryland) only. No zip-code or census-tract data was available from these sources.
+- Data years vary: food insecurity data is from **2021** (Feeding America), income/poverty data is from **2023** (Claritas)
+- The open data portals (Census Bureau, Maryland Open Data, PG County Open Data) likely have more granular data but require API queries or dataset downloads not accessible via page scraping
+- Not all locations have area-specific data — this file provides context for the PG County region as a whole
+
+#### Usage guidance
+
+| Use for | How |
+|---------|-----|
+| Donor heatmap / need indicators | Use `food insecurity rate` and `families below poverty` to show area need levels |
+| Impact dashboard context | Use `cost per meal` and `annual food budget shortfall` for impact calculations |
+| Demographic context | Use `median household income` breakdowns for community profiling |
+| **Do NOT** use for | Per-location economic scoring (data is county-level, not location-specific) |
+
+---
+
 ## Data Pipeline Flow
 
 ```
@@ -230,6 +303,9 @@ Day 2: Final Merge
   └─→ locations_final_merged.json (737 locations)
         ├─→ locations_final_merged_backup.json (pre-enrichment backup)
         └─→ foodTypes + healthAttributes enrichment ⭐ PRODUCTION
+
+Day 2: Economic Data Scrape
+  └─→ area_income_sources.json (13 data points from Feeding America + PG Health Zone)
 ```
 
 ---
@@ -242,3 +318,4 @@ Day 2: Final Merge
 | **Read-only intermediate** | `locations_expanded.json`, `foodbank_scraped_locations.json`, `foodbank_csv_converted.json`, `foodbank_merged_clean.json` |
 | **Safe to edit for testing** | `locations_sample.json` |
 | **Production — enrich only** | `locations_final_merged.json` |
+| **Reference — add verified data** | `area_income_sources.json` |
