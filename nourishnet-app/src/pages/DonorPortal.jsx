@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import locations from '../data/locations_expanded.json';
+import locations from '../data/locations_final_merged.json';
 import { filterBySearch } from '../utils/filterUtils';
 import ImpactCalculator from '../components/joe/ImpactCalculator';
 import LocationCard from '../components/shared/LocationCard';

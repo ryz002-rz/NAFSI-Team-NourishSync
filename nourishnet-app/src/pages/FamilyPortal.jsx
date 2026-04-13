@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import locations from '../data/locations_expanded.json';
+import locations from '../data/locations_final_merged.json';
 import { applyFilters } from '../utils/filterUtils';
 import FilterEngine from '../components/joe/FilterEngine';
 import VoiceSearch from '../components/joe/VoiceSearch';
